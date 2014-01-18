@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="worlds">
+    <% @worlds.each do |world| %>
+      <li>
+        <%= link_to world.headline_1, refinery.worlds_world_path(world) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

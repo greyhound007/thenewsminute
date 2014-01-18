@@ -11,3 +11,21 @@ Refinery::Pages::Engine.load_seed
 
 # Added by Refinery CMS Homepages extension
 Refinery::Homepages::Engine.load_seed
+
+# Added by Refinery CMS Politics extension
+Refinery::Politics::Engine.load_seed
+
+# Added by Refinery CMS News extension
+Refinery::News::Engine.load_seed
+
+# Added by Refinery CMS Sports extension
+Refinery::Sports::Engine.load_seed
+
+# Added by Refinery CMS Entertainments extension
+Refinery::Entertainments::Engine.load_seed
+
+# Added by Refinery CMS Technologies extension
+Refinery::Technologies::Engine.load_seed
+
+# Added by Refinery CMS Worlds extension
+Refinery::Worlds::Engine.load_seed

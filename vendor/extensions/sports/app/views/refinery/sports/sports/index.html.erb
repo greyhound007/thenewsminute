@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="sports">
+    <% @sports.each do |sport| %>
+      <li>
+        <%= link_to sport.headline_1, refinery.sports_sport_path(sport) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

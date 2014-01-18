@@ -1,0 +1,91 @@
+sk:
+  refinery:
+    plugins:
+      worlds:
+        title: Worlds
+    worlds:
+      admin:
+        worlds:
+          actions:
+            create_new: Pridať World
+            reorder: Preusporiadať Worlds
+            reorder_done: Koniec radenia Worlds
+          records:
+            title: Worlds
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Worlds. Kliknite na "Pridať World" pre pridanie prvého world.
+          world:
+            view_live_html: Zobraziť náhľad world<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť world
+            delete: Zmazať world
+      worlds:
+        show:
+          other: Daľšie Worlds
+  activerecord:
+    attributes:
+      'refinery/worlds/world':
+        headline_1: Headline 1
+        photo_1: Photo 1
+        summary_1: Summary 1
+        news_1_source_1: News 1 Source 1
+        news_1_link_1: News 1 Link 1
+        news_1_source_2: News 1 Source 2
+        news_1_link_2: News 1 Link 2
+        news_1_source_3: News 1 Source 3
+        news_1_link_3: News 1 Link 3
+        news_1_source_4: News 1 Source 4
+        news_1_link_4: News 1 Link 4
+        news_1_source_5: News 1 Source 5
+        news_1_link_5: News 1 Link 5
+        headline_2: Headline 2
+        photo_2: Photo 2
+        summary_2: Summary 2
+        news_2_source_1: News 2 Source 1
+        news_2_link_1: News 2 Link 1
+        news_2_source_2: News 2 Source 2
+        news_2_link_2: News 2 Link 2
+        news_2_source_3: News 2 Source 3
+        news_2_link_3: News 2 Link 3
+        news_2_source_4: News 2 Source 4
+        news_2_link_4: News 2 Link 4
+        news_2_source_5: News 2 Source 5
+        news_2_link_5: News 2 Link 5
+        headline_3: Headline 3
+        photo_3: Photo 3
+        summary_3: Summary 3
+        news_3_source_1: News 3 Source 1
+        news_3_link_1: News 3 Link 1
+        news_3_source_2: News 3 Source 2
+        news_3_link_2: News 3 Link 2
+        news_3_source_3: News 3 Source 3
+        news_3_link_3: News 3 Link 3
+        news_3_source_4: News 3 Source 4
+        news_3_link_4: News 3 Link 4
+        news_3_source_5: News 3 Source 5
+        news_3_link_5: News 3 Link 5
+        headline_4: Headline 4
+        photo_4: Photo 4
+        summary_4: Summary 4
+        news_4_source_1: News 4 Source 1
+        news_4_link_1: News 4 Link 1
+        news_4_source_2: News 4 Source 2
+        news_4_link_2: News 4 Link 2
+        news_4_source_3: News 4 Source 3
+        news_4_link_3: News 4 Link 3
+        news_4_source_4: News 4 Source 4
+        news_4_link_4: News 4 Link 4
+        news_4_source_5: News 4 Source 5
+        news_4_link_5: News 4 Link 5
+        headline_5: Headline 5
+        photo_5: Photo 5
+        summary_5: Summary 5
+        news_5_source_1: News 5 Source 1
+        news_5_link_1: News 5 Link 1
+        news_5_source_2: News 5 Source 2
+        news_5_link_2: News 5 Link 2
+        news_5_source_3: News 5 Source 3
+        news_5_link_3: News 5 Link 3
+        news_5_source_4: News 5 Source 4
+        news_5_link_4: News 5 Link 4
+        news_5_source_5: News 5 Source 5
+        news_5_link_5: News 5 Link 5

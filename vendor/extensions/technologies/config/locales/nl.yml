@@ -1,0 +1,91 @@
+nl:
+  refinery:
+    plugins:
+      technologies:
+        title: Technologies
+    technologies:
+      admin:
+        technologies:
+          actions:
+            create_new: Nieuwe Technology toevoegen
+            reorder: De volgorde van de Technologies wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Technology-volgorde
+          records:
+            title: Technologies
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Technologies. Druk op 'Nieuwe Technology toevoegen' om de eerste toe te voegen.
+          technology:
+            view_live_html: Deze technology op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze technology
+            delete: Deze technology definitief verwijderen
+      technologies:
+        show:
+          other: Andere Technologies
+  activerecord:
+    attributes:
+      'refinery/technologies/technology':
+        headline_1: Headline 1
+        photo_1: Photo 1
+        summary_1: Summary 1
+        news_1_source_1: News 1 Source 1
+        news_1_link_1: News 1 Link 1
+        news_1_source_2: News 1 Source 2
+        news_1_link_2: News 1 Link 2
+        news_1_source_3: News 1 Source 3
+        news_1_link_3: News 1 Link 3
+        news_1_source_4: News 1 Source 4
+        news_1_link_4: News 1 Link 4
+        news_1_source_5: News 1 Source 5
+        news_1_link_5: News 1 Link 5
+        headline_2: Headline 2
+        photo_2: Photo 2
+        summary_2: Summary 2
+        news_2_source_1: News 2 Source 1
+        news_2_link_1: News 2 Link 1
+        news_2_source_2: News 2 Source 2
+        news_2_link_2: News 2 Link 2
+        news_2_source_3: News 2 Source 3
+        news_2_link_3: News 2 Link 3
+        news_2_source_4: News 2 Source 4
+        news_2_link_4: News 2 Link 4
+        news_2_source_5: News 2 Source 5
+        news_2_link_5: News 2 Link 5
+        headline_3: Headline 3
+        photo_3: Photo 3
+        summary_3: Summary 3
+        news_3_source_1: News 3 Source 1
+        news_3_link_1: News 3 Link 1
+        news_3_source_2: News 3 Source 2
+        news_3_link_2: News 3 Link 2
+        news_3_source_3: News 3 Source 3
+        news_3_link_3: News 3 Link 3
+        news_3_source_4: News 3 Source 4
+        news_3_link_4: News 3 Link 4
+        news_3_source_5: News 3 Source 5
+        news_3_link_5: News 3 Link 5
+        headline_4: Headline 4
+        photo_4: Photo 4
+        summary_4: Summary 4
+        news_4_source_1: News 4 Source 1
+        news_4_link_1: News 4 Link 1
+        news_4_source_2: News 4 Source 2
+        news_4_link_2: News 4 Link 2
+        news_4_source_3: News 4 Source 3
+        news_4_link_3: News 4 Link 3
+        news_4_source_4: News 4 Source 4
+        news_4_link_4: News 4 Link 4
+        news_4_source_5: News 4 Source 5
+        news_4_link_5: News 4 Link 5
+        headline_5: Headline 5
+        photo_5: Photo 5
+        summary_5: Summary 5
+        news_5_source_1: News 5 Source 1
+        news_5_link_1: News 5 Link 1
+        news_5_source_2: News 5 Source 2
+        news_5_link_2: News 5 Link 2
+        news_5_source_3: News 5 Source 3
+        news_5_link_3: News 5 Link 3
+        news_5_source_4: News 5 Source 4
+        news_5_link_4: News 5 Link 4
+        news_5_source_5: News 5 Source 5
+        news_5_link_5: News 5 Link 5

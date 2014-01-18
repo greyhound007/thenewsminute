@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Worlds::Admin::WorldsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.worlds_admin_worlds_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_worlds_admin_world_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Worlds::Admin::WorldsController.sortable? && ::Refinery::Worlds::World.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Worlds"),
+                 refinery.worlds_admin_worlds_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Worlds"),
+                 refinery.worlds_admin_worlds_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

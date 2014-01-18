@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Sports::Admin::SportsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.sports_admin_sports_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_sports_admin_sport_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Sports::Admin::SportsController.sortable? && ::Refinery::Sports::Sport.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Sports"),
+                 refinery.sports_admin_sports_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Sports"),
+                 refinery.sports_admin_sports_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

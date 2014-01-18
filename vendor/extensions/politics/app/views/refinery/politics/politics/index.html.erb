@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="politics">
+    <% @politics.each do |politic| %>
+      <li>
+        <%= link_to politic.headline_1, refinery.politics_politic_path(politic) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

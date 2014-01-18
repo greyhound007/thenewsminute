@@ -1,7 +1,17 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-entertainments (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-homepages (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-politics (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-sports (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-technologies (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-worlds (1.0)
       refinerycms-core (~> 2.1.1)
 
 GEM
@@ -228,7 +238,12 @@ DEPENDENCIES
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-entertainments!
   refinerycms-homepages!
+  refinerycms-politics!
+  refinerycms-sports!
+  refinerycms-technologies!
+  refinerycms-worlds!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

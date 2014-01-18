@@ -62,3 +62,9 @@ gem 'fog'
 gem 'pg'
 
 gem 'refinerycms-homepages', :path => 'vendor/extensions'
+gem 'refinerycms-politics', :path => 'vendor/extensions'
+
+gem 'refinerycms-sports', :path => 'vendor/extensions'
+gem 'refinerycms-entertainments', :path => 'vendor/extensions'
+gem 'refinerycms-technologies', :path => 'vendor/extensions'
+gem 'refinerycms-worlds', :path => 'vendor/extensions'
