@@ -1,0 +1,578 @@
+<%= form_for [refinery, :homepages_admin, @homepage] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @homepage,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :main_story_headline_1 -%>
+    <%= f.text_field :main_story_headline_1, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_photo_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :main_story_photo_1_id,
+               :image => @homepage.main_story_photo_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_blurb_1 -%>
+    <%= f.text_field :main_story_blurb_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_1 -%>
+    <%= f.text_field :main_story_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_headline_2 -%>
+    <%= f.text_field :main_story_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_photo_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :main_story_photo_2_id,
+               :image => @homepage.main_story_photo_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_blurb_2 -%>
+    <%= f.text_field :main_story_blurb_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_2 -%>
+    <%= f.text_field :main_story_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_photo_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :latest_photo_1_id,
+               :image => @homepage.latest_photo_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_headline_1 -%>
+    <%= f.text_field :latest_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_link_1 -%>
+    <%= f.text_field :latest_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_photo_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :latest_photo_2_id,
+               :image => @homepage.latest_photo_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_headline_2 -%>
+    <%= f.text_field :latest_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_link_2 -%>
+    <%= f.text_field :latest_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_photo_3 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :latest_photo_3_id,
+               :image => @homepage.latest_photo_3,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_headline_3 -%>
+    <%= f.text_field :latest_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_link_3 -%>
+    <%= f.text_field :latest_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :politics_photo_id,
+               :image => @homepage.politics_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_headline_1 -%>
+    <%= f.text_field :politics_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_link_1 -%>
+    <%= f.text_field :politics_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_headline_2 -%>
+    <%= f.text_field :politics_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_link_2 -%>
+    <%= f.text_field :politics_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_headline_3 -%>
+    <%= f.text_field :politics_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_link_3 -%>
+    <%= f.text_field :politics_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :news_photo_id,
+               :image => @homepage.news_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_headline_1 -%>
+    <%= f.text_field :news_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_link_1 -%>
+    <%= f.text_field :news_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_headline_2 -%>
+    <%= f.text_field :news_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_link_2 -%>
+    <%= f.text_field :news_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_headline_3 -%>
+    <%= f.text_field :news_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_link_3 -%>
+    <%= f.text_field :news_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :sports_photo_id,
+               :image => @homepage.sports_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_headline_1 -%>
+    <%= f.text_field :sports_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_link_1 -%>
+    <%= f.text_field :sports_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_headline_2 -%>
+    <%= f.text_field :sports_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_link_2 -%>
+    <%= f.text_field :sports_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_headline_3 -%>
+    <%= f.text_field :sports_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_link_3 -%>
+    <%= f.text_field :sports_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :entertainment_photo_id,
+               :image => @homepage.entertainment_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_headline_1 -%>
+    <%= f.text_field :entertainment_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_link_1 -%>
+    <%= f.text_field :entertainment_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_headline_2 -%>
+    <%= f.text_field :entertainment_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_link_2 -%>
+    <%= f.text_field :entertainment_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_headline_3 -%>
+    <%= f.text_field :entertainment_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_link_3 -%>
+    <%= f.text_field :entertainment_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :technology_photo_id,
+               :image => @homepage.technology_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_headline_1 -%>
+    <%= f.text_field :technology_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_link_1 -%>
+    <%= f.text_field :technology_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_headline_2 -%>
+    <%= f.text_field :technology_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_link_2 -%>
+    <%= f.text_field :technology_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_headline_3 -%>
+    <%= f.text_field :technology_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_link_3 -%>
+    <%= f.text_field :technology_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :world_photo_id,
+               :image => @homepage.world_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_1 -%>
+    <%= f.text_field :world_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_1 -%>
+    <%= f.text_field :world_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_2 -%>
+    <%= f.text_field :world_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_2 -%>
+    <%= f.text_field :world_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_3 -%>
+    <%= f.text_field :world_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_3 -%>
+    <%= f.text_field :world_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :simply_south_photo_id,
+               :image => @homepage.simply_south_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_headline_1 -%>
+    <%= f.text_field :simply_south_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_link_1 -%>
+    <%= f.text_field :simply_south_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_headline_2 -%>
+    <%= f.text_field :simply_south_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_link_2 -%>
+    <%= f.text_field :simply_south_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_headline_3 -%>
+    <%= f.text_field :simply_south_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :simply_south_link_3 -%>
+    <%= f.text_field :simply_south_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_caricature_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :editorial_caricature_1_id,
+               :image => @homepage.editorial_caricature_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_heading_1 -%>
+    <%= f.text_field :editorial_heading_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_blurb_1 -%>
+    <%= f.text_field :editorial_blurb_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_caricature_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :editorial_caricature_2_id,
+               :image => @homepage.editorial_caricature_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_heading_2 -%>
+    <%= f.text_field :editorial_heading_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_blurb_2 -%>
+    <%= f.text_field :editorial_blurb_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :whats_on_my_mind_photo_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :whats_on_my_mind_photo_1_id,
+               :image => @homepage.whats_on_my_mind_photo_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :whats_on_my_mind_headline_1 -%>
+    <%= f.text_field :whats_on_my_mind_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :whats_on_my_mind_link_1 -%>
+    <%= f.text_field :whats_on_my_mind_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :whats_on_my_mind_photo_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :whats_on_my_mind_photo_2_id,
+               :image => @homepage.whats_on_my_mind_photo_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :whats_on_my_mind_headline_2 -%>
+    <%= f.text_field :whats_on_my_mind_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :whats_on_my_mind_link_2 -%>
+    <%= f.text_field :whats_on_my_mind_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :odd_one_photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :odd_one_photo_id,
+               :image => @homepage.odd_one_photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :odd_one_headline -%>
+    <%= f.text_field :odd_one_headline -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :odd_one_blurb -%>
+    <%= f.text_field :odd_one_blurb -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_cartooon_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :blog_we_like_cartooon_1_id,
+               :image => @homepage.blog_we_like_cartooon_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_headline1 -%>
+    <%= f.text_field :blog_we_like_headline1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_link1 -%>
+    <%= f.text_field :blog_we_like_link1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_cartooon_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :blog_we_like_cartooon_2_id,
+               :image => @homepage.blog_we_like_cartooon_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_headline2 -%>
+    <%= f.text_field :blog_we_like_headline2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_link2 -%>
+    <%= f.text_field :blog_we_like_link2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_cartooon_3 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :blog_we_like_cartooon_3_id,
+               :image => @homepage.blog_we_like_cartooon_3,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_headline3 -%>
+    <%= f.text_field :blog_we_like_headline3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_link3 -%>
+    <%= f.text_field :blog_we_like_link3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_cartooon_4 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :blog_we_like_cartooon_4_id,
+               :image => @homepage.blog_we_like_cartooon_4,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_headline4 -%>
+    <%= f.text_field :blog_we_like_headline4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_link4 -%>
+    <%= f.text_field :blog_we_like_link4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_cartooon_5 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :blog_we_like_cartooon_5_id,
+               :image => @homepage.blog_we_like_cartooon_5,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_headline5 -%>
+    <%= f.text_field :blog_we_like_headline5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blog_we_like_link5 -%>
+    <%= f.text_field :blog_we_like_link5 -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.homepages.admin.homepages.homepage'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @homepage.main_story_headline_1) -%>
+<% end -%>

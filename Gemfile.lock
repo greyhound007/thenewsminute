@@ -1,3 +1,9 @@
+PATH
+  remote: vendor/extensions
+  specs:
+    refinerycms-homepages (1.0)
+      refinerycms-core (~> 2.1.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -222,6 +228,7 @@ DEPENDENCIES
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-homepages!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

@@ -1,0 +1,122 @@
+nl:
+  refinery:
+    plugins:
+      homepages:
+        title: Homepages
+    homepages:
+      admin:
+        homepages:
+          actions:
+            create_new: Nieuwe Homepage toevoegen
+            reorder: De volgorde van de Homepages wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Homepage-volgorde
+          records:
+            title: Homepages
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Homepages. Druk op 'Nieuwe Homepage toevoegen' om de eerste toe te voegen.
+          homepage:
+            view_live_html: Deze homepage op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze homepage
+            delete: Deze homepage definitief verwijderen
+      homepages:
+        show:
+          other: Andere Homepages
+  activerecord:
+    attributes:
+      'refinery/homepages/homepage':
+        main_story_headline_1: Main Story Headline 1
+        main_story_photo_1: Main Story Photo 1
+        main_story_blurb_1: Main Story Blurb 1
+        main_story_link_1: Main Story Link 1
+        main_story_headline_2: Main Story Headline 2
+        main_story_photo_2: Main Story Photo 2
+        main_story_blurb_2: Main Story Blurb 2
+        main_story_link_2: Main Story Link 2
+        latest_photo_1: Latest Photo 1
+        latest_headline_1: Latest Headline 1
+        latest_link_1: Latest Link 1
+        latest_photo_2: Latest Photo 2
+        latest_headline_2: Latest Headline 2
+        latest_link_2: Latest Link 2
+        latest_photo_3: Latest Photo 3
+        latest_headline_3: Latest Headline 3
+        latest_link_3: Latest Link 3
+        politics_photo: Politics Photo
+        politics_headline_1: Politics Headline 1
+        politics_link_1: Politics Link 1
+        politics_headline_2: Politics Headline 2
+        politics_link_2: Politics Link 2
+        politics_headline_3: Politics Headline 3
+        politics_link_3: Politics Link 3
+        news_photo: News Photo
+        news_headline_1: News Headline 1
+        news_link_1: News Link 1
+        news_headline_2: News Headline 2
+        news_link_2: News Link 2
+        news_headline_3: News Headline 3
+        news_link_3: News Link 3
+        sports_photo: Sports Photo
+        sports_headline_1: Sports Headline 1
+        sports_link_1: Sports Link 1
+        sports_headline_2: Sports Headline 2
+        sports_link_2: Sports Link 2
+        sports_headline_3: Sports Headline 3
+        sports_link_3: Sports Link 3
+        entertainment_photo: Entertainment Photo
+        entertainment_headline_1: Entertainment Headline 1
+        entertainment_link_1: Entertainment Link 1
+        entertainment_headline_2: Entertainment Headline 2
+        entertainment_link_2: Entertainment Link 2
+        entertainment_headline_3: Entertainment Headline 3
+        entertainment_link_3: Entertainment Link 3
+        technology_photo: Technology Photo
+        technology_headline_1: Technology Headline 1
+        technology_link_1: Technology Link 1
+        technology_headline_2: Technology Headline 2
+        technology_link_2: Technology Link 2
+        technology_headline_3: Technology Headline 3
+        technology_link_3: Technology Link 3
+        world_photo: World Photo
+        world_headline_1: World Headline 1
+        world_link_1: World Link 1
+        world_headline_2: World Headline 2
+        world_link_2: World Link 2
+        world_headline_3: World Headline 3
+        world_link_3: World Link 3
+        simply_south_photo: Simply South Photo
+        simply_south_headline_1: Simply South Headline 1
+        simply_south_link_1: Simply South Link 1
+        simply_south_headline_2: Simply South Headline 2
+        simply_south_link_2: Simply South Link 2
+        simply_south_headline_3: Simply South Headline 3
+        simply_south_link_3: Simply South Link 3
+        editorial_caricature_1: Editorial Caricature 1
+        editorial_heading_1: Editorial Heading 1
+        editorial_blurb_1: Editorial Blurb 1
+        editorial_caricature_2: Editorial Caricature 2
+        editorial_heading_2: Editorial Heading 2
+        editorial_blurb_2: Editorial Blurb 2
+        whats_on_my_mind_photo_1: Whats On My Mind Photo 1
+        whats_on_my_mind_headline_1: Whats On My Mind Headline 1
+        whats_on_my_mind_link_1: Whats On My Mind Link 1
+        whats_on_my_mind_photo_2: Whats On My Mind Photo 2
+        whats_on_my_mind_headline_2: Whats On My Mind Headline 2
+        whats_on_my_mind_link_2: Whats On My Mind Link 2
+        odd_one_photo: Odd One Photo
+        odd_one_headline: Odd One Headline
+        odd_one_blurb: Odd One Blurb
+        blog_we_like_cartooon_1: Blog We Like Cartooon 1
+        blog_we_like_headline1: Blog We Like Headline1
+        blog_we_like_link1: Blog We Like Link1
+        blog_we_like_cartooon_2: Blog We Like Cartooon 2
+        blog_we_like_headline2: Blog We Like Headline2
+        blog_we_like_link2: Blog We Like Link2
+        blog_we_like_cartooon_3: Blog We Like Cartooon 3
+        blog_we_like_headline3: Blog We Like Headline3
+        blog_we_like_link3: Blog We Like Link3
+        blog_we_like_cartooon_4: Blog We Like Cartooon 4
+        blog_we_like_headline4: Blog We Like Headline4
+        blog_we_like_link4: Blog We Like Link4
+        blog_we_like_cartooon_5: Blog We Like Cartooon 5
+        blog_we_like_headline5: Blog We Like Headline5
+        blog_we_like_link5: Blog We Like Link5
