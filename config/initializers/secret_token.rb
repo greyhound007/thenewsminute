@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Thenewsminute::Application.config.secret_token = '14ee1e19f291dc4cc2a9567aa7ccaf7e1efbf8ed68cb5c87a1aa7ae83181390ad78e63c4062a52b333d2c2cc91940b3f9a0f2fb89506e69c307370209ce46197'
+Thenewsminute::Application.config.secret_token = 'e12bab47f69baa2cfdb48270e13e44c028a1ff5f728d095344f95b4cde5c4236ac956c8c2269feee5ca151edd71fec323d4fefd98b575c7dcdb8c5e476f3197c'

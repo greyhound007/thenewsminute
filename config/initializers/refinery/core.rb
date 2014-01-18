@@ -32,7 +32,7 @@ Refinery::Core.configure do |config|
 
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
-  # config.dragonfly_secret = "a1d3abe552efb8c3754a24dc89e102e81d5285ddb829b322"
+  # config.dragonfly_secret = "26095048006bb74f20f34ae590ade49fb5a7d2e3a070b710"
 
   # Add extra tags to the wymeditor whitelist e.g. = {'tag' => {'attributes' => {'1' => 'href'}}} or just {'tag' => {}}
   # config.wymeditor_whitelist_tags = {}
