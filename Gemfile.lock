@@ -5,6 +5,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-homepages (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-news_stories (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-politics (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-sports (1.0)
@@ -240,6 +242,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-entertainments!
   refinerycms-homepages!
+  refinerycms-news_stories!
   refinerycms-politics!
   refinerycms-sports!
   refinerycms-technologies!

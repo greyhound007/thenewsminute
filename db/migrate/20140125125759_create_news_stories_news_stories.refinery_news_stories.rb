@@ -1,8 +1,8 @@
-# This migration comes from refinery_news (originally 1)
-class CreateNewsNews < ActiveRecord::Migration
+# This migration comes from refinery_news_stories (originally 1)
+class CreateNewsStoriesNewsStories < ActiveRecord::Migration
 
   def up
-    create_table :refinery_news do |t|
+    create_table :refinery_news_stories do |t|
       t.string :headline_1
       t.integer :photo_1_id
       t.text :summary_1
@@ -77,14 +77,14 @@ class CreateNewsNews < ActiveRecord::Migration
 
   def down
     if defined?(::Refinery::UserPlugin)
-      ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-news"})
+      ::Refinery::UserPlugin.destroy_all({:name => "refinerycms-news_stories"})
     end
 
     if defined?(::Refinery::Page)
-      ::Refinery::Page.delete_all({:link_url => "/news/news"})
+      ::Refinery::Page.delete_all({:link_url => "/news_stories/news_stories"})
     end
 
-    drop_table :refinery_news
+    drop_table :refinery_news_stories
 
   end
 

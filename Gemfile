@@ -68,3 +68,5 @@ gem 'refinerycms-sports', :path => 'vendor/extensions'
 gem 'refinerycms-entertainments', :path => 'vendor/extensions'
 gem 'refinerycms-technologies', :path => 'vendor/extensions'
 gem 'refinerycms-worlds', :path => 'vendor/extensions'
+
+gem 'refinerycms-news_stories', :path => 'vendor/extensions'

@@ -29,3 +29,12 @@ Refinery::Technologies::Engine.load_seed
 
 # Added by Refinery CMS Worlds extension
 Refinery::Worlds::Engine.load_seed
+
+# Added by Refinery CMS TopNews extension
+Refinery::TopNews::Engine.load_seed
+
+# Added by Refinery CMS Topnews extension
+Refinery::Topnews::Engine.load_seed
+
+# Added by Refinery CMS NewsStories extension
+Refinery::NewsStories::Engine.load_seed
