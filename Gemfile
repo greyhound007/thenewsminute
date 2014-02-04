@@ -12,6 +12,10 @@ group :production do
   gem 'pg'
 end
 
+group :production do
+  gem 'fog'
+end
+
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -61,12 +65,8 @@ gem 'fog'
 # Postgres support (added for Heroku)
 gem 'pg'
 
-gem 'refinerycms-homepages', :path => 'vendor/extensions'
-gem 'refinerycms-politics', :path => 'vendor/extensions'
+#gem 'refinerycms-homepages', :path => 'vendor/extensions'
 
-gem 'refinerycms-sports', :path => 'vendor/extensions'
-gem 'refinerycms-entertainments', :path => 'vendor/extensions'
-gem 'refinerycms-technologies', :path => 'vendor/extensions'
-gem 'refinerycms-worlds', :path => 'vendor/extensions'
-
-gem 'refinerycms-news_stories', :path => 'vendor/extensions'
+#gem 'refinerycms-base_page_redirects', :path => 'vendor/extensions'
+#gem 'refinerycms-topstories', :path => 'vendor/extensions'
+gem 'refinerycms-mainpages', :path => 'vendor/extensions'

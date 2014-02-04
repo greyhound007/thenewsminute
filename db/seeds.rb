@@ -38,3 +38,12 @@ Refinery::Topnews::Engine.load_seed
 
 # Added by Refinery CMS NewsStories extension
 Refinery::NewsStories::Engine.load_seed
+
+# Added by Refinery CMS BasePageRedirects extension
+Refinery::BasePageRedirects::Engine.load_seed
+
+# Added by Refinery CMS Topstories extension
+Refinery::Topstories::Engine.load_seed
+
+# Added by Refinery CMS Mainpages extension
+Refinery::Mainpages::Engine.load_seed

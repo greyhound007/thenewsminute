@@ -1,0 +1,196 @@
+fr:
+  refinery:
+    plugins:
+      mainpages:
+        title: Mainpages
+    mainpages:
+      admin:
+        mainpages:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Mainpage
+            reorder: Réordonner les Mainpages
+            reorder_done: Fin de réordonnancement des Mainpages
+          records:
+            title: Mainpages
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Mainpage. Cliquer sur "Créer un(e) nouve(au/l/lle) Mainpage" pour créer votre premi(er/ère) mainpage.'
+          mainpage:
+            view_live_html: Voir ce(t/tte) mainpage <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) mainpage
+            delete: Supprimer définitivement ce(t/tte) mainpage
+      mainpages:
+        show:
+          other: Autres Mainpages
+  activerecord:
+    attributes:
+      'refinery/mainpages/mainpage':
+        main_headline: Main Headline
+        main_photo: Main Photo
+        main_blurb: Main Blurb
+        main_link: Main Link
+        main_story_link_headline_1: Main Story Link Headline 1
+        main_story_link_1: Main Story Link 1
+        main_story_link_source_1: Main Story Link Source 1
+        main_story_link_headline_2: Main Story Link Headline 2
+        main_story_link_2: Main Story Link 2
+        main_story_link_source_2: Main Story Link Source 2
+        main_story_link_headline_3: Main Story Link Headline 3
+        main_story_link_3: Main Story Link 3
+        main_story_link_source_3: Main Story Link Source 3
+        main_story_link_headline_4: Main Story Link Headline 4
+        main_story_link_4: Main Story Link 4
+        main_story_link_source_4: Main Story Link Source 4
+        main_headline_2: Main Headline 2
+        main_photo_2: Main Photo 2
+        main_blurb_2: Main Blurb 2
+        main_link_2: Main Link 2
+        latest_photo_1: Latest Photo 1
+        latest_headline_1: Latest Headline 1
+        latest_link_1: Latest Link 1
+        latest_photo_2: Latest Photo 2
+        latest_headline_2: Latest Headline 2
+        latest_link_2: Latest Link 2
+        latest_photo_3: Latest Photo 3
+        latest_headline_3: Latest Headline 3
+        latest_link_3: Latest Link 3
+        latest_photo_4: Latest Photo 4
+        latest_headline_4: Latest Headline 4
+        latest_link_4: Latest Link 4
+        politics_photo: Politics Photo
+        politics_headline: Politics Headline
+        politics_link: Politics Link
+        politics_headline_1: Politics Headline 1
+        politics_link_1: Politics Link 1
+        politics_headline_2: Politics Headline 2
+        politics_link_2: Politics Link 2
+        politics_headline_3: Politics Headline 3
+        politics_link_3: Politics Link 3
+        news_photo: News Photo
+        news_headline: News Headline
+        news_link: News Link
+        news_headline_1: News Headline 1
+        news_link_1: News Link 1
+        news_headline_2: News Headline 2
+        news_link_2: News Link 2
+        news_headline_3: News Headline 3
+        news_link_3: News Link 3
+        sports_photo: Sports Photo
+        sports_headline: Sports Headline
+        sports_link: Sports Link
+        sports_headline_1: Sports Headline 1
+        sports_link_1: Sports Link 1
+        sports_headline_2: Sports Headline 2
+        sports_link_2: Sports Link 2
+        sports_headline_3: Sports Headline 3
+        sports_link_3: Sports Link 3
+        entertainment_photo: Entertainment Photo
+        entertainment_headline: Entertainment Headline
+        entertainment_link: Entertainment Link
+        entertainment_headline_1: Entertainment Headline 1
+        entertainment_link_1: Entertainment Link 1
+        entertainment_headline_2: Entertainment Headline 2
+        entertainment_link_2: Entertainment Link 2
+        entertainment_headline_3: Entertainment Headline 3
+        entertainment_link_3: Entertainment Link 3
+        technology_photo: Technology Photo
+        technology_headline: Technology Headline
+        technology_link: Technology Link
+        technology_headline_1: Technology Headline 1
+        technology_link_1: Technology Link 1
+        technology_headline_2: Technology Headline 2
+        technology_link_2: Technology Link 2
+        technology_headline_3: Technology Headline 3
+        technology_link_3: Technology Link 3
+        money_photo: Money Photo
+        money_headline: Money Headline
+        money_link: Money Link
+        money_headline_1: Money Headline 1
+        money_link_1: Money Link 1
+        money_headline_2: Money Headline 2
+        money_link_2: Money Link 2
+        money_headline_3: Money Headline 3
+        money_link_3: Money Link 3
+        world_photo_left: World Photo Left
+        world_headline_left: World Headline Left
+        world_link_left: World Link Left
+        world_headline_1_left: World Headline 1 Left
+        world_link_1_left: World Link 1 Left
+        world_headline_2_left: World Headline 2 Left
+        world_link_2_left: World Link 2 Left
+        world_headline_3_left: World Headline 3 Left
+        world_link_3_left: World Link 3 Left
+        world_photo_right: World Photo Right
+        world_headline_right: World Headline Right
+        world_link_right: World Link Right
+        world_headline_1_right: World Headline 1 Right
+        world_link_1_right: World Link 1 Right
+        world_headline_2_right: World Headline 2 Right
+        world_link_2_right: World Link 2 Right
+        world_headline_3_right: World Headline 3 Right
+        world_link_3_right: World Link 3 Right
+        southern_minute_photo_1: Southern Minute Photo 1
+        southern_minute_headline_1: Southern Minute Headline 1
+        southern_minute_link_1: Southern Minute Link 1
+        southern_minute_photo_2: Southern Minute Photo 2
+        southern_minute_headline_2: Southern Minute Headline 2
+        southern_minute_link_2: Southern Minute Link 2
+        southern_minute_photo_3: Southern Minute Photo 3
+        southern_minute_headline_3: Southern Minute Headline 3
+        southern_minute_link_3: Southern Minute Link 3
+        southern_minute_photo_4: Southern Minute Photo 4
+        southern_minute_headline_4: Southern Minute Headline 4
+        southern_minute_link_4: Southern Minute Link 4
+        columnist_caricature_1: Columnist Caricature 1
+        columnist_headline_1: Columnist Headline 1
+        columnist_link_1: Columnist Link 1
+        columnist_name_1: Columnist Name 1
+        columnist_caricature_2: Columnist Caricature 2
+        columnist_headline_2: Columnist Headline 2
+        columnist_link_2: Columnist Link 2
+        columnist_name_2: Columnist Name 2
+        columnist_caricature_3: Columnist Caricature 3
+        columnist_headline_3: Columnist Headline 3
+        columnist_link_3: Columnist Link 3
+        columnist_name_3: Columnist Name 3
+        columnist_caricature_4: Columnist Caricature 4
+        columnist_headline_4: Columnist Headline 4
+        columnist_link_4: Columnist Link 4
+        columnist_name_4: Columnist Name 4
+        columnist_caricature_5: Columnist Caricature 5
+        columnist_headline_5: Columnist Headline 5
+        columnist_link_5: Columnist Link 5
+        columnist_name_5: Columnist Name 5
+        editorial_caricature_1: Editorial Caricature 1
+        editorial_heading_1: Editorial Heading 1
+        editorial_author_1: Editorial Author 1
+        editorial_link_1: Editorial Link 1
+        editorial_caricature_2: Editorial Caricature 2
+        editorial_heading_2: Editorial Heading 2
+        editorial_author_2: Editorial Author 2
+        editorial_link_2: Editorial Link 2
+        voices_1: Voices 1
+        voices_headline_1: Voices Headline 1
+        voices_link_1: Voices Link 1
+        voices_photo_2: Voices Photo 2
+        voices_headline_2: Voices Headline 2
+        voices_link_2: Voices Link 2
+        random_photo_1: Random Photo 1
+        random_headline_1: Random Headline 1
+        random_link_1: Random Link 1
+        random_photo_2: Random Photo 2
+        random_headline_2: Random Headline 2
+        random_link_2: Random Link 2
+        random_photo_3: Random Photo 3
+        random_headline_3: Random Headline 3
+        random_link_3: Random Link 3
+        random_photo_4: Random Photo 4
+        random_headline_4: Random Headline 4
+        random_link_4: Random Link 4
+        not_to_miss_headline_1: Not To Miss Headline 1
+        not_to_miss_link_1: Not To Miss Link 1
+        not_to_miss_headline_2: Not To Miss Headline 2
+        not_to_miss_link_2: Not To Miss Link 2
+        not_to_miss_headline_3: Not To Miss Headline 3
+        not_to_miss_link_3: Not To Miss Link 3
+        not_to_miss_headline_4: Not To Miss Headline 4
+        not_to_miss_link_4: Not To Miss Link 4

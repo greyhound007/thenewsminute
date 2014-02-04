@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Mainpages::Admin::MainpagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.mainpages_admin_mainpages_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_mainpages_admin_mainpage_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Mainpages::Admin::MainpagesController.sortable? && ::Refinery::Mainpages::Mainpage.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Mainpages"),
+                 refinery.mainpages_admin_mainpages_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Mainpages"),
+                 refinery.mainpages_admin_mainpages_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

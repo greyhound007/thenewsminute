@@ -4,22 +4,32 @@
               :include_object_name => true %>
 
   <div class='field'>
-    <%= f.label :main_story_headline_1 -%>
-    <%= f.text_field :main_story_headline_1, :class => 'larger widest' -%>
+    <%= f.label :main_headline -%>
+    <%= f.text_field :main_headline, :class => 'larger widest' -%>
   </div>
 
   <div class='field'>
-    <%= f.label :main_story_photo_1 -%>
+    <%= f.label :main_photo -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :main_story_photo_1_id,
-               :image => @homepage.main_story_photo_1,
+               :field => :main_photo_id,
+               :image => @homepage.main_photo,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :main_story_blurb_1 -%>
-    <%= f.text_field :main_story_blurb_1 -%>
+    <%= f.label :main_blurb -%>
+    <%= f.text_field :main_blurb -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_link -%>
+    <%= f.text_field :main_link -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_headline_1 -%>
+    <%= f.text_field :main_story_link_headline_1 -%>
   </div>
 
   <div class='field'>
@@ -28,27 +38,77 @@
   </div>
 
   <div class='field'>
-    <%= f.label :main_story_headline_2 -%>
-    <%= f.text_field :main_story_headline_2 -%>
+    <%= f.label :main_story_link_source_1 -%>
+    <%= f.text_field :main_story_link_source_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :main_story_photo_2 -%>
-    <%= render '/refinery/admin/image_picker',
-               :f => f,
-               :field => :main_story_photo_2_id,
-               :image => @homepage.main_story_photo_2,
-               :toggle_image_display => false -%>
-  </div>
-
-  <div class='field'>
-    <%= f.label :main_story_blurb_2 -%>
-    <%= f.text_field :main_story_blurb_2 -%>
+    <%= f.label :main_story_link_headline_2 -%>
+    <%= f.text_field :main_story_link_headline_2 -%>
   </div>
 
   <div class='field'>
     <%= f.label :main_story_link_2 -%>
     <%= f.text_field :main_story_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_source_2 -%>
+    <%= f.text_field :main_story_link_source_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_headline_3 -%>
+    <%= f.text_field :main_story_link_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_3 -%>
+    <%= f.text_field :main_story_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_source_3 -%>
+    <%= f.text_field :main_story_link_source_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_headline_4 -%>
+    <%= f.text_field :main_story_link_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_4 -%>
+    <%= f.text_field :main_story_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_story_link_source_4 -%>
+    <%= f.text_field :main_story_link_source_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_headline_2 -%>
+    <%= f.text_field :main_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_photo_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :main_photo_2_id,
+               :image => @homepage.main_photo_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_blurb_2 -%>
+    <%= f.text_field :main_blurb_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :main_link_2 -%>
+    <%= f.text_field :main_link_2 -%>
   </div>
 
   <div class='field'>
@@ -109,12 +169,41 @@
   </div>
 
   <div class='field'>
+    <%= f.label :latest_photo_4 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :latest_photo_4_id,
+               :image => @homepage.latest_photo_4,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_headline_4 -%>
+    <%= f.text_field :latest_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :latest_link_4 -%>
+    <%= f.text_field :latest_link_4 -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :politics_photo -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
                :field => :politics_photo_id,
                :image => @homepage.politics_photo,
                :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_headline -%>
+    <%= f.text_field :politics_headline -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :politics_link -%>
+    <%= f.text_field :politics_link -%>
   </div>
 
   <div class='field'>
@@ -157,6 +246,16 @@
   </div>
 
   <div class='field'>
+    <%= f.label :news_headline -%>
+    <%= f.text_field :news_headline -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_link -%>
+    <%= f.text_field :news_link -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :news_headline_1 -%>
     <%= f.text_field :news_headline_1 -%>
   </div>
@@ -193,6 +292,16 @@
                :field => :sports_photo_id,
                :image => @homepage.sports_photo,
                :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_headline -%>
+    <%= f.text_field :sports_headline -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :sports_link -%>
+    <%= f.text_field :sports_link -%>
   </div>
 
   <div class='field'>
@@ -235,6 +344,16 @@
   </div>
 
   <div class='field'>
+    <%= f.label :entertainment_headline -%>
+    <%= f.text_field :entertainment_headline -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :entertainment_link -%>
+    <%= f.text_field :entertainment_link -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :entertainment_headline_1 -%>
     <%= f.text_field :entertainment_headline_1 -%>
   </div>
@@ -274,6 +393,16 @@
   </div>
 
   <div class='field'>
+    <%= f.label :technology_headline -%>
+    <%= f.text_field :technology_headline -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :technology_link -%>
+    <%= f.text_field :technology_link -%>
+  </div>
+
+  <div class='field'>
     <%= f.label :technology_headline_1 -%>
     <%= f.text_field :technology_headline_1 -%>
   </div>
@@ -304,81 +433,346 @@
   </div>
 
   <div class='field'>
-    <%= f.label :world_photo -%>
+    <%= f.label :money_photo -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :world_photo_id,
-               :image => @homepage.world_photo,
+               :field => :money_photo_id,
+               :image => @homepage.money_photo,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :world_headline_1 -%>
-    <%= f.text_field :world_headline_1 -%>
+    <%= f.label :money_headline -%>
+    <%= f.text_field :money_headline -%>
   </div>
 
   <div class='field'>
-    <%= f.label :world_link_1 -%>
-    <%= f.text_field :world_link_1 -%>
+    <%= f.label :money_link -%>
+    <%= f.text_field :money_link -%>
   </div>
 
   <div class='field'>
-    <%= f.label :world_headline_2 -%>
-    <%= f.text_field :world_headline_2 -%>
+    <%= f.label :money_headline_1 -%>
+    <%= f.text_field :money_headline_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :world_link_2 -%>
-    <%= f.text_field :world_link_2 -%>
+    <%= f.label :money_link_1 -%>
+    <%= f.text_field :money_link_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :world_headline_3 -%>
-    <%= f.text_field :world_headline_3 -%>
+    <%= f.label :money_headline_2 -%>
+    <%= f.text_field :money_headline_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :world_link_3 -%>
-    <%= f.text_field :world_link_3 -%>
+    <%= f.label :money_link_2 -%>
+    <%= f.text_field :money_link_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_photo -%>
+    <%= f.label :money_headline_3 -%>
+    <%= f.text_field :money_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :money_link_3 -%>
+    <%= f.text_field :money_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_photo_left -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :simply_south_photo_id,
-               :image => @homepage.simply_south_photo,
+               :field => :world_photo_left_id,
+               :image => @homepage.world_photo_left,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_headline_1 -%>
-    <%= f.text_field :simply_south_headline_1 -%>
+    <%= f.label :world_headline_left -%>
+    <%= f.text_field :world_headline_left -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_link_1 -%>
-    <%= f.text_field :simply_south_link_1 -%>
+    <%= f.label :world_link_left -%>
+    <%= f.text_field :world_link_left -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_headline_2 -%>
-    <%= f.text_field :simply_south_headline_2 -%>
+    <%= f.label :world_headline_1_left -%>
+    <%= f.text_field :world_headline_1_left -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_link_2 -%>
-    <%= f.text_field :simply_south_link_2 -%>
+    <%= f.label :world_link_1_left -%>
+    <%= f.text_field :world_link_1_left -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_headline_3 -%>
-    <%= f.text_field :simply_south_headline_3 -%>
+    <%= f.label :world_headline_2_left -%>
+    <%= f.text_field :world_headline_2_left -%>
   </div>
 
   <div class='field'>
-    <%= f.label :simply_south_link_3 -%>
-    <%= f.text_field :simply_south_link_3 -%>
+    <%= f.label :world_link_2_left -%>
+    <%= f.text_field :world_link_2_left -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_3_left -%>
+    <%= f.text_field :world_headline_3_left -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_3_left -%>
+    <%= f.text_field :world_link_3_left -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_photo_right -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :world_photo_right_id,
+               :image => @homepage.world_photo_right,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_right -%>
+    <%= f.text_field :world_headline_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_right -%>
+    <%= f.text_field :world_link_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_1_right -%>
+    <%= f.text_field :world_headline_1_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_1_right -%>
+    <%= f.text_field :world_link_1_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_2_right -%>
+    <%= f.text_field :world_headline_2_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_2_right -%>
+    <%= f.text_field :world_link_2_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_headline_3_right -%>
+    <%= f.text_field :world_headline_3_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :world_link_3_right -%>
+    <%= f.text_field :world_link_3_right -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_photo_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :southern_minute_photo_1_id,
+               :image => @homepage.southern_minute_photo_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_headline_1 -%>
+    <%= f.text_field :southern_minute_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_link_1 -%>
+    <%= f.text_field :southern_minute_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_photo_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :southern_minute_photo_2_id,
+               :image => @homepage.southern_minute_photo_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_headline_2 -%>
+    <%= f.text_field :southern_minute_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_link_2 -%>
+    <%= f.text_field :southern_minute_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_photo_3 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :southern_minute_photo_3_id,
+               :image => @homepage.southern_minute_photo_3,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_headline_3 -%>
+    <%= f.text_field :southern_minute_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_link_3 -%>
+    <%= f.text_field :southern_minute_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_photo_4 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :southern_minute_photo_4_id,
+               :image => @homepage.southern_minute_photo_4,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_headline_4 -%>
+    <%= f.text_field :southern_minute_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :southern_minute_link_4 -%>
+    <%= f.text_field :southern_minute_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_caricature_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :columnist_caricature_1_id,
+               :image => @homepage.columnist_caricature_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_headline_1 -%>
+    <%= f.text_field :columnist_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_link_1 -%>
+    <%= f.text_field :columnist_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_name_1 -%>
+    <%= f.text_field :columnist_name_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_caricature_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :columnist_caricature_2_id,
+               :image => @homepage.columnist_caricature_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_headline_2 -%>
+    <%= f.text_field :columnist_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_link_2 -%>
+    <%= f.text_field :columnist_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_name_2 -%>
+    <%= f.text_field :columnist_name_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_caricature_3 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :columnist_caricature_3_id,
+               :image => @homepage.columnist_caricature_3,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_headline_3 -%>
+    <%= f.text_field :columnist_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_link_3 -%>
+    <%= f.text_field :columnist_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_name_3 -%>
+    <%= f.text_field :columnist_name_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_caricature_4 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :columnist_caricature_4_id,
+               :image => @homepage.columnist_caricature_4,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_headline_4 -%>
+    <%= f.text_field :columnist_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_link_4 -%>
+    <%= f.text_field :columnist_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_name_4 -%>
+    <%= f.text_field :columnist_name_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_caricature_5 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :columnist_caricature_5_id,
+               :image => @homepage.columnist_caricature_5,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_headline_5 -%>
+    <%= f.text_field :columnist_headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_link_5 -%>
+    <%= f.text_field :columnist_link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :columnist_name_5 -%>
+    <%= f.text_field :columnist_name_5 -%>
   </div>
 
   <div class='field'>
@@ -396,8 +790,13 @@
   </div>
 
   <div class='field'>
-    <%= f.label :editorial_blurb_1 -%>
-    <%= f.text_field :editorial_blurb_1 -%>
+    <%= f.label :editorial_author_1 -%>
+    <%= f.text_field :editorial_author_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :editorial_link_1 -%>
+    <%= f.text_field :editorial_link_1 -%>
   </div>
 
   <div class='field'>
@@ -415,164 +814,171 @@
   </div>
 
   <div class='field'>
-    <%= f.label :editorial_blurb_2 -%>
-    <%= f.text_field :editorial_blurb_2 -%>
+    <%= f.label :editorial_author_2 -%>
+    <%= f.text_field :editorial_author_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :whats_on_my_mind_photo_1 -%>
+    <%= f.label :editorial_link_2 -%>
+    <%= f.text_field :editorial_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :voices_1 -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :whats_on_my_mind_photo_1_id,
-               :image => @homepage.whats_on_my_mind_photo_1,
+               :field => :voices_1_id,
+               :image => @homepage.voices_1,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :whats_on_my_mind_headline_1 -%>
-    <%= f.text_field :whats_on_my_mind_headline_1 -%>
+    <%= f.label :voices_headline_1 -%>
+    <%= f.text_field :voices_headline_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :whats_on_my_mind_link_1 -%>
-    <%= f.text_field :whats_on_my_mind_link_1 -%>
+    <%= f.label :voices_link_1 -%>
+    <%= f.text_field :voices_link_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :whats_on_my_mind_photo_2 -%>
+    <%= f.label :voices_photo_2 -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :whats_on_my_mind_photo_2_id,
-               :image => @homepage.whats_on_my_mind_photo_2,
+               :field => :voices_photo_2_id,
+               :image => @homepage.voices_photo_2,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :whats_on_my_mind_headline_2 -%>
-    <%= f.text_field :whats_on_my_mind_headline_2 -%>
+    <%= f.label :voices_headline_2 -%>
+    <%= f.text_field :voices_headline_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :whats_on_my_mind_link_2 -%>
-    <%= f.text_field :whats_on_my_mind_link_2 -%>
+    <%= f.label :voices_link_2 -%>
+    <%= f.text_field :voices_link_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :odd_one_photo -%>
+    <%= f.label :random_photo_1 -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :odd_one_photo_id,
-               :image => @homepage.odd_one_photo,
+               :field => :random_photo_1_id,
+               :image => @homepage.random_photo_1,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :odd_one_headline -%>
-    <%= f.text_field :odd_one_headline -%>
+    <%= f.label :random_headline_1 -%>
+    <%= f.text_field :random_headline_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :odd_one_blurb -%>
-    <%= f.text_field :odd_one_blurb -%>
+    <%= f.label :random_link_1 -%>
+    <%= f.text_field :random_link_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_cartooon_1 -%>
+    <%= f.label :random_photo_2 -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :blog_we_like_cartooon_1_id,
-               :image => @homepage.blog_we_like_cartooon_1,
+               :field => :random_photo_2_id,
+               :image => @homepage.random_photo_2,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_headline1 -%>
-    <%= f.text_field :blog_we_like_headline1 -%>
+    <%= f.label :random_headline_2 -%>
+    <%= f.text_field :random_headline_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_link1 -%>
-    <%= f.text_field :blog_we_like_link1 -%>
+    <%= f.label :random_link_2 -%>
+    <%= f.text_field :random_link_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_cartooon_2 -%>
+    <%= f.label :random_photo_3 -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :blog_we_like_cartooon_2_id,
-               :image => @homepage.blog_we_like_cartooon_2,
+               :field => :random_photo_3_id,
+               :image => @homepage.random_photo_3,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_headline2 -%>
-    <%= f.text_field :blog_we_like_headline2 -%>
+    <%= f.label :random_headline_3 -%>
+    <%= f.text_field :random_headline_3 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_link2 -%>
-    <%= f.text_field :blog_we_like_link2 -%>
+    <%= f.label :random_link_3 -%>
+    <%= f.text_field :random_link_3 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_cartooon_3 -%>
+    <%= f.label :random_photo_4 -%>
     <%= render '/refinery/admin/image_picker',
                :f => f,
-               :field => :blog_we_like_cartooon_3_id,
-               :image => @homepage.blog_we_like_cartooon_3,
+               :field => :random_photo_4_id,
+               :image => @homepage.random_photo_4,
                :toggle_image_display => false -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_headline3 -%>
-    <%= f.text_field :blog_we_like_headline3 -%>
+    <%= f.label :random_headline_4 -%>
+    <%= f.text_field :random_headline_4 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_link3 -%>
-    <%= f.text_field :blog_we_like_link3 -%>
+    <%= f.label :random_link_4 -%>
+    <%= f.text_field :random_link_4 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_cartooon_4 -%>
-    <%= render '/refinery/admin/image_picker',
-               :f => f,
-               :field => :blog_we_like_cartooon_4_id,
-               :image => @homepage.blog_we_like_cartooon_4,
-               :toggle_image_display => false -%>
+    <%= f.label :not_to_miss_headline_1 -%>
+    <%= f.text_field :not_to_miss_headline_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_headline4 -%>
-    <%= f.text_field :blog_we_like_headline4 -%>
+    <%= f.label :not_to_miss_link_1 -%>
+    <%= f.text_field :not_to_miss_link_1 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_link4 -%>
-    <%= f.text_field :blog_we_like_link4 -%>
+    <%= f.label :not_to_miss_headline_2 -%>
+    <%= f.text_field :not_to_miss_headline_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_cartooon_5 -%>
-    <%= render '/refinery/admin/image_picker',
-               :f => f,
-               :field => :blog_we_like_cartooon_5_id,
-               :image => @homepage.blog_we_like_cartooon_5,
-               :toggle_image_display => false -%>
+    <%= f.label :not_to_miss_link_2 -%>
+    <%= f.text_field :not_to_miss_link_2 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_headline5 -%>
-    <%= f.text_field :blog_we_like_headline5 -%>
+    <%= f.label :not_to_miss_headline_3 -%>
+    <%= f.text_field :not_to_miss_headline_3 -%>
   </div>
 
   <div class='field'>
-    <%= f.label :blog_we_like_link5 -%>
-    <%= f.text_field :blog_we_like_link5 -%>
+    <%= f.label :not_to_miss_link_3 -%>
+    <%= f.text_field :not_to_miss_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :not_to_miss_headline_4 -%>
+    <%= f.text_field :not_to_miss_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :not_to_miss_link_4 -%>
+    <%= f.text_field :not_to_miss_link_4 -%>
   </div>
 
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.homepages.admin.homepages.homepage'),
-             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @homepage.main_story_headline_1) -%>
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @homepage.main_headline) -%>
 <% end -%>

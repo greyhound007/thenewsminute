@@ -8,7 +8,12 @@ Refinery::Core.configure do |config|
 
   # When true will use Amazon's Simple Storage Service instead of
   # the default file system for storing resources and images
-    #config.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
+    config.s3_backend = true
+    config.s3_access_key_id = 'AKIAIKRJVICLFDBP7YBQ'
+    config.s3_secret_access_key = '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'
+    config.s3_bucket_name = 'thenewsline'
+    config.s3_region = 'ap-southeast-1'
+
 
   # Use a custom Dragonfly storage backend instead of the default
   # file system for storing resources and images
@@ -20,7 +25,7 @@ Refinery::Core.configure do |config|
   # config.base_cache_key = :refinery
 
   # Site name
-  config.site_name = "The Newsline"
+  config.site_name = "THE NEWS MINUTE"
 
   # This activates Google Analytics tracking within your website. If this
   # config is left blank or set to UA-xxxxxx-x then no remote calls to
@@ -32,7 +37,7 @@ Refinery::Core.configure do |config|
 
   # Should set this if concerned about DOS attacks. See
   # http://markevans.github.com/dragonfly/file.Configuration.html#Configuration
-  # config.dragonfly_secret = "26095048006bb74f20f34ae590ade49fb5a7d2e3a070b710"
+  # config.dragonfly_secret = "963c035f5351d150afe8c11fe4fc8dd800d8b55c3e80d802"
 
   # Add extra tags to the wymeditor whitelist e.g. = {'tag' => {'attributes' => {'1' => 'href'}}} or just {'tag' => {}}
   # config.wymeditor_whitelist_tags = {}

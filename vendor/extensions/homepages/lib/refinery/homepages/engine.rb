@@ -13,7 +13,7 @@ module Refinery
           plugin.pathname = root
           plugin.activity = {
             :class_name => :'refinery/homepages/homepage',
-            :title => 'main_story_headline_1'
+            :title => 'main_headline'
           }
           
         end

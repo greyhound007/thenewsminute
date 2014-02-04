@@ -27,20 +27,20 @@ Refinery::Images.configure do |config|
 
   # Configure S3 (you can also use ENV for this)
   # The s3_backend setting by default defers to the core setting for this but can be set just for images.
-  # config.s3_backend = Refinery::Core.s3_backend
-  # config.s3_bucket_name = ENV['S3_BUCKET']
-  # config.s3_access_key_id = ENV['S3_KEY']
-  # config.s3_secret_access_key = ENV['S3_SECRET']
-  # config.s3_region = ENV['S3_REGION']
+  config.s3_backend = Refinery::Core.s3_backend
+  config.s3_bucket_name = ENV['S3_BUCKET']
+  config.s3_access_key_id = ENV['S3_KEY']
+  config.s3_secret_access_key = ENV['S3_SECRET']
+  config.s3_region = ENV['S3_REGION']
 
   # Configure Dragonfly
   # This is where in the middleware stack to insert the Dragonfly middleware
   # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  # config.dragonfly_secret = "26095048006bb74f20f34ae590ade49fb5a7d2e3a070b710"
+  # config.dragonfly_secret = "963c035f5351d150afe8c11fe4fc8dd800d8b55c3e80d802"
   # If you decide to trust file extensions replace :ext below with :format
   # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
-  # config.datastore_root_path = "/Users/gswamina/thenewsminute/public/system/refinery/images"
+  # config.datastore_root_path = "/Users/gswamina/newsbrew/public/system/refinery/images"
   # config.trust_file_extensions = false
 
   # Configure Dragonfly custom storage backend

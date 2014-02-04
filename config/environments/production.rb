@@ -1,6 +1,9 @@
 Thenewsminute::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+    ENV['S3_KEY']='AKIAIKRJVICLFDBP7YBQ'
+    ENV['S3_SECRET']='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'
+    ENV['S3_BUCKET']='thenewsline'
+    ENV['S3_REGION']='ap-southeast-1'
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -62,7 +65,7 @@ Thenewsminute::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-
+Refinery::Core.config.s3_backend = true
   # Log the query plan for queries taking more than this (works
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5

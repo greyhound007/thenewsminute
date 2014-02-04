@@ -6,12 +6,12 @@ module Refinery
       describe "validations" do
         subject do
           FactoryGirl.create(:homepage,
-          :main_story_headline_1 => "Refinery CMS")
+          :main_headline => "Refinery CMS")
         end
 
         it { should be_valid }
         its(:errors) { should be_empty }
-        its(:main_story_headline_1) { should == "Refinery CMS" }
+        its(:main_headline) { should == "Refinery CMS" }
       end
     end
   end

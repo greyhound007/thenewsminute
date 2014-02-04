@@ -1,6 +1,6 @@
 <li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(homepage) -%>">
   <span class='title'>
-    <%= homepage.main_story_headline_1 %>
+    <%= homepage.main_headline %>
 
   </span>
   <span class='actions'>
@@ -14,7 +14,7 @@
     <%= link_to refinery_icon_tag("delete.png"), refinery.homepages_admin_homepage_path(homepage),
         :class => "cancel confirm-delete",
         :title => t('.delete'),
-        :confirm => t('message', :scope => 'refinery.admin.delete', :title => homepage.main_story_headline_1),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => homepage.main_headline),
         :method => :delete %>
   </span>
 </li>

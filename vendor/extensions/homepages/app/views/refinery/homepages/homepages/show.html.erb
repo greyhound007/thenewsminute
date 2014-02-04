@@ -1,24 +1,36 @@
 <% content_for :body_content_title do %>
-  <%= @homepage.main_story_headline_1 %>
+  <%= @homepage.main_headline %>
 <% end %>
 
 <% content_for :body do %>
   <section>
-    <h1>Main Story Headline 1</h1>
+    <h1>Main Headline</h1>
     <p>
-      <%=raw @homepage.main_story_headline_1 %>
+      <%=raw @homepage.main_headline %>
     </p>
   </section>
   <section>
-    <h1>Main Story Photo 1</h1>
+    <h1>Main Photo</h1>
     <p>
-      <%= image_fu @homepage.main_story_photo_1, nil %>
+      <%= image_fu @homepage.main_photo, nil %>
     </p>
   </section>
   <section>
-    <h1>Main Story Blurb 1</h1>
+    <h1>Main Blurb</h1>
     <p>
-      <%=raw @homepage.main_story_blurb_1 %>
+      <%=raw @homepage.main_blurb %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Link</h1>
+    <p>
+      <%=raw @homepage.main_link %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 1</h1>
+    <p>
+      <%=raw @homepage.main_story_link_headline_1 %>
     </p>
   </section>
   <section>
@@ -28,27 +40,87 @@
     </p>
   </section>
   <section>
-    <h1>Main Story Headline 2</h1>
+    <h1>Main Story Link Source 1</h1>
     <p>
-      <%=raw @homepage.main_story_headline_2 %>
+      <%=raw @homepage.main_story_link_source_1 %>
     </p>
   </section>
   <section>
-    <h1>Main Story Photo 2</h1>
+    <h1>Main Story Link Headline 2</h1>
     <p>
-      <%= image_fu @homepage.main_story_photo_2, nil %>
-    </p>
-  </section>
-  <section>
-    <h1>Main Story Blurb 2</h1>
-    <p>
-      <%=raw @homepage.main_story_blurb_2 %>
+      <%=raw @homepage.main_story_link_headline_2 %>
     </p>
   </section>
   <section>
     <h1>Main Story Link 2</h1>
     <p>
       <%=raw @homepage.main_story_link_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 2</h1>
+    <p>
+      <%=raw @homepage.main_story_link_source_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 3</h1>
+    <p>
+      <%=raw @homepage.main_story_link_headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link 3</h1>
+    <p>
+      <%=raw @homepage.main_story_link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 3</h1>
+    <p>
+      <%=raw @homepage.main_story_link_source_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 4</h1>
+    <p>
+      <%=raw @homepage.main_story_link_headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link 4</h1>
+    <p>
+      <%=raw @homepage.main_story_link_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 4</h1>
+    <p>
+      <%=raw @homepage.main_story_link_source_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Headline 2</h1>
+    <p>
+      <%=raw @homepage.main_headline_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Photo 2</h1>
+    <p>
+      <%= image_fu @homepage.main_photo_2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Blurb 2</h1>
+    <p>
+      <%=raw @homepage.main_blurb_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Link 2</h1>
+    <p>
+      <%=raw @homepage.main_link_2 %>
     </p>
   </section>
   <section>
@@ -106,9 +178,39 @@
     </p>
   </section>
   <section>
+    <h1>Latest Photo 4</h1>
+    <p>
+      <%= image_fu @homepage.latest_photo_4, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Latest Headline 4</h1>
+    <p>
+      <%=raw @homepage.latest_headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Latest Link 4</h1>
+    <p>
+      <%=raw @homepage.latest_link_4 %>
+    </p>
+  </section>
+  <section>
     <h1>Politics Photo</h1>
     <p>
       <%= image_fu @homepage.politics_photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Politics Headline</h1>
+    <p>
+      <%=raw @homepage.politics_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Politics Link</h1>
+    <p>
+      <%=raw @homepage.politics_link %>
     </p>
   </section>
   <section>
@@ -154,6 +256,18 @@
     </p>
   </section>
   <section>
+    <h1>News Headline</h1>
+    <p>
+      <%=raw @homepage.news_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>News Link</h1>
+    <p>
+      <%=raw @homepage.news_link %>
+    </p>
+  </section>
+  <section>
     <h1>News Headline 1</h1>
     <p>
       <%=raw @homepage.news_headline_1 %>
@@ -193,6 +307,18 @@
     <h1>Sports Photo</h1>
     <p>
       <%= image_fu @homepage.sports_photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Sports Headline</h1>
+    <p>
+      <%=raw @homepage.sports_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Sports Link</h1>
+    <p>
+      <%=raw @homepage.sports_link %>
     </p>
   </section>
   <section>
@@ -238,6 +364,18 @@
     </p>
   </section>
   <section>
+    <h1>Entertainment Headline</h1>
+    <p>
+      <%=raw @homepage.entertainment_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Entertainment Link</h1>
+    <p>
+      <%=raw @homepage.entertainment_link %>
+    </p>
+  </section>
+  <section>
     <h1>Entertainment Headline 1</h1>
     <p>
       <%=raw @homepage.entertainment_headline_1 %>
@@ -280,6 +418,18 @@
     </p>
   </section>
   <section>
+    <h1>Technology Headline</h1>
+    <p>
+      <%=raw @homepage.technology_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Technology Link</h1>
+    <p>
+      <%=raw @homepage.technology_link %>
+    </p>
+  </section>
+  <section>
     <h1>Technology Headline 1</h1>
     <p>
       <%=raw @homepage.technology_headline_1 %>
@@ -316,87 +466,357 @@
     </p>
   </section>
   <section>
-    <h1>World Photo</h1>
+    <h1>Money Photo</h1>
     <p>
-      <%= image_fu @homepage.world_photo, nil %>
+      <%= image_fu @homepage.money_photo, nil %>
     </p>
   </section>
   <section>
-    <h1>World Headline 1</h1>
+    <h1>Money Headline</h1>
     <p>
-      <%=raw @homepage.world_headline_1 %>
+      <%=raw @homepage.money_headline %>
     </p>
   </section>
   <section>
-    <h1>World Link 1</h1>
+    <h1>Money Link</h1>
     <p>
-      <%=raw @homepage.world_link_1 %>
+      <%=raw @homepage.money_link %>
     </p>
   </section>
   <section>
-    <h1>World Headline 2</h1>
+    <h1>Money Headline 1</h1>
     <p>
-      <%=raw @homepage.world_headline_2 %>
+      <%=raw @homepage.money_headline_1 %>
     </p>
   </section>
   <section>
-    <h1>World Link 2</h1>
+    <h1>Money Link 1</h1>
     <p>
-      <%=raw @homepage.world_link_2 %>
+      <%=raw @homepage.money_link_1 %>
     </p>
   </section>
   <section>
-    <h1>World Headline 3</h1>
+    <h1>Money Headline 2</h1>
     <p>
-      <%=raw @homepage.world_headline_3 %>
+      <%=raw @homepage.money_headline_2 %>
     </p>
   </section>
   <section>
-    <h1>World Link 3</h1>
+    <h1>Money Link 2</h1>
     <p>
-      <%=raw @homepage.world_link_3 %>
+      <%=raw @homepage.money_link_2 %>
     </p>
   </section>
   <section>
-    <h1>Simply South Photo</h1>
+    <h1>Money Headline 3</h1>
     <p>
-      <%= image_fu @homepage.simply_south_photo, nil %>
+      <%=raw @homepage.money_headline_3 %>
     </p>
   </section>
   <section>
-    <h1>Simply South Headline 1</h1>
+    <h1>Money Link 3</h1>
     <p>
-      <%=raw @homepage.simply_south_headline_1 %>
+      <%=raw @homepage.money_link_3 %>
     </p>
   </section>
   <section>
-    <h1>Simply South Link 1</h1>
+    <h1>World Photo Left</h1>
     <p>
-      <%=raw @homepage.simply_south_link_1 %>
+      <%= image_fu @homepage.world_photo_left, nil %>
     </p>
   </section>
   <section>
-    <h1>Simply South Headline 2</h1>
+    <h1>World Headline Left</h1>
     <p>
-      <%=raw @homepage.simply_south_headline_2 %>
+      <%=raw @homepage.world_headline_left %>
     </p>
   </section>
   <section>
-    <h1>Simply South Link 2</h1>
+    <h1>World Link Left</h1>
     <p>
-      <%=raw @homepage.simply_south_link_2 %>
+      <%=raw @homepage.world_link_left %>
     </p>
   </section>
   <section>
-    <h1>Simply South Headline 3</h1>
+    <h1>World Headline 1 Left</h1>
     <p>
-      <%=raw @homepage.simply_south_headline_3 %>
+      <%=raw @homepage.world_headline_1_left %>
     </p>
   </section>
   <section>
-    <h1>Simply South Link 3</h1>
+    <h1>World Link 1 Left</h1>
     <p>
-      <%=raw @homepage.simply_south_link_3 %>
+      <%=raw @homepage.world_link_1_left %>
+    </p>
+  </section>
+  <section>
+    <h1>World Headline 2 Left</h1>
+    <p>
+      <%=raw @homepage.world_headline_2_left %>
+    </p>
+  </section>
+  <section>
+    <h1>World Link 2 Left</h1>
+    <p>
+      <%=raw @homepage.world_link_2_left %>
+    </p>
+  </section>
+  <section>
+    <h1>World Headline 3 Left</h1>
+    <p>
+      <%=raw @homepage.world_headline_3_left %>
+    </p>
+  </section>
+  <section>
+    <h1>World Link 3 Left</h1>
+    <p>
+      <%=raw @homepage.world_link_3_left %>
+    </p>
+  </section>
+  <section>
+    <h1>World Photo Right</h1>
+    <p>
+      <%= image_fu @homepage.world_photo_right, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>World Headline Right</h1>
+    <p>
+      <%=raw @homepage.world_headline_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Link Right</h1>
+    <p>
+      <%=raw @homepage.world_link_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Headline 1 Right</h1>
+    <p>
+      <%=raw @homepage.world_headline_1_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Link 1 Right</h1>
+    <p>
+      <%=raw @homepage.world_link_1_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Headline 2 Right</h1>
+    <p>
+      <%=raw @homepage.world_headline_2_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Link 2 Right</h1>
+    <p>
+      <%=raw @homepage.world_link_2_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Headline 3 Right</h1>
+    <p>
+      <%=raw @homepage.world_headline_3_right %>
+    </p>
+  </section>
+  <section>
+    <h1>World Link 3 Right</h1>
+    <p>
+      <%=raw @homepage.world_link_3_right %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Photo 1</h1>
+    <p>
+      <%= image_fu @homepage.southern_minute_photo_1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Headline 1</h1>
+    <p>
+      <%=raw @homepage.southern_minute_headline_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Link 1</h1>
+    <p>
+      <%=raw @homepage.southern_minute_link_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Photo 2</h1>
+    <p>
+      <%= image_fu @homepage.southern_minute_photo_2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Headline 2</h1>
+    <p>
+      <%=raw @homepage.southern_minute_headline_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Link 2</h1>
+    <p>
+      <%=raw @homepage.southern_minute_link_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Photo 3</h1>
+    <p>
+      <%= image_fu @homepage.southern_minute_photo_3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Headline 3</h1>
+    <p>
+      <%=raw @homepage.southern_minute_headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Link 3</h1>
+    <p>
+      <%=raw @homepage.southern_minute_link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Photo 4</h1>
+    <p>
+      <%= image_fu @homepage.southern_minute_photo_4, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Headline 4</h1>
+    <p>
+      <%=raw @homepage.southern_minute_headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Southern Minute Link 4</h1>
+    <p>
+      <%=raw @homepage.southern_minute_link_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Caricature 1</h1>
+    <p>
+      <%= image_fu @homepage.columnist_caricature_1, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Headline 1</h1>
+    <p>
+      <%=raw @homepage.columnist_headline_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Link 1</h1>
+    <p>
+      <%=raw @homepage.columnist_link_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Name 1</h1>
+    <p>
+      <%=raw @homepage.columnist_name_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Caricature 2</h1>
+    <p>
+      <%= image_fu @homepage.columnist_caricature_2, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Headline 2</h1>
+    <p>
+      <%=raw @homepage.columnist_headline_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Link 2</h1>
+    <p>
+      <%=raw @homepage.columnist_link_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Name 2</h1>
+    <p>
+      <%=raw @homepage.columnist_name_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Caricature 3</h1>
+    <p>
+      <%= image_fu @homepage.columnist_caricature_3, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Headline 3</h1>
+    <p>
+      <%=raw @homepage.columnist_headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Link 3</h1>
+    <p>
+      <%=raw @homepage.columnist_link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Name 3</h1>
+    <p>
+      <%=raw @homepage.columnist_name_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Caricature 4</h1>
+    <p>
+      <%= image_fu @homepage.columnist_caricature_4, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Headline 4</h1>
+    <p>
+      <%=raw @homepage.columnist_headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Link 4</h1>
+    <p>
+      <%=raw @homepage.columnist_link_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Name 4</h1>
+    <p>
+      <%=raw @homepage.columnist_name_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Caricature 5</h1>
+    <p>
+      <%= image_fu @homepage.columnist_caricature_5, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Headline 5</h1>
+    <p>
+      <%=raw @homepage.columnist_headline_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Link 5</h1>
+    <p>
+      <%=raw @homepage.columnist_link_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Columnist Name 5</h1>
+    <p>
+      <%=raw @homepage.columnist_name_5 %>
     </p>
   </section>
   <section>
@@ -412,9 +832,15 @@
     </p>
   </section>
   <section>
-    <h1>Editorial Blurb 1</h1>
+    <h1>Editorial Author 1</h1>
     <p>
-      <%=raw @homepage.editorial_blurb_1 %>
+      <%=raw @homepage.editorial_author_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Editorial Link 1</h1>
+    <p>
+      <%=raw @homepage.editorial_link_1 %>
     </p>
   </section>
   <section>
@@ -430,153 +856,171 @@
     </p>
   </section>
   <section>
-    <h1>Editorial Blurb 2</h1>
+    <h1>Editorial Author 2</h1>
     <p>
-      <%=raw @homepage.editorial_blurb_2 %>
+      <%=raw @homepage.editorial_author_2 %>
     </p>
   </section>
   <section>
-    <h1>Whats On My Mind Photo 1</h1>
+    <h1>Editorial Link 2</h1>
     <p>
-      <%= image_fu @homepage.whats_on_my_mind_photo_1, nil %>
+      <%=raw @homepage.editorial_link_2 %>
     </p>
   </section>
   <section>
-    <h1>Whats On My Mind Headline 1</h1>
+    <h1>Voices 1</h1>
     <p>
-      <%=raw @homepage.whats_on_my_mind_headline_1 %>
+      <%= image_fu @homepage.voices_1, nil %>
     </p>
   </section>
   <section>
-    <h1>Whats On My Mind Link 1</h1>
+    <h1>Voices Headline 1</h1>
     <p>
-      <%=raw @homepage.whats_on_my_mind_link_1 %>
+      <%=raw @homepage.voices_headline_1 %>
     </p>
   </section>
   <section>
-    <h1>Whats On My Mind Photo 2</h1>
+    <h1>Voices Link 1</h1>
     <p>
-      <%= image_fu @homepage.whats_on_my_mind_photo_2, nil %>
+      <%=raw @homepage.voices_link_1 %>
     </p>
   </section>
   <section>
-    <h1>Whats On My Mind Headline 2</h1>
+    <h1>Voices Photo 2</h1>
     <p>
-      <%=raw @homepage.whats_on_my_mind_headline_2 %>
+      <%= image_fu @homepage.voices_photo_2, nil %>
     </p>
   </section>
   <section>
-    <h1>Whats On My Mind Link 2</h1>
+    <h1>Voices Headline 2</h1>
     <p>
-      <%=raw @homepage.whats_on_my_mind_link_2 %>
+      <%=raw @homepage.voices_headline_2 %>
     </p>
   </section>
   <section>
-    <h1>Odd One Photo</h1>
+    <h1>Voices Link 2</h1>
     <p>
-      <%= image_fu @homepage.odd_one_photo, nil %>
+      <%=raw @homepage.voices_link_2 %>
     </p>
   </section>
   <section>
-    <h1>Odd One Headline</h1>
+    <h1>Random Photo 1</h1>
     <p>
-      <%=raw @homepage.odd_one_headline %>
+      <%= image_fu @homepage.random_photo_1, nil %>
     </p>
   </section>
   <section>
-    <h1>Odd One Blurb</h1>
+    <h1>Random Headline 1</h1>
     <p>
-      <%=raw @homepage.odd_one_blurb %>
+      <%=raw @homepage.random_headline_1 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Cartooon 1</h1>
+    <h1>Random Link 1</h1>
     <p>
-      <%= image_fu @homepage.blog_we_like_cartooon_1, nil %>
+      <%=raw @homepage.random_link_1 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Headline1</h1>
+    <h1>Random Photo 2</h1>
     <p>
-      <%=raw @homepage.blog_we_like_headline1 %>
+      <%= image_fu @homepage.random_photo_2, nil %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Link1</h1>
+    <h1>Random Headline 2</h1>
     <p>
-      <%=raw @homepage.blog_we_like_link1 %>
+      <%=raw @homepage.random_headline_2 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Cartooon 2</h1>
+    <h1>Random Link 2</h1>
     <p>
-      <%= image_fu @homepage.blog_we_like_cartooon_2, nil %>
+      <%=raw @homepage.random_link_2 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Headline2</h1>
+    <h1>Random Photo 3</h1>
     <p>
-      <%=raw @homepage.blog_we_like_headline2 %>
+      <%= image_fu @homepage.random_photo_3, nil %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Link2</h1>
+    <h1>Random Headline 3</h1>
     <p>
-      <%=raw @homepage.blog_we_like_link2 %>
+      <%=raw @homepage.random_headline_3 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Cartooon 3</h1>
+    <h1>Random Link 3</h1>
     <p>
-      <%= image_fu @homepage.blog_we_like_cartooon_3, nil %>
+      <%=raw @homepage.random_link_3 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Headline3</h1>
+    <h1>Random Photo 4</h1>
     <p>
-      <%=raw @homepage.blog_we_like_headline3 %>
+      <%= image_fu @homepage.random_photo_4, nil %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Link3</h1>
+    <h1>Random Headline 4</h1>
     <p>
-      <%=raw @homepage.blog_we_like_link3 %>
+      <%=raw @homepage.random_headline_4 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Cartooon 4</h1>
+    <h1>Random Link 4</h1>
     <p>
-      <%= image_fu @homepage.blog_we_like_cartooon_4, nil %>
+      <%=raw @homepage.random_link_4 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Headline4</h1>
+    <h1>Not To Miss Headline 1</h1>
     <p>
-      <%=raw @homepage.blog_we_like_headline4 %>
+      <%=raw @homepage.not_to_miss_headline_1 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Link4</h1>
+    <h1>Not To Miss Link 1</h1>
     <p>
-      <%=raw @homepage.blog_we_like_link4 %>
+      <%=raw @homepage.not_to_miss_link_1 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Cartooon 5</h1>
+    <h1>Not To Miss Headline 2</h1>
     <p>
-      <%= image_fu @homepage.blog_we_like_cartooon_5, nil %>
+      <%=raw @homepage.not_to_miss_headline_2 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Headline5</h1>
+    <h1>Not To Miss Link 2</h1>
     <p>
-      <%=raw @homepage.blog_we_like_headline5 %>
+      <%=raw @homepage.not_to_miss_link_2 %>
     </p>
   </section>
   <section>
-    <h1>Blog We Like Link5</h1>
+    <h1>Not To Miss Headline 3</h1>
     <p>
-      <%=raw @homepage.blog_we_like_link5 %>
+      <%=raw @homepage.not_to_miss_headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Not To Miss Link 3</h1>
+    <p>
+      <%=raw @homepage.not_to_miss_link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Not To Miss Headline 4</h1>
+    <p>
+      <%=raw @homepage.not_to_miss_headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Not To Miss Link 4</h1>
+    <p>
+      <%=raw @homepage.not_to_miss_link_4 %>
     </p>
   </section>
 <% end %>
@@ -587,7 +1031,7 @@
     <ul id="homepages">
       <% @homepages.each do |homepage| %>
         <li>
-          <%= link_to homepage.main_story_headline_1, refinery.homepages_homepage_path(homepage) %>
+          <%= link_to homepage.main_headline, refinery.homepages_homepage_path(homepage) %>
         </li>
       <% end %>
     </ul>

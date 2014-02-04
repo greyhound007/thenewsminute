@@ -9,8 +9,8 @@ describe Refinery do
 
         describe "homepages list" do
           before do
-            FactoryGirl.create(:homepage, :main_story_headline_1 => "UniqueTitleOne")
-            FactoryGirl.create(:homepage, :main_story_headline_1 => "UniqueTitleTwo")
+            FactoryGirl.create(:homepage, :main_headline => "UniqueTitleOne")
+            FactoryGirl.create(:homepage, :main_headline => "UniqueTitleTwo")
           end
 
           it "shows two items" do
@@ -29,7 +29,7 @@ describe Refinery do
 
           context "valid data" do
             it "should succeed" do
-              fill_in "Main Story Headline 1", :with => "This is a test of the first string field"
+              fill_in "Main Headline", :with => "This is a test of the first string field"
               click_button "Save"
 
               page.should have_content("'This is a test of the first string field' was successfully added.")
@@ -41,20 +41,20 @@ describe Refinery do
             it "should fail" do
               click_button "Save"
 
-              page.should have_content("Main Story Headline 1 can't be blank")
+              page.should have_content("Main Headline can't be blank")
               Refinery::Homepages::Homepage.count.should == 0
             end
           end
 
           context "duplicate" do
-            before { FactoryGirl.create(:homepage, :main_story_headline_1 => "UniqueTitle") }
+            before { FactoryGirl.create(:homepage, :main_headline => "UniqueTitle") }
 
             it "should fail" do
               visit refinery.homepages_admin_homepages_path
 
               click_link "Add New Homepage"
 
-              fill_in "Main Story Headline 1", :with => "UniqueTitle"
+              fill_in "Main Headline", :with => "UniqueTitle"
               click_button "Save"
 
               page.should have_content("There were problems")
@@ -65,7 +65,7 @@ describe Refinery do
         end
 
         describe "edit" do
-          before { FactoryGirl.create(:homepage, :main_story_headline_1 => "A main_story_headline_1") }
+          before { FactoryGirl.create(:homepage, :main_headline => "A main_headline") }
 
           it "should succeed" do
             visit refinery.homepages_admin_homepages_path
@@ -74,16 +74,16 @@ describe Refinery do
               click_link "Edit this homepage"
             end
 
-            fill_in "Main Story Headline 1", :with => "A different main_story_headline_1"
+            fill_in "Main Headline", :with => "A different main_headline"
             click_button "Save"
 
-            page.should have_content("'A different main_story_headline_1' was successfully updated.")
-            page.should have_no_content("A main_story_headline_1")
+            page.should have_content("'A different main_headline' was successfully updated.")
+            page.should have_no_content("A main_headline")
           end
         end
 
         describe "destroy" do
-          before { FactoryGirl.create(:homepage, :main_story_headline_1 => "UniqueTitleOne") }
+          before { FactoryGirl.create(:homepage, :main_headline => "UniqueTitleOne") }
 
           it "should succeed" do
             visit refinery.homepages_admin_homepages_path

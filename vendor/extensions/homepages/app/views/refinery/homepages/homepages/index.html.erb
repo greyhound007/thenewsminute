@@ -2,7 +2,7 @@
   <ul id="homepages">
     <% @homepages.each do |homepage| %>
       <li>
-        <%= link_to homepage.main_story_headline_1, refinery.homepages_homepage_path(homepage) %>
+        <%= link_to homepage.main_headline, refinery.homepages_homepage_path(homepage) %>
       </li>
     <% end %>
   </ul>

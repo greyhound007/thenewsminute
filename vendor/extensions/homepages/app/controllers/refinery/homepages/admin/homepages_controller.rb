@@ -4,7 +4,7 @@ module Refinery
       class HomepagesController < ::Refinery::AdminController
 
         crudify :'refinery/homepages/homepage',
-                :title_attribute => 'main_story_headline_1',
+                :title_attribute => 'main_headline',
                 :xhr_paging => true
 
       end
