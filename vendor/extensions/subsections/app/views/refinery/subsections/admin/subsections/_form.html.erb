@@ -1,0 +1,502 @@
+<%= form_for [refinery, :subsections_admin, @subsection] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @subsection,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :Topic -%>
+    <%= f.text_field :Topic, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_1 -%>
+    <%= f.text_field :headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_1 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_1_id,
+               :image => @subsection.image_1,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_1 -%>
+    <%= f.text_field :link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_headline_1 -%>
+    <%= f.text_field :news_1_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_link_1 -%>
+    <%= f.text_field :news_1_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_source_1 -%>
+    <%= f.text_field :news_1_source_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_headline_2 -%>
+    <%= f.text_field :news_1_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_link_2 -%>
+    <%= f.text_field :news_1_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_source_2 -%>
+    <%= f.text_field :news_1_source_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_headline_3 -%>
+    <%= f.text_field :news_1_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_link_3 -%>
+    <%= f.text_field :news_1_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_source_3 -%>
+    <%= f.text_field :news_1_source_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_headline_4 -%>
+    <%= f.text_field :news_1_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_link_4 -%>
+    <%= f.text_field :news_1_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_source_4 -%>
+    <%= f.text_field :news_1_source_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_headline_5 -%>
+    <%= f.text_field :news_1_headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_link_5 -%>
+    <%= f.text_field :news_1_link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_1_source_5 -%>
+    <%= f.text_field :news_1_source_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_1 -%>
+    <%= f.text_field :rank_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_2 -%>
+    <%= f.text_field :headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_2 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_2_id,
+               :image => @subsection.image_2,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_2 -%>
+    <%= f.text_field :link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_headline_1 -%>
+    <%= f.text_field :news_2_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_link_1 -%>
+    <%= f.text_field :news_2_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_source_1 -%>
+    <%= f.text_field :news_2_source_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_headline_2 -%>
+    <%= f.text_field :news_2_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_link_2 -%>
+    <%= f.text_field :news_2_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_source_2 -%>
+    <%= f.text_field :news_2_source_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_headline_3 -%>
+    <%= f.text_field :news_2_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_link_3 -%>
+    <%= f.text_field :news_2_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_source_3 -%>
+    <%= f.text_field :news_2_source_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_headline_4 -%>
+    <%= f.text_field :news_2_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_link_4 -%>
+    <%= f.text_field :news_2_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_source_4 -%>
+    <%= f.text_field :news_2_source_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_headline_5 -%>
+    <%= f.text_field :news_2_headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_link_5 -%>
+    <%= f.text_field :news_2_link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_2 -%>
+    <%= f.text_field :rank_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_3 -%>
+    <%= f.text_field :headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_3 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_3_id,
+               :image => @subsection.image_3,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_3 -%>
+    <%= f.text_field :link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_headline_1 -%>
+    <%= f.text_field :news_3_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_link_1 -%>
+    <%= f.text_field :news_3_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_source_1 -%>
+    <%= f.text_field :news_3_source_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_headline_2 -%>
+    <%= f.text_field :news_3_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_link_2 -%>
+    <%= f.text_field :news_3_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_source_2 -%>
+    <%= f.text_field :news_3_source_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_headline_3 -%>
+    <%= f.text_field :news_3_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_link_3 -%>
+    <%= f.text_field :news_3_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_source_3 -%>
+    <%= f.text_field :news_3_source_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_headline_4 -%>
+    <%= f.text_field :news_3_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_link_4 -%>
+    <%= f.text_field :news_3_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_source_4 -%>
+    <%= f.text_field :news_3_source_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_headline_5 -%>
+    <%= f.text_field :news_3_headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_3_link_5 -%>
+    <%= f.text_field :news_3_link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_2_source_5 -%>
+    <%= f.text_field :news_2_source_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_4 -%>
+    <%= f.text_field :rank_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_4 -%>
+    <%= f.text_field :headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_4 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_4_id,
+               :image => @subsection.image_4,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_4 -%>
+    <%= f.text_field :link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_headline_1 -%>
+    <%= f.text_field :news_4_headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_link_1 -%>
+    <%= f.text_field :news_4_link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_source_1 -%>
+    <%= f.text_field :news_4_source_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_headline_2 -%>
+    <%= f.text_field :news_4_headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_link_2 -%>
+    <%= f.text_field :news_4_link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_source_2 -%>
+    <%= f.text_field :news_4_source_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_headline_3 -%>
+    <%= f.text_field :news_4_headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_link_3 -%>
+    <%= f.text_field :news_4_link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_source_3 -%>
+    <%= f.text_field :news_4_source_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_headline_4 -%>
+    <%= f.text_field :news_4_headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_link_4 -%>
+    <%= f.text_field :news_4_link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_source_4 -%>
+    <%= f.text_field :news_4_source_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_headline_5 -%>
+    <%= f.text_field :news_4_headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_link_5 -%>
+    <%= f.text_field :news_4_link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :news_4_source_5 -%>
+    <%= f.text_field :news_4_source_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_4 -%>
+    <%= f.text_field :rank_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_5 -%>
+    <%= f.text_field :headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_5 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_5_id,
+               :image => @subsection.image_5,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_5 -%>
+    <%= f.text_field :link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_5 -%>
+    <%= f.text_field :rank_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_6 -%>
+    <%= f.text_field :headline_6 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_6 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_6_id,
+               :image => @subsection.image_6,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_6 -%>
+    <%= f.text_field :link_6 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_6 -%>
+    <%= f.text_field :rank_6 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_7 -%>
+    <%= f.text_field :headline_7 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_7 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_7_id,
+               :image => @subsection.image_7,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_7 -%>
+    <%= f.text_field :link_7 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_7 -%>
+    <%= f.text_field :rank_7 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_8 -%>
+    <%= f.text_field :headline_8 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_8 -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :image_8_id,
+               :image => @subsection.image_8,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_8 -%>
+    <%= f.text_field :link_8 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :rank_8 -%>
+    <%= f.text_field :rank_8 -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.subsections.admin.subsections.subsection'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @subsection.Topic) -%>
+<% end -%>

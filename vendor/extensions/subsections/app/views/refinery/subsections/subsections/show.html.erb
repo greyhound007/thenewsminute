@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+
+    <title>News Minute</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/newsminute.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row" style="text-align: center;margin-top: 0px">
+        <img src="/assets/logo.png" />
+      </div>
+     
+         <hr />
+        <div class="navbar navbar-default" role="navigation">
+       
+        <div class="navbar-header" >
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><img src="/assets/home.png" width="43px" height="39px" /></li>
+            <li><a href="#about">Politics</a></li>
+            <li><a href="#contact">Sports</a></li>
+            <li><a href="#contact">News</a></li>
+            <li><a href="#contact">Entertainment</a></li>
+            <li><a href="#contact">South</a></li>
+            <li><a href="#contact">Tech</a></li>
+            <li><a href="#contact">Money</a></li>
+            <li><a href="#contact">World</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      
+    </div><!-- /.navbar -->
+     <hr />
+      
+      
+    </div>
+
+    <div class="container">
+
+      <div class="row row-offcanvas row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-9">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          
+          <div class="row">
+            <div class="col-6 col-sm-6 col-lg-6">
+              
+              <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_1 %>><%=raw @subsection.headline_1 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div class="more-rect" >
+                <p class="more-text">More <%=raw @subsection.Topic %></p>
+              </div>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_1 %>><%=raw @subsection.news_1_headline_1 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_1 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_2 %>><%=raw @subsection.news_1_headline_2 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_2 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_3 %>><%=raw @subsection.news_1_headline_3 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_3 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_4 %>><%=raw @subsection.news_1_headline_4 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_4 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_5 %>><%=raw @subsection.news_1_headline_5 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_5 %></p>
+                
+                <hr />
+              <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_5 %>><%=raw @subsection.headline_5 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              
+              
+              
+              <hr />
+              
+               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_2 %>><%=raw @subsection.headline_2 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div class="more-rect" >
+                <p class="more-text">More <%=raw @subsection.Topic %></p>
+              </div>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_1 %>><%=raw @subsection.news_2_headline_1 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_1 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_2 %>><%=raw @subsection.news_2_headline_2 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_2 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_3 %>><%=raw @subsection.news_2_headline_3 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_3 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_4 %>><%=raw @subsection.news_2_headline_4 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_4 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_5 %>><%=raw @subsection.news_2_headline_5 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_5 %></p>
+                
+               
+              <<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_6 %>><%=raw @subsection.headline_6 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-6">
+             <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_7 %>><%=raw @subsection.headline_7 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              
+              <div class="row">
+                
+            <div class="col-6 col-sm-6 col-lg-6">
+                
+                
+                
+            </div>
+                
+              </div>
+              
+            </div><!--/span-->
+            <div class="col-6 col-sm-6 col-lg-4">
+              <hr />
+              
+                <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_3 %>><%=raw @subsection.headline_3 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div class="more-rect" >
+                <p class="more-text">More <%=raw @subsection.Topic %></p>
+              </div>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_1 %>><%=raw @subsection.news_3_headline_1 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_1 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_2 %>><%=raw @subsection.news_3_headline_2 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_2 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_3 %>><%=raw @subsection.news_3_headline_3 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_3 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_4 %>><%=raw @subsection.news_3_headline_4 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_4 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_5 %>><%=raw @subsection.news_3_headline_5 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_5 %></p>
+                
+              
+                
+                
+                <hr />
+               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_8 %>><%=raw @subsection.headline_8 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              
+              <hr />
+              
+              <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_4 %>><%=raw @subsection.headline_4 %></a></p>
+              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div class="more-rect" >
+                <p class="more-text">More <%=raw @subsection.Topic %></p>
+              </div>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_1 %>><%=raw @subsection.news_4_headline_1 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_1 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_2 %>><%=raw @subsection.news_4_headline_2 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_2 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_3 %>><%=raw @subsection.news_4_headline_3 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_3 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_4 %>><%=raw @subsection.news_4_headline_4 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_4 %></p>
+                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_5 %>><%=raw @subsection.news_4_headline_5 %></a></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_5 %></p>
+                
+                <hr />
+            </div><!--/span-->
+            
+            
+          </div><!--/row-->
+          
+         
+          
+           <div class="row">
+            
+                
+              
+                
+                
+                
+                
+                <div class="row">
+            
+            </div>
+               
+               <div class="row">
+            
+               </div>
+                
+                
+                
+          </div>
+          
+         
+        </div><!--/span-->
+
+        
+        
+        <!-------------------------------------   -->
+        <!-------------------------------------   -->
+        <!---------  SIDEBAR          ---------   -->
+        <!-------------------------------------   -->
+        <!-------------------------------------   -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+           <h3 style="font-family: Roboto">SRK v Farhan : Who will 
+win Best Actor ?</h3>
+           <img src="/assets/screens/farhan.png" />
+           <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+            <hr />
+              <h2 class="section-header" >Latest</h2>
+              <hr />
+              
+              <div class="col-6 col-sm-6 col-lg-4">
+                <img src="/assets/screens/latest 1.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
+            </div>
+              
+            <div class="col-6 col-sm-6 col-lg-8">
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+            </div>
+            <img src="/assets/elephant.png" style="margin-top: 20px" />
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+              
+              <h2 class="section-header" style="margin-top: 10px" >Chitra Subramaniam</h2>
+              
+              <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
+              
+              <hr />
+              <h2 class="section-header" style="margin-top: 20px" >Southern Minute</h2>
+              <hr />
+              
+              <div class="col-6 col-sm-6 col-lg-4">
+                <img src="/assets/screens/latest 1.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
+            </div>
+              
+            <div class="col-6 col-sm-6 col-lg-8">
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+            </div>
+            
+            
+            <img src="/assets/ear.png" style="margin-top: 20px" />
+            <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+              
+              <h2 class="section-header" style="margin-top: 10px" >Deepthy Menon</h2>
+              
+              <img src="/assets/deepthy.png" style="margin-left: 20px; margin-top: 0px" />
+              
+              <img src="/assets/ad.png" style="margin-left: 20px; margin-top: 40px" />
+              
+               <hr />
+              <h2 class="section-header" style="margin-top: 20px" >Random</h2>
+              <hr />
+              <div class="col-6 col-sm-6 col-lg-4">
+                <img src="/assets/screens/latest 1.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
+            </div>
+              
+            <div class="col-6 col-sm-6 col-lg-8">
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
+will handle the issue</p>
+            </div>
+            
+             <img src="/assets/ad.png" style="margin-left: 20px; margin-top: 40px" />
+             
+             <img src="/assets/contribute.png" style="margin-left: 20px; margin-top: 40px" /> 
+            
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr />
+
+     
+    </div><!--/.container-->
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/js/jquery-1.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/offcanvas.js"></script>
+  
+
+</body></html>

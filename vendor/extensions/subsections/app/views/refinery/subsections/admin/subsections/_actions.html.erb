@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Subsections::Admin::SubsectionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.subsections_admin_subsections_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_subsections_admin_subsection_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Subsections::Admin::SubsectionsController.sortable? && ::Refinery::Subsections::Subsection.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Subsections"),
+                 refinery.subsections_admin_subsections_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Subsections"),
+                 refinery.subsections_admin_subsections_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

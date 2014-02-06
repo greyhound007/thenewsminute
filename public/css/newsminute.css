@@ -1,0 +1,233 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+@font-face {
+  font-family: 'Yanone_Light';
+  font-style:  normal;
+  font-weight: 400;
+  src: url(../fonts/YanoneKaffeesatz-Light.otf);
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style:  normal;
+  font-weight: 400;
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Amaranth';
+  font-style: inherit;
+  font-weight: 400;
+  src: url(../fonts/Amaranth-Regular.otf);
+}
+hr {
+ 
+  background: #a0a6ad;
+  width: 100%;
+  height: 1px; }
+
+.jumbotron {
+   
+    background-color: #FFFFFF;
+}
+
+
+a
+{
+   color: #000000;
+}
+a:hover
+{
+   font-family: 'Cambria';
+   text-decoration: underline;
+   color: #000000;
+   cursor: pointer;
+}
+/**
+ *Navbar
+ **/
+.navbar-default {
+    border-radius: 0px;
+    border: hidden;
+    height: 20px;
+    font-family: 'Yanone_Light';
+    font-size: 28px;
+    color: #000000;
+}
+
+  .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:focus {
+    color: #FFFFFF;
+    background-color: #292c37;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+    font-family: 'Yanone_Light';
+    font-size: 28px;
+    color: #000000;
+}
+
+.navbar-nav > li {
+  
+    padding-left: 20px;
+}
+
+.columnists
+{
+  font-family: 'Yanone_Light';
+    font-size: 22px;
+    color: #000000;
+}
+
+.links
+{
+   font-family: 'Cambria';
+}
+.links:hover
+{
+   font-family: 'Cambria';
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+
+.editors
+{
+   font-family: 'Amaranth';
+   font-size: 18px;
+}
+.editors:hover
+{
+   font-family: 'Amaranth';
+   text-decoration: underline;
+   cursor: pointer;
+}
+
+.top-buffer
+{
+  margin-top: 0px;
+}
+.courtesy-row
+{
+  margin:0;
+  font-weight: 400;
+  font-style: italic;
+  color: #565e71;
+  text-align: right;
+}
+
+.courtesy-row-story
+{
+  margin:0;
+  font-weight: 400;
+  font-style: italic;
+  color: #565e71;
+  text-align: left;
+}
+.container .jumbotron {
+    
+    padding-top: 0px;
+     padding-left: 10px;
+     padding-right: 110px;
+  
+}
+
+
+/**
+ *more box
+ **/
+
+.more-rect
+{
+  width: 75%;
+  height: 25px;
+  background-color: #292c37;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.more-text
+{
+  font-family: 'Yanone_Light';
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+/**
+ *styles for latest column
+ **/
+
+.latest-text
+{
+  margin-left: 10px;
+  margin-top: 0px;
+ 
+        
+        display:                    block;
+        height:                     7em;
+        overflow:                   hidden;
+}
+
+.latest-spacer {  margin-top: 20px; }
+p
+{
+  font-family: 'Cambria';
+}
+
+.section-header
+{
+  font-family: 'Yanone_Light';
+    background-color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    color: #000000;
+}
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}

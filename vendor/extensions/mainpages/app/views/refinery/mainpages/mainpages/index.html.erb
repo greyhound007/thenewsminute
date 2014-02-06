@@ -1,11 +1,2 @@
-<% content_for :body do %>
-  <ul id="mainpages">
-    <% @mainpages.each do |mainpage| %>
-      <li>
-        <%= link_to mainpage.main_headline, refinery.mainpages_mainpage_path(mainpage) %>
-      </li>
-    <% end %>
-  </ul>
-<% end %>
 
 <%= render '/refinery/content_page' %>

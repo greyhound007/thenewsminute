@@ -3,6 +3,10 @@ PATH
   specs:
     refinerycms-mainpages (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-stories (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-subsections (1.0)
+      refinerycms-core (~> 2.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -222,6 +226,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   fog
+  friendly_id
   heroku
   jquery-rails
   pg
@@ -229,6 +234,8 @@ DEPENDENCIES
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-mainpages!
+  refinerycms-stories!
+  refinerycms-subsections!
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)

@@ -64,9 +64,14 @@ gem 'fog'
 
 # Postgres support (added for Heroku)
 gem 'pg'
-
+gem 'friendly_id'
 #gem 'refinerycms-homepages', :path => 'vendor/extensions'
 
 #gem 'refinerycms-base_page_redirects', :path => 'vendor/extensions'
 #gem 'refinerycms-topstories', :path => 'vendor/extensions'
+
 gem 'refinerycms-mainpages', :path => 'vendor/extensions'
+gem 'refinerycms-stories', :path => 'vendor/extensions'
+
+
+gem 'refinerycms-subsections', :path => 'vendor/extensions'

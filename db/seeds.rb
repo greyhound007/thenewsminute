@@ -47,3 +47,15 @@ Refinery::Topstories::Engine.load_seed
 
 # Added by Refinery CMS Mainpages extension
 Refinery::Mainpages::Engine.load_seed
+
+# Added by Refinery CMS Mainstories extension
+Refinery::Mainstories::Engine.load_seed
+
+# Added by Refinery CMS Stories extension
+Refinery::Stories::Engine.load_seed
+
+# Added by Refinery CMS Sections extension
+Refinery::Sections::Engine.load_seed
+
+# Added by Refinery CMS Subsections extension
+Refinery::Subsections::Engine.load_seed

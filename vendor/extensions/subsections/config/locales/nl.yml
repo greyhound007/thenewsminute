@@ -1,0 +1,118 @@
+nl:
+  refinery:
+    plugins:
+      subsections:
+        title: Subsections
+    subsections:
+      admin:
+        subsections:
+          actions:
+            create_new: Nieuwe Subsection toevoegen
+            reorder: De volgorde van de Subsections wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Subsection-volgorde
+          records:
+            title: Subsections
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Subsections. Druk op 'Nieuwe Subsection toevoegen' om de eerste toe te voegen.
+          subsection:
+            view_live_html: Deze subsection op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze subsection
+            delete: Deze subsection definitief verwijderen
+      subsections:
+        show:
+          other: Andere Subsections
+  activerecord:
+    attributes:
+      'refinery/subsections/subsection':
+        Topic: Topic
+        headline_1: Headline 1
+        image_1: Image 1
+        link_1: Link 1
+        news_1_headline_1: News 1 Headline 1
+        news_1_link_1: News 1 Link 1
+        news_1_source_1: News 1 Source 1
+        news_1_headline_2: News 1 Headline 2
+        news_1_link_2: News 1 Link 2
+        news_1_source_2: News 1 Source 2
+        news_1_headline_3: News 1 Headline 3
+        news_1_link_3: News 1 Link 3
+        news_1_source_3: News 1 Source 3
+        news_1_headline_4: News 1 Headline 4
+        news_1_link_4: News 1 Link 4
+        news_1_source_4: News 1 Source 4
+        news_1_headline_5: News 1 Headline 5
+        news_1_link_5: News 1 Link 5
+        news_1_source_5: News 1 Source 5
+        rank_1: Rank 1
+        headline_2: Headline 2
+        image_2: Image 2
+        link_2: Link 2
+        news_2_headline_1: News 2 Headline 1
+        news_2_link_1: News 2 Link 1
+        news_2_source_1: News 2 Source 1
+        news_2_headline_2: News 2 Headline 2
+        news_2_link_2: News 2 Link 2
+        news_2_source_2: News 2 Source 2
+        news_2_headline_3: News 2 Headline 3
+        news_2_link_3: News 2 Link 3
+        news_2_source_3: News 2 Source 3
+        news_2_headline_4: News 2 Headline 4
+        news_2_link_4: News 2 Link 4
+        news_2_source_4: News 2 Source 4
+        news_2_headline_5: News 2 Headline 5
+        news_2_link_5: News 2 Link 5
+        rank_2: Rank 2
+        headline_3: Headline 3
+        image_3: Image 3
+        link_3: Link 3
+        news_3_headline_1: News 3 Headline 1
+        news_3_link_1: News 3 Link 1
+        news_3_source_1: News 3 Source 1
+        news_3_headline_2: News 3 Headline 2
+        news_3_link_2: News 3 Link 2
+        news_3_source_2: News 3 Source 2
+        news_3_headline_3: News 3 Headline 3
+        news_3_link_3: News 3 Link 3
+        news_3_source_3: News 3 Source 3
+        news_3_headline_4: News 3 Headline 4
+        news_3_link_4: News 3 Link 4
+        news_3_source_4: News 3 Source 4
+        news_3_headline_5: News 3 Headline 5
+        news_3_link_5: News 3 Link 5
+        news_2_source_5: News 2 Source 5
+        rank_4: Rank 4
+        headline_4: Headline 4
+        image_4: Image 4
+        link_4: Link 4
+        news_4_headline_1: News 4 Headline 1
+        news_4_link_1: News 4 Link 1
+        news_4_source_1: News 4 Source 1
+        news_4_headline_2: News 4 Headline 2
+        news_4_link_2: News 4 Link 2
+        news_4_source_2: News 4 Source 2
+        news_4_headline_3: News 4 Headline 3
+        news_4_link_3: News 4 Link 3
+        news_4_source_3: News 4 Source 3
+        news_4_headline_4: News 4 Headline 4
+        news_4_link_4: News 4 Link 4
+        news_4_source_4: News 4 Source 4
+        news_4_headline_5: News 4 Headline 5
+        news_4_link_5: News 4 Link 5
+        news_4_source_5: News 4 Source 5
+        rank_4: Rank 4
+        headline_5: Headline 5
+        image_5: Image 5
+        link_5: Link 5
+        rank_5: Rank 5
+        headline_6: Headline 6
+        image_6: Image 6
+        link_6: Link 6
+        rank_6: Rank 6
+        headline_7: Headline 7
+        image_7: Image 7
+        link_7: Link 7
+        rank_7: Rank 7
+        headline_8: Headline 8
+        image_8: Image 8
+        link_8: Link 8
+        rank_8: Rank 8
