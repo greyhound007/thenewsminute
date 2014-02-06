@@ -35,6 +35,8 @@ hr {
  
   background: #a0a6ad;
   width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
   height: 1px; }
 
 .jumbotron {
@@ -42,7 +44,10 @@ hr {
     background-color: #FFFFFF;
 }
 
-
+h2{
+  margin-top: 5px;
+margin-bottom: 5px;
+}
 a
 {
    color: #000000;
@@ -57,8 +62,11 @@ a:hover
 /**
  *Navbar
  **/
-.navbar-default {
+.navbar-default, .navbar-collapse {
     border-radius: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: #FFFFFF;
     border: hidden;
     height: 20px;
     font-family: 'Yanone_Light';

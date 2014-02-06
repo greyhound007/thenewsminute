@@ -47,14 +47,14 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li><img src="/assets/home.png" width="43px" height="39px" /></li>
-            <li><a href="#about">Politics</a></li>
-            <li><a href="#contact">Sports</a></li>
-            <li><a href="#contact">News</a></li>
-            <li><a href="#contact">Entertainment</a></li>
-            <li><a href="#contact">South</a></li>
-            <li><a href="#contact">Tech</a></li>
-            <li><a href="#contact">Money</a></li>
-            <li><a href="#contact">World</a></li>
+           <li><a href="http://thenewsminute.herokuapp.com/subsections/Politics">Politics</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/Sports">Sports</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/News">News</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/Entertainment">Entertainment</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/South">South</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/Tech">Tech</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/Money">Money</a></li>
+            <li><a href="http://thenewsminute.herokuapp.com/subsections/World">World</a></li>
           </ul>
         </div><!-- /.nav-collapse -->
       
@@ -72,7 +72,7 @@
           <p class="pull-right visible-xs">
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
-          <div class="jumbotron">
+          <div class="panel">
             <h2 style="font-family: Roboto"><a href= <%=raw @mainpage.main_link %> ><%=raw @mainpage.main_headline %></a> </h2>
             <img src="/assets/screens/binny.png" />
             
@@ -163,14 +163,14 @@
             <div class="col-6 col-sm-6 col-lg-6">
                 <div class="row">
                   <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px ; margin: 0px 0px -10px;"><a href=<%=raw @mainpage.voices_link_1 %>><%=raw @mainpage.voices_headline_1 %></a></p>
-                <hr />
+                <hr style="margin-top:20px"/>
                 <p  style="font-weight: 400;font-size: 14px ;">Arun Jaitley</p>
                   
                 </div>
                 
-                <div class="row" style="margin-top: 30px">
-                  <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px ; margin: 0px 0px -10px;">a href=<%=raw @mainpage.voices_link_2 %>><%=raw @mainpage.voices_headline_2 %></a></p>
-                <hr />
+                <div class="row" style="margin-top: 50px">
+                  <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px ; margin: 0px 0px -10px;"><a href=<%=raw @mainpage.voices_link_2 %>><%=raw @mainpage.voices_headline_2 %></a></p>
+                <hr style="margin-top:20px" />
                 <p  style="font-weight: 400;font-size: 14px ;">S.Ramadorai</p>
                   
                 </div>
@@ -180,7 +180,7 @@
               </div>
               
             </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-4">
+            <div class="col-6 col-sm-6 col-lg-6">
               <hr />
               <h2 class="section-header" >News</h2>
               <hr />
@@ -267,7 +267,7 @@
                 
                 
                 <div class="row">
-            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 10px">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 0px">
              
                 <hr />
               <h2 class="section-header" >Money</h2>
@@ -284,7 +284,7 @@
                 
                 </div>
             
-            <div class="col-6 col-sm-6 col-lg-4" style="margin-top: 40px; margin-left: 10px">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 0px">
              
                 <hr />
               <h2 class="section-header" >Tech</h2>
@@ -310,7 +310,7 @@
               <hr />
               
               <div class="row">
-            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 10px">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 0px">
              
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.world_link_left %>><%=raw @mainpage.world_headline_left %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
@@ -324,7 +324,7 @@
                 
                 </div>
             
-            <div class="col-6 col-sm-6 col-lg-4" style="margin-top: 40px; margin-left: 10px">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 0px">
              
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.world_link_right %>><%=raw @mainpage.world_headline_right %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
@@ -383,7 +383,7 @@
               
               <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.columnist_name_1 %></h2>
               
-              <img src="assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
+              <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
               
               <hr />
               <h2 class="section-header" style="margin-top: 20px" >Southern Minute</h2>

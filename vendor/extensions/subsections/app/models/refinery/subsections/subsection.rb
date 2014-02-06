@@ -22,6 +22,10 @@ module Refinery
       belongs_to :image_7, :class_name => '::Refinery::Image'
 
       belongs_to :image_8, :class_name => '::Refinery::Image'
+      
+        extend FriendlyId
+        friendly_id :Topic
+        
     end
   end
 end
