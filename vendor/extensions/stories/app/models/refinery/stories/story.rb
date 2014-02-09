@@ -8,6 +8,10 @@ module Refinery
       validates :Main_headline, :presence => true, :uniqueness => true
 
       belongs_to :photo, :class_name => '::Refinery::Image'
+        
+        
+        extend FriendlyId
+        friendly_id :Main_headline
     end
   end
 end
