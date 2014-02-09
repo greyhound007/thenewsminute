@@ -34,11 +34,11 @@ Refinery::Images.configure do |config|
   config.s3_region = ENV['S3_REGION']
 
   # Configure Dragonfly
-  # This is where in the middleware stack to insert the Dragonfly middleware
-  # config.dragonfly_insert_before = "ActionDispatch::Callbacks"
-  # config.dragonfly_secret = "963c035f5351d150afe8c11fe4fc8dd800d8b55c3e80d802"
+  #This is where in the middleware stack to insert the Dragonfly middleware
+   config.dragonfly_insert_before = "ActionDispatch::Callbacks"
+   config.dragonfly_secret = "963c035f5351d150afe8c11fe4fc8dd800d8b55c3e80d802"
   # If you decide to trust file extensions replace :ext below with :format
-  # config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
+   config.dragonfly_url_format = "/system/images/:job/:basename.:ext"
   # config.dragonfly_url_host = ""
   # config.datastore_root_path = "/Users/gswamina/newsbrew/public/system/refinery/images"
   # config.trust_file_extensions = false
