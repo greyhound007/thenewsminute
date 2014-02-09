@@ -29,10 +29,10 @@
   <body>
     <div class="container">
       <div class="row" style="text-align: center;margin-top: 0px">
-        <img src="/assets/logo.png" />
+       <a href=http://thenewsminute.herokuapp.com/mainpages/BLACK%20DAY%20FOR%20INDIAN%20SPORTS><img src="/assets/logo.png" style="text-align: center;margin-top: 0px" /></a>
       </div>
      
-         <hr />
+        <hr style="margin-top: 20px"/>
         <div class="navbar navbar-default" role="navigation">
        
         <div class="navbar-header" >
@@ -46,12 +46,20 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><img src="/assets/home.png" width="43px" height="39px" /></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/Politics">Politics</a></li>
+            <li><a href=http://thenewsminute.herokuapp.com/mainpages/BLACK%20DAY%20FOR%20INDIAN%20SPORTS><img src="/assets/home.png" width="43px" height="39px" /></a></li>
+           <li><a href="http://thenewsminute.herokuapp.com/subsections/Politics">Politics</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Sports">Sports</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/News">News</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Entertainment">Entertainment</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/South">South</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">South <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Kerala">Kerala</a></li>
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Karnataka">Karnataka</a></li>
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Tamil Nadu">Tamil Nadu</a></li>
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Andhra Pradesh<">Andhra Pradesh</a></li>
+              </ul>
+            </li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Tech">Tech</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Money">Money</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/World">World</a></li>
@@ -59,7 +67,7 @@
         </div><!-- /.nav-collapse -->
       
     </div><!-- /.navbar -->
-     <hr />
+    <hr style="margin-top: 20px"/>
       
       
     </div>
@@ -76,53 +84,53 @@
           <div class="row">
             <div class="col-6 col-sm-6 col-lg-6">
               
-              <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_1 %>><%=raw @subsection.headline_1 %></a></p>
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_1 %>><%=raw @subsection.headline_1 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               <div class="more-rect" >
                 <p class="more-text">More <%=raw @subsection.Topic %></p>
               </div>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_1 %>><%=raw @subsection.news_1_headline_1 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_1 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_1_source_1 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_2 %>><%=raw @subsection.news_1_headline_2 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_2 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_1_source_2 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_3 %>><%=raw @subsection.news_1_headline_3 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_3 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_1_source_3 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_4 %>><%=raw @subsection.news_1_headline_4 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_4 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_1_source_4 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_1_link_5 %>><%=raw @subsection.news_1_headline_5 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_5 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_1_source_5 %></p>
                 
-                <hr />
-              <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_5 %>><%=raw @subsection.headline_5 %></a></p>
+               <hr style="margin-top: 20px"/>
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_5 %>><%=raw @subsection.headline_5 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               
               
               
-              <hr />
+             <hr style="margin-top: 20px"/>
               
-               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_2 %>><%=raw @subsection.headline_2 %></a></p>
+               <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_2 %>><%=raw @subsection.headline_2 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               <div class="more-rect" >
                 <p class="more-text">More <%=raw @subsection.Topic %></p>
               </div>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_1 %>><%=raw @subsection.news_2_headline_1 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_1 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_2_source_1 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_2 %>><%=raw @subsection.news_2_headline_2 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_2 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_2_source_2 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_3 %>><%=raw @subsection.news_2_headline_3 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_3 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_2_source_3 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_4 %>><%=raw @subsection.news_2_headline_4 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_4 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_2_source_4 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_2_link_5 %>><%=raw @subsection.news_2_headline_5 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_2_source_5 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_2_source_5 %></p>
                 
-               
-              <<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_6 %>><%=raw @subsection.headline_6 %></a></p>
+               <hr style="margin-top: 20px"/>
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_6 %>><%=raw @subsection.headline_6 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-6">
-             <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_7 %>><%=raw @subsection.headline_7 %></a></p>
+             <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_7 %>><%=raw @subsection.headline_7 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               
               <div class="row">
@@ -137,50 +145,50 @@
               
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-6">
-              <hr />
+             <hr style="margin-top: 20px"/>
               
-                <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_3 %>><%=raw @subsection.headline_3 %></a></p>
+                <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_3 %>><%=raw @subsection.headline_3 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               <div class="more-rect" >
                 <p class="more-text">More <%=raw @subsection.Topic %></p>
               </div>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_1 %>><%=raw @subsection.news_3_headline_1 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_1 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_3_source_1 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_2 %>><%=raw @subsection.news_3_headline_2 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_2 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_3_source_2 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_3 %>><%=raw @subsection.news_3_headline_3 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_3 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_3_source_3 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_4 %>><%=raw @subsection.news_3_headline_4 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_3_source_4 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_3_source_4 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_3_link_5 %>><%=raw @subsection.news_3_headline_5 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_1_source_5 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_1_source_5 %></p>
                 
               
                 
                 
-                <hr />
-               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_8 %>><%=raw @subsection.headline_8 %></a></p>
+               <hr />
+               <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_8 %>><%=raw @subsection.headline_8 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               
-              <hr />
+             <hr style="margin-top: 20px"/>
               
-              <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @subsection.link_4 %>><%=raw @subsection.headline_4 %></a></p>
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @subsection.link_4 %>><%=raw @subsection.headline_4 %></a></p>
               <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
               <div class="more-rect" >
                 <p class="more-text">More <%=raw @subsection.Topic %></p>
               </div>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_1 %>><%=raw @subsection.news_4_headline_1 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_1 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_4_source_1 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_2 %>><%=raw @subsection.news_4_headline_2 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_2 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_4_source_2 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_3 %>><%=raw @subsection.news_4_headline_3 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_3 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_4_source_3 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_4 %>><%=raw @subsection.news_4_headline_4 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_4 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_4_source_4 %></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @subsection.news_4_link_5 %>><%=raw @subsection.news_4_headline_5 %></a></p>
-                <p class="courtesy-row" style="font-size: 12px;margin-top: -20px"><%=raw @subsection.news_4_source_5 %></p>
+                <p class="courtesy-row" style="font-size: 12px;margin-top: -10px"><%=raw @subsection.news_4_source_5 %></p>
                 
-                <hr />
+               <hr style="margin-top: 20px"/>
             </div><!--/span-->
             
             
@@ -212,109 +220,61 @@
         </div><!--/span-->
 
         
-        
+     
         <!-------------------------------------   -->
         <!-------------------------------------   -->
         <!---------  SIDEBAR          ---------   -->
         <!-------------------------------------   -->
         <!-------------------------------------   -->
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
-           <h3 style="font-family: Roboto">SRK v Farhan : Who will 
-win Best Actor ?</h3>
+           <h3 style="font-family: Roboto"><a href=<%=raw @mainpage.main_link_2 %>><%=raw @mainpage.main_headline_2 %></a></h3>
            <img src="/assets/screens/farhan.png" />
-           <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
+           <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @mainpage.main_blurb_2 %></p>
             <hr />
               <h2 class="section-header" >Latest</h2>
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px" src="/assets/screens/latest 1.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 2.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 3.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 4.png" />
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_1 %>><%=raw @mainpage.latest_headline_1 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_2 %>><%=raw @mainpage.latest_headline_2 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_3 %>><%=raw @mainpage.latest_headline_3 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_4 %>><%=raw @mainpage.latest_headline_4 %></a></p>
             </div>
             <img src="/assets/elephant.png" style="margin-top: 20px" />
-              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_1 %>><%=raw @mainpage.editorial_heading_1 %></a></p>
               
-              <h2 class="section-header" style="margin-top: 10px" >Chitra Subramaniam</h2>
+              <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_1 %></h2>
               
               <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
               
               <hr />
-              <h2 class="section-header" style="margin-top: 20px" >Southern Minute</h2>
+              <h2 class="section-header" style="margin-top: 0px" >Southern Minute</h2>
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px" src="/assets/screens/latest 1.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 2.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 3.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 4.png" />
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_1 %>><%=raw @mainpage.southern_minute_headline_1 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_2 %>><%=raw @mainpage.southern_minute_headline_2 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_3 %>><%=raw @mainpage.southern_minute_headline_3 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_4 %>><%=raw @mainpage.southern_minute_headline_4 %></a></p>
             </div>
-            
-            
-            <img src="/assets/ear.png" style="margin-top: 20px" />
-            <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-              
-              <h2 class="section-header" style="margin-top: 10px" >Deepthy Menon</h2>
-              
-              <img src="/assets/deepthy.png" style="margin-left: 20px; margin-top: 0px" />
-              
-              <img src="/assets/ad.png" style="margin-left: 20px; margin-top: 40px" />
-              
-               <hr />
-              <h2 class="section-header" style="margin-top: 20px" >Random</h2>
-              <hr />
-              <div class="col-6 col-sm-6 col-lg-4">
-                <img src="/assets/screens/latest 1.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
-            </div>
-              
-            <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px">The Chief Minister said party leader Yogendra Yadav 
-will handle the issue</p>
-            </div>
-            
-             <img src="/assets/ad.png" style="margin-left: 20px; margin-top: 40px" />
-             
-             <img src="/assets/contribute.png" style="margin-left: 20px; margin-top: 40px" /> 
-            
         </div><!--/span-->
       </div><!--/row-->
 
-      <hr />
+     <hr style="margin-top: 20px"/>
 
      
     </div><!--/.container-->
