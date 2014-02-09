@@ -13,7 +13,7 @@ module Refinery
 
       def show
         @subsection = Subsection.find(params[:id])
-          @mainpage = Refinery::Mainpage::Mainpage.find(1)
+          @mainpage = Refinery::Mainpages::Mainpage.find(1)
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @subsection in the line below:
