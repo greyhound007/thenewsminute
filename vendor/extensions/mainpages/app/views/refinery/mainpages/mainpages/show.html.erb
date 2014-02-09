@@ -29,10 +29,10 @@
   <body>
     <div class="container">
       <div class="row" style="text-align: center;margin-top: 0px">
-        <img src="/assets/logo.png" />
+        <img src="/assets/logo.png" style="text-align: center;margin-top: 0px" />
       </div>
      
-         <hr />
+         <hr style="text-align: center;margin-top: 10px" />
         <div class="navbar navbar-default" role="navigation">
        
         <div class="navbar-header" >
@@ -51,7 +51,15 @@
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Sports">Sports</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/News">News</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Entertainment">Entertainment</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/South">South</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">South <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Kerala">Kerala</a></li>
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Karnataka">Karnataka</a></li>
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Tamil Nadu">Tamil Nadu</a></li>
+                <li><a href="http://thenewsminute.herokuapp.com/subsections/Andhra Pradesh<">Andhra Pradesh</a></li>
+              </ul>
+            </li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Tech">Tech</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/Money">Money</a></li>
             <li><a href="http://thenewsminute.herokuapp.com/subsections/World">World</a></li>
@@ -59,7 +67,7 @@
         </div><!-- /.nav-collapse -->
       
     </div><!-- /.navbar -->
-     <hr />
+     <hr style="text-align: center;margin-bottom: 10px" />
       
       
     </div>
@@ -74,7 +82,7 @@
           </p>
           <div class="panel">
             <h2 style="font-family: Roboto"><a href= <%=raw @mainpage.main_link %> ><%=raw @mainpage.main_headline %></a> </h2>
-            <img src=/assets/screens/binny.png />            
+            <img style="margin-left: 60px" src=/assets/screens/binny.png />            
             <p class="links" style="font-weight: 500; padding-top: 10px"><%=raw @mainpage.main_blurb %></p>
             <div class="col-6 col-sm-6 col-lg-6">
               <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_1 %>><%=raw @mainpage.main_story_link_headline_1 %></a></p>
@@ -98,14 +106,14 @@
               
                 
                   <div class="span4 top-buffer">
-                    <p class="courtesy-row" style="font-size: 12px;"><%=raw @mainpage.main_story_link_source_3 %></p>
+                    <p class="courtesy-row" style="font-size: 14px;"><%=raw @mainpage.main_story_link_source_3 %></p>
                   
                 </div>
               <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_4 %>><%=raw @mainpage.main_story_link_headline_4 %></a></p>
               
                 
                   <div class="span4 top-buffer">
-                    <p class="courtesy-row" style="font-size: 12px;"><%=raw @mainpage.main_story_link_source_4 %></p>
+                    <p class="courtesy-row" style="font-size: 14px;"><%=raw @mainpage.main_story_link_source_4 %></p>
                   
                 </div>
             </div>
@@ -180,7 +188,7 @@
               </div>
               
             </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-6">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 20px">
               <hr />
               <h2 class="section-header" >News</h2>
               <hr />
@@ -211,7 +219,7 @@
 </div><!--/row-->
           
           <div class="row">
-            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 10px">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 20px; margin-left: 10px">
               <img src="/assets/columnists.png" />
                 
                 </div>
@@ -303,7 +311,7 @@
             </div>
                
                <div class="row">
-            <div class="col-12 col-sm-12 col-lg-12" style="margin-top: 40px; margin-left: 10px">
+            <div class="col-12 col-sm-12 col-lg-12" style="margin-top: 40px; margin-left: 0px">
              
                 <hr />
               <h2 class="section-header" >From around the world</h2>
@@ -366,7 +374,7 @@
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px" src="/assets/screens/latest 1.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 2.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 3.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 4.png" />
@@ -386,18 +394,18 @@
               <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
               
               <hr />
-              <h2 class="section-header" style="margin-top: 20px" >Southern Minute</h2>
+              <h2 class="section-header" style="margin-top: 0px" >Southern Minute</h2>
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px" src="/assets/screens/latest 1.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 2.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 3.png" />
                 <img class="latest-spacer" src="/assets/screens/latest 4.png" />
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_1 %>><%=raw @mainpage.southern_minute_headline_1 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_1 %>><%=raw @mainpage.southern_minute_headline_1 %></a></p>
                 <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_2 %>><%=raw @mainpage.southern_minute_headline_2 %></a></p>
                 <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_3 %>><%=raw @mainpage.southern_minute_headline_3 %></a></p>
                 <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_4 %>><%=raw @mainpage.southern_minute_headline_4 %></a></p>
