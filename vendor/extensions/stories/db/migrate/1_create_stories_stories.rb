@@ -9,9 +9,6 @@ class CreateStoriesStories < ActiveRecord::Migration
       t.string :headline_1
       t.string :link_1
       t.string :source_1
-      t.string :headline_1
-      t.string :link_1
-      t.string :source_1
       t.string :headline_2
       t.string :link_2
       t.string :source_2

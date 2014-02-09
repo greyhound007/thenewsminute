@@ -1,157 +1,189 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="http://getbootstrap.com/assets/ico/favicon.ico">
+<% content_for :body_content_title do %>
+  <%= @story.Main_headline %>
+<% end %>
 
-    <title>News Minute</title>
+<% content_for :body do %>
+  <section>
+    <h1>Main Headline</h1>
+    <p>
+      <%=raw @story.Main_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @story.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Blurb</h1>
+    <p>
+      <%=raw @story.blurb %>
+    </p>
+  </section>
+  <section>
+    <h1>Summary</h1>
+    <p>
+      <%=raw @story.summary %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 1</h1>
+    <p>
+      <%=raw @story.headline_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 1</h1>
+    <p>
+      <%=raw @story.link_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 1</h1>
+    <p>
+      <%=raw @story.source_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 2</h1>
+    <p>
+      <%=raw @story.headline_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 2</h1>
+    <p>
+      <%=raw @story.link_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 2</h1>
+    <p>
+      <%=raw @story.source_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 3</h1>
+    <p>
+      <%=raw @story.headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 3</h1>
+    <p>
+      <%=raw @story.link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 3</h1>
+    <p>
+      <%=raw @story.source_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 4</h1>
+    <p>
+      <%=raw @story.headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 4</h1>
+    <p>
+      <%=raw @story.link_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 4</h1>
+    <p>
+      <%=raw @story.source_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 5</h1>
+    <p>
+      <%=raw @story.headline_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 5</h1>
+    <p>
+      <%=raw @story.link_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 5</h1>
+    <p>
+      <%=raw @story.source_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 6</h1>
+    <p>
+      <%=raw @story.headline_6 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 6</h1>
+    <p>
+      <%=raw @story.link_6 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 6</h1>
+    <p>
+      <%=raw @story.source_6 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 7</h1>
+    <p>
+      <%=raw @story.headline_7 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 7</h1>
+    <p>
+      <%=raw @story.link_7 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 7</h1>
+    <p>
+      <%=raw @story.source_7 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 8</h1>
+    <p>
+      <%=raw @story.headline_8 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 8</h1>
+    <p>
+      <%=raw @story.link_8 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 8</h1>
+    <p>
+      <%=raw @story.source_8 %>
+    </p>
+  </section>
+<% end %>
 
-    <!-- Bootstrap core CSS -->
-    <link href="/css/bootstrap.css" rel="stylesheet">
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="stories">
+      <% @stories.each do |story| %>
+        <li>
+          <%= link_to story.Main_headline, refinery.stories_story_path(story) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
 
-    <!-- Custom styles for this template -->
-    <link href="/css/newsminute.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-
-  <body>
-    <div class="container">
-      <div class="row" style="text-align: center;margin-top: 0px">
-        <img src="/assets/logo.png" />
-      </div>
-     
-         <hr />
-        <div class="navbar navbar-default" role="navigation">
-       
-        <div class="navbar-header" >
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-         
-        </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><img src="/assets/home.png" width="43px" height="39px" /></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/Politics">Politics</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/Sports">Sports</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/News">News</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/Entertainment">Entertainment</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/South">South</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/Tech">Tech</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/Money">Money</a></li>
-            <li><a href="http://thenewsminute.herokuapp.com/subsections/World">World</a></li>
-          </ul>
-        </div><!-- /.nav-collapse -->
-      
-    </div><!-- /.navbar -->
-     <hr />
-      
-      
-    </div>
-
-    <div class="container">
-
-      <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-12 col-sm-9">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
-          <div class="jumbotron">
-            <h2 style="font-family: Roboto"><%=raw @story.Main_headline %></h2>
-            <img src="/assets/screens/binny.png" />
-            
-            <p class="links" style="font-weight: 500; padding-top: 10px"><%=raw @story.blurb %></p>
-            <div class="col-12 col-sm-12 col-lg-12">
-              <p style="font-weight: 400; padding-top: 10px; padding-left: -10px; font-size: 14px"><%=raw @story.summary %> </p>
-              
-                
-                  
-            </div>
-            
-          </div>
-         
-         
-          
-            <div class="col-6 col-sm-6 col-lg-8">
-               <hr />
-                <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_1 %>><%=raw @story.headline_1 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_1 %></p></div>
-             
-             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_2 %>><%=raw @story.headline_2 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_2 %></p></div>
-             
-             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_3 %>><%=raw @story.headline_3 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_3 %></p></div>
-             
-             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_4 %>><%=raw @story.headline_4 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_4 %></p></div>
-             
-             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_5 %>><%=raw @story.headline_5 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_5 %></p></div>
-             
-             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_6 %>><%=raw @story.headline_6 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_6 %></p></div>
-             
-            <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_7 %>><%=raw @story.headline_7 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_7 %></p></div>
-             
-             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @story.link_8 %>><%=raw @story.headline_8 %></a></p>
-                
-                </div>
-             <div class="row"  style="margin-top: -80px"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_8 %></p></div>
-             
-                            
-                        </div>
-          
-         
-        </div><!--/span-->
-
-        
-        
-      <hr />
-
-      
-
-    </div><!--/.container-->
-
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery-1.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/offcanvas.js"></script>
-  
-
-</body></html>
+<%= render '/refinery/content_page' %>
