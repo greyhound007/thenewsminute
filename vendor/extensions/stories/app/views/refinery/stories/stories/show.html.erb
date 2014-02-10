@@ -23,13 +23,17 @@
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;
+      js.src="https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    
     <![endif]-->
   </head>
 
   <body>
     <div class="container">
       <div class="row" style="text-align: center;margin-top: 0px">
-        <img src="/assets/logo.png" style="text-align: center;margin-top: 0px" />
+        <img src="/assets/logo.png" />
       </div>
      
          <hr />
@@ -85,11 +89,18 @@
             <h2 style="font-family: Roboto"><%=raw @story.Main_headline %></h2>
             <img src="/assets/screens/binny.png" />
             
-            <p class="links" style="font-weight: 500; padding-top: 10px"><%=raw @story.blurb %></a></p>
+            <p  style="font-weight: 500; padding-top: 10px"><%=raw @story.blurb %></p>
             <div class="col-12 col-sm-12 col-lg-12">
               <p style="font-weight: 400; padding-top: 10px; padding-left: -10px; font-size: 14px"><%=raw @story.summary %></p>
               
-                
+                </div>
+            
+            <div class="row" style="margin-top: 60px; margin-bottom: -60px; margin-left: 10px">
+          
+         <a href="https://www.facebook.com/sharer/sharer.php?u=www.thenewsminute.com/stories/<%=raw @story.Main_headline %>" target="_blank"><img src="/assets/fb.png" style="text-align: center;width: 30px; height: 30px"/></a>
+         <a href="https://twitter.com/share?url=http://www.thenewsminute.com/stories/<%=raw @story.Main_headline %>" class="twitter-share-button" data-lang="en" target="_blank">
+          <img src="/assets/twitter.png" style="text-align: center;width: 30px; height: 30px"/></a>
+ 
                   
             </div>
             
@@ -146,14 +157,83 @@
         </div><!--/span-->
 
         
+    
+        <!-------------------------------------   -->
+        <!-------------------------------------   -->
+        <!---------  SIDEBAR          ---------   -->
+        <!-------------------------------------   -->
+        <!-------------------------------------   -->
+        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+           <h3 style="font-family: Roboto"><a href=<%=raw @mainpage.main_link_2 %>><%=raw @mainpage.main_headline_2 %></a></h3>
+           <img src="/assets/screens/farhan.png" />
+           <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @mainpage.main_blurb_2 %></p>
+            <hr />
+              <h2 class="section-header" >Latest</h2>
+              <hr />
+              
+              <div class="col-6 col-sm-6 col-lg-4">
+                <img style="margin-top: 20px; width: 85px; height: 88px"  src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
+            </div>
+              
+            <div class="col-6 col-sm-6 col-lg-8">
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_1 %>><%=raw @mainpage.latest_headline_1 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_2 %>><%=raw @mainpage.latest_headline_2 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_3 %>><%=raw @mainpage.latest_headline_3 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_4 %>><%=raw @mainpage.latest_headline_4 %></a></p>
+            </div>
+            <img src="/assets/elephant.png" />
+              <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_1 %>><%=raw @mainpage.editorial_heading_1 %></a></p>
+              
+              <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_1 %></h2>
+              
+              <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
+              
+             <hr style="margin-top: 10px" />
+              <h2 class="section-header" style="margin-top: 10px" >Southern Minute</h2>
+              <hr />
+              
+              <div class="col-6 col-sm-6 col-lg-4">
+                <img style="margin-top: 20px; width: 85px; height: 88px" src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
+            </div>
+              
+            <div class="col-6 col-sm-6 col-lg-8">
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_1 %>><%=raw @mainpage.southern_minute_headline_1 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_2 %>><%=raw @mainpage.southern_minute_headline_2 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_3 %>><%=raw @mainpage.southern_minute_headline_3 %></a></p>
+                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_4 %>><%=raw @mainpage.southern_minute_headline_4 %></a></p>
+            </div>
+            
+        </div><!--/span-->
+      </div><!--/row-->
+
+     <footer>
+        <div class="footer-rect">
+          <div class="col-xs-3 col-sm-3">
+              <p class="footer-text"><a href="http://thenewsminute.herokuapp.com/about-us">About us</a></p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p class="footer-text">Terms and conditions</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p class="footer-text">Advertise with us</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p class="footer-text">Disclaimer</p>
+          </div>
+        </div>
         
-      <hr />
-
-      <footer>
-        <p>© Company 2014</p>
+          
+          
       </footer>
-
+     
     </div><!--/.container-->
+
 
 
 
