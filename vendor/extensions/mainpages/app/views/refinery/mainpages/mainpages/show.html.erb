@@ -31,6 +31,11 @@
       <div class="row" style="text-align: center;margin-top: 0px">
         <img src="/assets/logo.png" style="text-align: center;margin-top: 0px" />
       </div>
+      
+      <div class="row" style="text-align: right;margin-top: -40px">
+        <a href="https://www.facebook.com/pages/TheNewsMinute/1375307999395597?ref=hl" target="_blank"><img src="/assets/fb.png" style="text-align: center;margin-top: 0px; width: 50px; height: 50px"/></a>
+        <a href="https://twitter.com/thenewsminute1" target="_blank"><img src="/assets/twitter.png" style="text-align: center;margin-top: 0px; width: 50px; height: 50px"/></a>
+      </div>
      
          <hr style="text-align: center;margin-top: 10px" />
         <div class="navbar navbar-default" role="navigation">
@@ -82,7 +87,7 @@
           </p>
           <div class="panel">
             <h2 style="font-family: Roboto"><%=raw @mainpage.main_headline %></h2>
-            <img style="margin-left: 60px" src=/assets/screens/binny.png />            
+            <a href=<%=raw @mainpage.main_link %>><img style="margin-left: 60px" src=/assets/screens/binny.png /></a>            
             <p class="links" style="font-weight: 500; font-size: 20px; padding-top: 10px"><%=raw @mainpage.main_blurb %></p>
             <div class="col-6 col-sm-6 col-lg-6">
               <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_1 %>><%=raw @mainpage.main_story_link_headline_1 %></a></p>
@@ -156,7 +161,7 @@
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.sports_link_3 %>><%=raw @mainpage.sports_headline_3 %></a></p>
               
             </div><!--/span-->
-            <div class="col-6 col-sm-6 col-lg-6">
+            <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 20px" >
              <hr />
               <h2 class="section-header" >Voices</h2>
               <hr />
@@ -374,10 +379,10 @@
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img style="margin-top: 20px" src="/assets/screens/latest 1.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px"  src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
@@ -386,22 +391,22 @@
                 <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_3 %>><%=raw @mainpage.latest_headline_3 %></a></p>
                 <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_4 %>><%=raw @mainpage.latest_headline_4 %></a></p>
             </div>
-            <img src="/assets/elephant.png" style="margin-top: 20px" />
+            <img src="/assets/elephant.png" />
               <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_1 %>><%=raw @mainpage.editorial_heading_1 %></a></p>
               
               <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_1 %></h2>
               
               <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
               
-              <hr />
-              <h2 class="section-header" style="margin-top: 0px" >Southern Minute</h2>
+             <hr style="margin-top: 10px" />
+              <h2 class="section-header" style="margin-top: 10px" >Southern Minute</h2>
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img style="margin-top: 20px" src="/assets/screens/latest 1.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" src="/assets/screens/latest 1.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
@@ -412,38 +417,53 @@
             </div>
             
             <img src="/assets/ear.png" style="margin-top: 20px" />
-            <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px">T<a href=<%=raw @mainpage.editorial_link_2 %>><%=raw @mainpage.editorial_heading_2 %></a></p>
+            <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_2 %>><%=raw @mainpage.editorial_heading_2 %></a></p>
               
               <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_2 %></h2>              
-              <img src="/assets/deepthy.png" style="margin-left: 20px; margin-top: 0px" />
+              <img src="/assets/deepthy.png" style="margin-left: 20px; margin-top: 20px" />
               
-              <img src="/assets/ad.png" style="margin-left: 20px; margin-top: 40px" />
               
-               <hr />
-              <h2 class="section-header" style="margin-top: 20px" >Random</h2>
+              <hr style="margin-top: 20px" />
+              <h2 class="section-header">Random</h2>
               <hr />
-              <div class="col-6 col-sm-6 col-lg-4">
+              <div class="col-6 col-sm-6 col-lg-4" style="margin-top: 20px">
                 <img src="/assets/screens/latest 1.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img class="latest-spacer" src="/assets/screens/latest 4.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
+                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
             </div>
               
-            <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_1 %>><%=raw @mainpage.random_headline_1 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"<a href=<%=raw @mainpage.random_link_2 %>><%=raw @mainpage.random_headline_2 %></a></p>                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_3 %>><%=raw @mainpage.random_headline_3 %></a></p>                                                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_4 %>><%=raw @mainpage.random_headline_4 %></a></p>
+            <div class="col-6 col-sm-6 col-lg-8" style="margin-top: 20px">
+                <p class="links latest-text"  style="margin-top: 20px; font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_1 %>><%=raw @mainpage.random_headline_1 %></a></p>
+                <p class="links latest-text" style="margin-top: 10px; font-weight: 400; font-size: 14px"<a href=<%=raw @mainpage.random_link_2 %>><%=raw @mainpage.random_headline_2 %></a></p>                <p class="links latest-text" style="margin-top: 10px; font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_3 %>><%=raw @mainpage.random_headline_3 %></a></p>                                                <p class="links latest-text" style="margin-top: 10px; font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_4 %>><%=raw @mainpage.random_headline_4 %></a></p>
             </div>
             
              
              
-             <img src="/assets/contribute.png" style="margin-left: 20px; margin-top: 40px" /> 
+             <img src="/assets/contribute.png" style="margin-left: 20px; margin-top: 20px" /> 
             
         </div><!--/span-->
       </div><!--/row-->
-
-      <hr />
-
-     
+<footer>
+        <div class="footer-rect">
+          <div class="col-xs-3 col-sm-3">
+              <p class="footer-text">About us</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p class="footer-text">Terms and conditions</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p class="footer-text">Advertise with us</p>
+          </div>
+          <div class="col-xs-3 col-sm-3">
+            <p class="footer-text">Disclaimer</p>
+          </div>
+        </div>
+        
+          
+          
+      </footer>
+      
 
     </div><!--/.container-->
 

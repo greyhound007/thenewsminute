@@ -11,7 +11,34 @@ body {
 }
 footer {
   padding: 30px 0;
+  padding-top: 0px;
+  height: 25px;
+  
 }
+
+/**
+ *footer rect
+ **/
+.footer-rect
+{
+  width: 100%;
+  height: 25px;
+  background-color: #292c37;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+.footer-text
+{
+  font-family: 'Yanone_Light';
+  font-size: 18px;
+  color: #FFFFFF;
+}
+
+
 @font-face {
   font-family: 'Yanone_Light';
   font-style:  normal;
@@ -31,6 +58,20 @@ footer {
   font-weight: 400;
   src: url(../fonts/Amaranth-Regular.otf);
 }
+
+.dropdown-menu
+{
+  font-family: 'Yanone_Light';
+    font-size: 22px;
+}
+
+.dropdown-menu:hover
+{
+  font-family: 'Yanone_Light';
+    font-size: 22px;
+}
+
+
 hr {
  
   background: #a0a6ad;
