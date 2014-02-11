@@ -86,7 +86,7 @@
             <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
           </p>
           <div class="panel">
-            <h2 style="font-family: Roboto"><%=raw @mainpage.main_headline %></h2>
+            <h2 class="links" style="font-family: Roboto"><a href=<%=raw @mainpage.main_link %>><%=raw @mainpage.main_headline %></a></h2>
             <a href=<%=raw @mainpage.main_link %>><img style="margin-left: 60px" src=/assets/screens/binny.png /></a>            
             <p class="links" style="font-weight: 500; font-size: 20px; padding-top: 10px"><%=raw @mainpage.main_blurb %></p>
             <div class="col-6 col-sm-6 col-lg-6">
