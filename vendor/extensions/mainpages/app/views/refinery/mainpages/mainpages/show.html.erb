@@ -87,7 +87,7 @@
           </p>
           <div class="panel">
             <h2 class="links" style="font-family: Roboto"><a href=<%=raw @mainpage.main_link %>><%=raw @mainpage.main_headline %></a></h2>
-            <a href=<%=raw @mainpage.main_link %>><img style="margin-left: 60px" src=/assets/screens/binny.png /></a>            
+            <a href=<%=raw @mainpage.main_link %>>        <%= image_fu @mainpage.main_photo,"660x390" %></a>            
             <p style="font-weight: 500; font-size: 20px; padding-top: 10px"><%=raw @mainpage.main_blurb %></p>
             <div class="col-6 col-sm-6 col-lg-6">
               <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_1 %>><%=raw @mainpage.main_story_link_headline_1 %></a></p>
@@ -130,7 +130,7 @@
               <h2 class="section-header" >Politics</h2>
               <hr />
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.politics_link %>><%=raw @mainpage.politics_headline %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.politics_photo,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More Politics</p>
               </div>
@@ -152,7 +152,7 @@
               <h2 class="section-header" >Sports</h2>
               <hr />
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.sports_link %>><%=raw @mainpage.sports_headline %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.sports_photo,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More Sports</p>
               </div>
@@ -163,15 +163,16 @@
             </div><!--/span-->
             <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 20px" >
              <hr />
-              <h2 class="section-header" >Voices</h2>
+              <h2 class="section-header" >Voices and Choices</h2>
               <hr />
               
               <div class="row">
                 <div class="col-6 col-sm-6 col-lg-4">
                 
-                <img style="margin-top: 50px" src="/assets/screens/ramadorai.png" />
-                <img style="margin-top: 50px" src="/assets/screens/ramadorai.png" />
-
+                <%= image_fu @mainpage.voices_1,"100x80" %>
+                <div  style="margin-top: 50px">
+                <%= image_fu @mainpage.voices_photo_2,"100x80" %>
+                </div>
             </div>
             <div class="col-6 col-sm-6 col-lg-6">
                 <div class="row">
@@ -198,7 +199,7 @@
               <h2 class="section-header" >News</h2>
               <hr />
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.news_link %>><%=raw @mainpage.news_headline %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.news_photo,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More News</p>
               </div>
@@ -211,7 +212,7 @@
               <h2 class="section-header" >Entertainment</h2>
               <hr />
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.entertainment_link %>><%=raw @mainpage.entertainment_headline %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.entertainment_photo,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More Entertainment</p>
               </div>
@@ -233,17 +234,14 @@
            <div class="row">
             
                 <div class="col-xs-3 col-sm-3" style="margin-top: 0px; margin-left: 0px">
-                <img src="/assets/shruti.png" />
+                <%= image_fu @mainpage.columnist_caricature_1,"200x200" %>
                 </div>
                 <div class="col-xs-3 col-sm-3" style="margin-top: 0px; margin-left: 0px">
-                <img src="/assets/suhasini.png" />
-                </div>
+                <%= image_fu @mainpage.columnist_caricature_2,"200x200" %>               </div>
                 <div class="col-xs-3 col-sm-3" style="margin-top: 0px; margin-left: 0px">
-                <img src="/assets/naomi.png" />
-                </div>
+                <%= image_fu @mainpage.columnist_caricature_3,"200x200" %>                </div>
                 <div class="col-xs-3 col-sm-3" style="margin-top: 0px; margin-left: 0px">
-                <img src="/assets/mahrukh.png" />
-                
+                <%= image_fu @mainpage.columnist_caricature_4,"200x200" %>
                 </div>
               
               <div class="col-xs-12 col-sm-12" style="margin-top: 0px; margin-left: 0px">
@@ -286,7 +284,7 @@
               <h2 class="section-header" >Money</h2>
               <hr />
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.money_link %>><%=raw @mainpage.money_headline %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.money_photo,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More Money</p>
               </div>
@@ -303,7 +301,7 @@
               <h2 class="section-header" >Tech</h2>
               <hr />
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.technology_link %>><%=raw @mainpage.technology_headline %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.technology_photo,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More Tech</p>
               </div>
@@ -326,7 +324,7 @@
             <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 0px">
              
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.world_link_left %>><%=raw @mainpage.world_headline_left %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.world_photo_left,"300x230" %></div>
               <div class="more-rect" >
                 <p class="more-text">More From around the world</p>
               </div>
@@ -340,9 +338,9 @@
             <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 40px; margin-left: 0px">
              
               <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><a href=<%=raw @mainpage.world_link_right %>><%=raw @mainpage.world_headline_right %></a></p>
-              <div style="text-align: center"><img src="/assets/screens/screamer.png" /></div>
+              <div style="text-align: center"><%= image_fu @mainpage.world_photo_right,"300x230" %></div>
               <div class="more-rect" >
-                <p class="more-text">More Politics</p>
+                <p class="more-text">More From around the world</p>
               </div>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.world_link_1_right %>><%=raw @mainpage.world_headline_1_right %></a></p>
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.world_link_2_right %>><%=raw @mainpage.world_headline_2_right %></a></p>
@@ -372,18 +370,24 @@
         <!-------------------------------------   -->
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
            <h3 style="font-family: Roboto"><a href=<%=raw @mainpage.main_link_2 %>><%=raw @mainpage.main_headline_2 %></a></h3>
-           <img src="/assets/screens/farhan.png" />
+           <%= image_fu @mainpage.main_photo_2,"235x174" %>
            <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @mainpage.main_blurb_2 %></p>
             <hr />
               <h2 class="section-header" >Latest</h2>
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img style="margin-top: 20px; width: 85px; height: 88px"  src="/assets/screens/latest 1.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
-            </div>
+              <div style="margin-top: 20px;">
+                <%= image_fu @mainpage.latest_photo_1,"85x88" %></div>
+                <div style="margin-top: 20px;">
+               <%= image_fu @mainpage.latest_photo_2,"85x88" %></div>
+               <div style="margin-top: 20px;">
+                <%= image_fu @mainpage.latest_photo_3,"85x88" %></div>
+                <div style="margin-top: 20px;">
+                 <%= image_fu @mainpage.latest_photo_4,"85x88" %></div>
+
+
+                </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
                 <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_1 %>><%=raw @mainpage.latest_headline_1 %></a></p>
@@ -395,18 +399,24 @@
               <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_1 %>><%=raw @mainpage.editorial_heading_1 %></a></p>
               
               <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_1 %></h2>
-              
-              <img src="/assets/chitra.png" style="margin-left: 20px; margin-top: 0px" />
-              
+              <div style="margin-left: 20px; margin-top: 0px">
+             <%= image_fu @mainpage.editorial_caricature_1,"240x320" %>
+              </div>
              <hr style="margin-top: 10px" />
               <h2 class="section-header" style="margin-top: 10px" >Southern Minute</h2>
               <hr />
               
               <div class="col-6 col-sm-6 col-lg-4">
-                <img style="margin-top: 20px; width: 85px; height: 88px" src="/assets/screens/latest 1.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
+                <div style="margin-top: 20px;">
+                <%= image_fu @mainpage.southern_minute_photo_1,"85x88" %></div>
+                <div style="margin-top: 20px;">
+               <%= image_fu @mainpage.southern_minute_photo_2,"85x88" %></div>
+               <div style="margin-top: 20px;">
+                <%= image_fu @mainpage.southern_minute_photo_3,"85x88" %></div>
+                <div style="margin-top: 20px;">
+                 <%= image_fu @mainpage.southern_minute_photo_4,"85x88" %></div>
+
+
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8">
@@ -419,18 +429,23 @@
             <img src="/assets/ear.png" style="margin-top: 20px" />
             <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_2 %>><%=raw @mainpage.editorial_heading_2 %></a></p>
               
-              <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_2 %></h2>              
-              <img src="/assets/deepthy.png" style="margin-left: 20px; margin-top: 20px" />
-              
-              
+              <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_2 %></h2>
+              <div style="margin-left: 20px; margin-top: 0px">
+              <%= image_fu @mainpage.editorial_caricature_2,"240x320" %>
+              </div>
               <hr style="margin-top: 20px" />
               <h2 class="section-header">Random</h2>
               <hr />
               <div class="col-6 col-sm-6 col-lg-4" style="margin-top: 20px">
-                <img src="/assets/screens/latest 1.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 2.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 3.png" />
-                <img style="margin-top: 20px; width: 85px; height: 88px" class="latest-spacer" src="/assets/screens/latest 4.png" />
+              <div style="margin-top: 20px;">
+                <%= image_fu @mainpage.random_photo_1,"85x88" %></div>
+                <div style="margin-top: 20px;">
+               <%= image_fu @mainpage.random_photo_2,"85x88" %></div>
+               <div style="margin-top: 20px;">
+                <%= image_fu @mainpage.random_photo_3,"85x88" %></div>
+                <div style="margin-top: 20px;">
+                 <%= image_fu @mainpage.random_photo_4,"85x88" %></div>
+
             </div>
               
             <div class="col-6 col-sm-6 col-lg-8" style="margin-top: 20px">
