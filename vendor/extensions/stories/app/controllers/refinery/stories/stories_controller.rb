@@ -13,7 +13,7 @@ module Refinery
 
       def show
         @story = Story.find(params[:id])
-           @mainpage = Refinery::Mainpages::Mainpage.find("BLACK DAY FOR INDIAN SPORTS")        # you can use meta fields from your model instead (e.g. browser_title)
+           @mainpage = Refinery::Mainpages::Mainpage.find(1)        # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @story in the line below:
         present(@page)
       end
