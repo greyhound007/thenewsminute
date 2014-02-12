@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::LandingPages::Admin::LandingPagesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.landing_pages_admin_landing_pages_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_landing_pages_admin_landing_page_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::LandingPages::Admin::LandingPagesController.sortable? && ::Refinery::LandingPages::LandingPage.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Landing Pages"),
+                 refinery.landing_pages_admin_landing_pages_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Landing Pages"),
+                 refinery.landing_pages_admin_landing_pages_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

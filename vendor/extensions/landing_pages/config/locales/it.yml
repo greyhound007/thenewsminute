@@ -1,0 +1,27 @@
+it:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Aggiungi Nuovo Landing Page
+            reorder: Riordina Landing Pages
+            reorder_done: Termina il Riordino di Landing Pages
+          records:
+            title: Landing Pages
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Landing Pages. Clicca "Aggiungi Nuovo Landing Page" per aggiungere il tuo primo landing page.
+          landing_page:
+            view_live_html: Guarda live questo landing page <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo landing page
+            delete: Rimuovi per sempre questo landing page
+      landing_pages:
+        show:
+          other: Altri Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

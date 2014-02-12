@@ -1,0 +1,27 @@
+<% content_for :body_content_title do %>
+  <%= @landing_page.Homepage_Headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Homepage Headline</h1>
+    <p>
+      <%=raw @landing_page.Homepage_Headline %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="landing_pages">
+      <% @landing_pages.each do |landing_page| %>
+        <li>
+          <%= link_to landing_page.Homepage_Headline, refinery.landing_pages_landing_page_path(landing_page) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

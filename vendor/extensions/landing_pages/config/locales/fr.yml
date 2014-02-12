@@ -1,0 +1,27 @@
+fr:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Landing Page
+            reorder: Réordonner les Landing Pages
+            reorder_done: Fin de réordonnancement des Landing Pages
+          records:
+            title: Landing Pages
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Landing Page. Cliquer sur "Créer un(e) nouve(au/l/lle) Landing Page" pour créer votre premi(er/ère) landing page.'
+          landing_page:
+            view_live_html: Voir ce(t/tte) landing page <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) landing page
+            delete: Supprimer définitivement ce(t/tte) landing page
+      landing_pages:
+        show:
+          other: Autres Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

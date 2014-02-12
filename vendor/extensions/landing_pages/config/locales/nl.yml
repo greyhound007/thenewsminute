@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Nieuwe Landing Page toevoegen
+            reorder: De volgorde van de Landing Pages wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Landing Page-volgorde
+          records:
+            title: Landing Pages
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Landing Pages. Druk op 'Nieuwe Landing Page toevoegen' om de eerste toe te voegen.
+          landing_page:
+            view_live_html: Deze landing page op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze landing page
+            delete: Deze landing page definitief verwijderen
+      landing_pages:
+        show:
+          other: Andere Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

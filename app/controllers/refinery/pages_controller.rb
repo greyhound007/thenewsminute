@@ -10,8 +10,9 @@ module Refinery
 
     # This action is usually accessed with the root path, normally '/'
     def home
-        redirect_page=refinery_base_page_redirects.find(2);
-      redirect_to redirect_page
+        @landing=Refinery::LandingPages::LandingPage.find(1)
+       
+      redirect_to "http://thenewsminute.herokuapp.com/mainpages/"+@landing.Homepage_Headline
     end
 
     # This action can be accessed normally, or as nested pages.

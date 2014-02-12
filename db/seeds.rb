@@ -59,3 +59,6 @@ Refinery::Sections::Engine.load_seed
 
 # Added by Refinery CMS Subsections extension
 Refinery::Subsections::Engine.load_seed
+
+# Added by Refinery CMS LandingPages extension
+Refinery::LandingPages::Engine.load_seed

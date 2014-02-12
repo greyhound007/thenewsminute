@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Lag en ny Landing Page
+            reorder: Endre rekkefølgen på Landing Pages
+            reorder_done: Ferdig å endre rekkefølgen Landing Pages
+          records:
+            title: Landing Pages
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Landing Pages enda. Klikk på "Lag en ny Landing Page" for å legge til din første landing page.
+          landing_page:
+            view_live_html: Vis hvordan denne landing page ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne landing page
+            delete: Fjern denne landing page permanent
+      landing_pages:
+        show:
+          other: Andre Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

@@ -1,0 +1,27 @@
+tr:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Yeni Ekle Landing Page
+            reorder: Tekrar sirala Landing Pages
+            reorder_done: Tekrar siralama tamamlandiLanding Pages
+          records:
+            title: Landing Pages
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Landing Pages yok henuz.  Tikla "Yeni Ekle Landing Page" eklemek senin ilk landing page.
+          landing_page:
+            view_live_html: Bunu canlu landing page goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle landing page
+            delete: Bunu Sil landing page sonsuza dek
+      landing_pages:
+        show:
+          other: Diger Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

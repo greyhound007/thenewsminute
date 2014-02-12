@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: 建立新的 Landing Page
+            reorder: 对 Landing Pages 重新排序
+            reorder_done: 对 Landing Pages 的重新排序结束
+          records:
+            title: Landing Pages
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Landing Pages yet. Click "Add New Landing Page" to add your first landing page.
+            no_items_yet: 目前没有 Landing Pages . 点击 "Add New Landing Page" 创建一个landing page.
+          landing_page:
+            view_live_html: 查看 landing page 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 landing page
+            delete: 永久删除 landing page
+      landing_pages:
+        show:
+          other: 其他 Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

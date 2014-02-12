@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="landing_pages">
+    <% @landing_pages.each do |landing_page| %>
+      <li>
+        <%= link_to landing_page.Homepage_Headline, refinery.landing_pages_landing_page_path(landing_page) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

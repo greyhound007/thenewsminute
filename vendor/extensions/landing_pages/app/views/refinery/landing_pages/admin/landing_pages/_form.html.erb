@@ -1,0 +1,15 @@
+<%= form_for [refinery, :landing_pages_admin, @landing_page] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @landing_page,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :Homepage_Headline -%>
+    <%= f.text_field :Homepage_Headline, :class => 'larger widest' -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.landing_pages.admin.landing_pages.landing_page'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @landing_page.Homepage_Headline) -%>
+<% end -%>

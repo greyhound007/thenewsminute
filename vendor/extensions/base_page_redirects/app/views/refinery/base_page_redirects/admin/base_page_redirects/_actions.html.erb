@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::BasePageRedirects::Admin::BasePageRedirectsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.base_page_redirects_admin_base_page_redirects_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_base_page_redirects_admin_base_page_redirect_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::BasePageRedirects::Admin::BasePageRedirectsController.sortable? && ::Refinery::BasePageRedirects::BasePageRedirect.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Base Page Redirects"),
+                 refinery.base_page_redirects_admin_base_page_redirects_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Base Page Redirects"),
+                 refinery.base_page_redirects_admin_base_page_redirects_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

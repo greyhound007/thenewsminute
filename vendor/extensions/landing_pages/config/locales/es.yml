@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+#        article: masculino/femenino
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Crear nuevo landing page
+            reorder: Reordenar landing pages
+            reorder_done: Reordenación de landing pages completada
+          records:
+            title: Landing Pages
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay landing pages todavía. Pulsa en "Crear nuevo Landing Page" para crear tu primer landing page.
+          landing_page:
+            view_live_html: Ver este landing page como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este landing page
+            delete: Borrar este landing page para siempre
+      landing_pages:
+        show:
+          other: Otros landing pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

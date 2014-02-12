@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      base_page_redirects:
+        title: Base Page Redirects
+    base_page_redirects:
+      admin:
+        base_page_redirects:
+          actions:
+            create_new: Nieuwe Base Page Redirect toevoegen
+            reorder: De volgorde van de Base Page Redirects wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Base Page Redirect-volgorde
+          records:
+            title: Base Page Redirects
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Base Page Redirects. Druk op 'Nieuwe Base Page Redirect toevoegen' om de eerste toe te voegen.
+          base_page_redirect:
+            view_live_html: Deze base page redirect op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze base page redirect
+            delete: Deze base page redirect definitief verwijderen
+      base_page_redirects:
+        show:
+          other: Andere Base Page Redirects
+  activerecord:
+    attributes:
+      'refinery/base_page_redirects/base_page_redirect':
+        Homepage_Headline: Homepage Headline

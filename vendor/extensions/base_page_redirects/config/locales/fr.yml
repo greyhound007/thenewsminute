@@ -1,0 +1,27 @@
+fr:
+  refinery:
+    plugins:
+      base_page_redirects:
+        title: Base Page Redirects
+    base_page_redirects:
+      admin:
+        base_page_redirects:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Base Page Redirect
+            reorder: Réordonner les Base Page Redirects
+            reorder_done: Fin de réordonnancement des Base Page Redirects
+          records:
+            title: Base Page Redirects
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Base Page Redirect. Cliquer sur "Créer un(e) nouve(au/l/lle) Base Page Redirect" pour créer votre premi(er/ère) base page redirect.'
+          base_page_redirect:
+            view_live_html: Voir ce(t/tte) base page redirect <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) base page redirect
+            delete: Supprimer définitivement ce(t/tte) base page redirect
+      base_page_redirects:
+        show:
+          other: Autres Base Page Redirects
+  activerecord:
+    attributes:
+      'refinery/base_page_redirects/base_page_redirect':
+        Homepage_Headline: Homepage Headline

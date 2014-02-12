@@ -1,0 +1,27 @@
+cs:
+  refinery:
+    plugins:
+      landing_pages:
+        title: Landing Pages
+    landing_pages:
+      admin:
+        landing_pages:
+          actions:
+            create_new: Přidat Landing Page
+            reorder: Řadit Landing Pages
+            reorder_done: Konec řazení Landing Pages
+          records:
+            title: Landing Pages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Landing Pages. Zvolte "Přidat Landing Page" pro přidání prvního landing page.
+          landing_page:
+            view_live_html: Zobrazit náhled landing page<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit landing page
+            delete: Smazat landing page
+      landing_pages:
+        show:
+          other: Další Landing Pages
+  activerecord:
+    attributes:
+      'refinery/landing_pages/landing_page':
+        Homepage_Headline: Homepage Headline

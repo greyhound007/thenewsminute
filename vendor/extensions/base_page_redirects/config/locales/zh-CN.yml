@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      base_page_redirects:
+        title: Base Page Redirects
+    base_page_redirects:
+      admin:
+        base_page_redirects:
+          actions:
+            create_new: 建立新的 Base Page Redirect
+            reorder: 对 Base Page Redirects 重新排序
+            reorder_done: 对 Base Page Redirects 的重新排序结束
+          records:
+            title: Base Page Redirects
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Base Page Redirects yet. Click "Add New Base Page Redirect" to add your first base page redirect.
+            no_items_yet: 目前没有 Base Page Redirects . 点击 "Add New Base Page Redirect" 创建一个base page redirect.
+          base_page_redirect:
+            view_live_html: 查看 base page redirect 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 base page redirect
+            delete: 永久删除 base page redirect
+      base_page_redirects:
+        show:
+          other: 其他 Base Page Redirects
+  activerecord:
+    attributes:
+      'refinery/base_page_redirects/base_page_redirect':
+        Homepage_Headline: Homepage Headline

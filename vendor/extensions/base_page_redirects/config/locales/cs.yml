@@ -1,0 +1,27 @@
+cs:
+  refinery:
+    plugins:
+      base_page_redirects:
+        title: Base Page Redirects
+    base_page_redirects:
+      admin:
+        base_page_redirects:
+          actions:
+            create_new: Přidat Base Page Redirect
+            reorder: Řadit Base Page Redirects
+            reorder_done: Konec řazení Base Page Redirects
+          records:
+            title: Base Page Redirects
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Base Page Redirects. Zvolte "Přidat Base Page Redirect" pro přidání prvního base page redirect.
+          base_page_redirect:
+            view_live_html: Zobrazit náhled base page redirect<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit base page redirect
+            delete: Smazat base page redirect
+      base_page_redirects:
+        show:
+          other: Další Base Page Redirects
+  activerecord:
+    attributes:
+      'refinery/base_page_redirects/base_page_redirect':
+        Homepage_Headline: Homepage Headline

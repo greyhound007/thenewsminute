@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      base_page_redirects:
+        title: Base Page Redirects
+    base_page_redirects:
+      admin:
+        base_page_redirects:
+          actions:
+            create_new: Lag en ny Base Page Redirect
+            reorder: Endre rekkefølgen på Base Page Redirects
+            reorder_done: Ferdig å endre rekkefølgen Base Page Redirects
+          records:
+            title: Base Page Redirects
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Base Page Redirects enda. Klikk på "Lag en ny Base Page Redirect" for å legge til din første base page redirect.
+          base_page_redirect:
+            view_live_html: Vis hvordan denne base page redirect ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne base page redirect
+            delete: Fjern denne base page redirect permanent
+      base_page_redirects:
+        show:
+          other: Andre Base Page Redirects
+  activerecord:
+    attributes:
+      'refinery/base_page_redirects/base_page_redirect':
+        Homepage_Headline: Homepage Headline

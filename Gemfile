@@ -75,3 +75,4 @@ gem 'refinerycms-stories', :path => 'vendor/extensions'
 
 
 gem 'refinerycms-subsections', :path => 'vendor/extensions'
+gem 'refinerycms-landing_pages', :path => 'vendor/extensions'
