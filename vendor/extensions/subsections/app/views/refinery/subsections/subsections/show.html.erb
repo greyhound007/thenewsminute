@@ -218,13 +218,15 @@
          
         </div><!--/span-->
 
-         
+          
+        
+        
         <!-------------------------------------   -->
         <!-------------------------------------   -->
         <!---------  SIDEBAR          ---------   -->
         <!-------------------------------------   -->
         <!-------------------------------------   -->
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+        <div class="col-xs-6 col-sm-3 " id="sidebar" role="navigation">
            <h3 style="font-family: Roboto"><a href=<%=raw @mainpage.main_link_2 %>><%=raw @mainpage.main_headline_2 %></a></h3>
            <%= image_fu @mainpage.main_photo_2,"235x174" %>
            <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @mainpage.main_blurb_2 %></p>
@@ -232,109 +234,189 @@
               <h2 class="section-header" >Latest</h2>
               <hr />
               
-              <div class="col-6 col-sm-6 col-lg-4">
-              <div style="margin-top: 20px;">
-                <%= image_fu @mainpage.latest_photo_1,"85x88" %></div>
-                <div style="margin-top: 20px;">
-               <%= image_fu @mainpage.latest_photo_2,"85x88" %></div>
-               <div style="margin-top: 20px;">
-                <%= image_fu @mainpage.latest_photo_3,"85x88" %></div>
-                <div style="margin-top: 20px;">
-                 <%= image_fu @mainpage.latest_photo_4,"85x88" %></div>
-
-
-                </div>
               
-            <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_1 %>><%=raw @mainpage.latest_headline_1 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_2 %>><%=raw @mainpage.latest_headline_2 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_3 %>><%=raw @mainpage.latest_headline_3 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.latest_link_4 %>><%=raw @mainpage.latest_headline_4 %></a></p>
-            </div>
-            <img src="/assets/elephant.png" />
+              <div class="col-12 col-sm-12 col-lg-12">
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.latest_photo_1,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.latest_link_1 %>><%=raw @mainpage.latest_headline_1 %></a></p>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.latest_photo_2,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.latest_link_2 %>><%=raw @mainpage.latest_headline_2 %></a></p>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.latest_photo_3,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.latest_link_3 %>><%=raw @mainpage.latest_headline_3 %></a></p>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.latest_photo_4,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.latest_link_4 %>><%=raw @mainpage.latest_headline_4 %></a></p>
+                  </div>
+                  
+                </div>
+                
+            <img src="/assets/elephant.png" style="margin-top: 20px"/>
               <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_1 %>><%=raw @mainpage.editorial_heading_1 %></a></p>
               
               <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_1 %></h2>
-              <div style="margin-left: 20px; margin-top: 0px">
-             <%= image_fu @mainpage.editorial_caricature_1,"240x320" %>
-              </div>
-             <hr style="margin-top: 10px" />
+              <div style="margin-left: 20px; margin-top: 0px"><%= image_fu @mainpage.editorial_caricature_1,"240x320" %></div>
+              
+              
+              <hr style="margin-top: 10px" />
               <h2 class="section-header" style="margin-top: 10px" >Southern Minute</h2>
               <hr />
               
-              <div class="col-6 col-sm-6 col-lg-4">
-                <div style="margin-top: 20px;">
-                <%= image_fu @mainpage.southern_minute_photo_1,"85x88" %></div>
-                <div style="margin-top: 20px;">
-               <%= image_fu @mainpage.southern_minute_photo_2,"85x88" %></div>
-               <div style="margin-top: 20px;">
-                <%= image_fu @mainpage.southern_minute_photo_3,"85x88" %></div>
-                <div style="margin-top: 20px;">
-                 <%= image_fu @mainpage.southern_minute_photo_4,"85x88" %></div>
-
-
-            </div>
               
-            <div class="col-6 col-sm-6 col-lg-8">
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_1 %>><%=raw @mainpage.southern_minute_headline_1 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_2 %>><%=raw @mainpage.southern_minute_headline_2 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_3 %>><%=raw @mainpage.southern_minute_headline_3 %></a></p>
-                <p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.southern_minute_link_4 %>><%=raw @mainpage.southern_minute_headline_4 %></a></p>
-            </div>
+             
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.southern_minute_photo_1,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_1 %>><%=raw @mainpage.southern_minute_headline_1 %></a></p>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.southern_minute_photo_2,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_2 %>><%=raw @mainpage.southern_minute_headline_2 %></a></p>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.southern_minute_photo_3,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_3 %>><%=raw @mainpage.southern_minute_headline_3 %></a></p>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px"><%= image_fu @mainpage.southern_minute_photo_4,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.southern_minute_link_4 %>><%=raw @mainpage.southern_minute_headline_4 %></a></p>
+                  </div>
+                  
+                </div>
+            
             
             <img src="/assets/ear.png" style="margin-top: 20px" />
             <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 16px"><a href=<%=raw @mainpage.editorial_link_2 %>><%=raw @mainpage.editorial_heading_2 %></a></p>
               
               <h2 class="section-header" style="margin-top: 10px" ><%=raw @mainpage.editorial_author_2 %></h2>
-              <div style="margin-left: 20px; margin-top: 0px">
-              <%= image_fu @mainpage.editorial_caricature_2,"240x320" %>
-              </div>
-              <hr style="margin-top: 20px" />
-              <h2 class="section-header">Random</h2>
-              <hr />
-              <div class="col-6 col-sm-6 col-lg-4" style="margin-top: 20px">
-              <div style="margin-top: 20px;">
-                <%= image_fu @mainpage.random_photo_1,"85x88" %></div>
-                <div style="margin-top: 20px;">
-               <%= image_fu @mainpage.random_photo_2,"85x88" %></div>
-               <div style="margin-top: 20px;">
-                <%= image_fu @mainpage.random_photo_3,"85x88" %></div>
-                <div style="margin-top: 20px;">
-                 <%= image_fu @mainpage.random_photo_4,"85x88" %></div>
-
-            </div>
+              <div style="margin-left: 20px; margin-top: 20px"><%= image_fu @mainpage.editorial_caricature_2,"240x320" %></div>
               
-            <div class="col-6 col-sm-6 col-lg-8" style="margin-top: 20px">
-                <p class="links latest-text"  style="margin-top: 20px; font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_1 %>><%=raw @mainpage.random_headline_1 %></a></p>
-                <p class="links latest-text" style="margin-top: 10px; font-weight: 400; font-size: 14px"<a href=<%=raw @mainpage.random_link_2 %>><%=raw @mainpage.random_headline_2 %></a></p>                <p class="links latest-text" style="margin-top: 10px; font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_3 %>><%=raw @mainpage.random_headline_3 %></a></p>                                                <p class="links latest-text" style="margin-top: 10px; font-weight: 400; font-size: 14px"><a href=<%=raw @mainpage.random_link_4 %>><%=raw @mainpage.random_headline_4 %></a></p>
-            </div>
-            
+              <hr style="margin-top: 20px" />
+              <h2 class="section-header"  >Random</h2>
+              <hr />
+              
              
-             
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px" ><%= image_fu @mainpage.random_photo_1,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.random_link_1 %>><%=raw @mainpage.random_headline_1 %></a></p>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px" ><%= image_fu @mainpage.random_photo_2,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.random_link_2 %>><%=raw @mainpage.random_headline_2 %></a></p>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px" ><%= image_fu @mainpage.random_photo_3,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.random_link_3 %>><%=raw @mainpage.random_headline_3 %></a></p>
+                  </div>
+                  
+                </div>
+                <div class="row">
+                  <div class="col-4 col-sm-4 col-lg-4">
+                      <div style="margin-top: 20px; width: 85px; height: 88px" ><%= image_fu @mainpage.random_photo_4,"85x88" %></div>
+                    
+                  </div>
+                  <div class="col-8 col-sm-8 col-lg-8">
+                    <p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @mainpage.random_link_4 %>><%=raw @mainpage.random_headline_4 %></a></p>
+                  </div>
+                  
+                </div>
+              
              <img src="/assets/contribute.png" style="margin-left: 20px; margin-top: 20px" /> 
+              
+               
+            
+            
             
         </div><!--/span-->
       </div><!--/row-->
-<footer>
+
+      </div>
+
+      <footer>
         <div class="footer-rect">
           <div class="col-xs-3 col-sm-3">
-              <p class="footer-text"><a href="http://thenewsminute.herokuapp.com/about-us">About us</a></p>
+              <p class="footer-text"><a class="footer-text" href=/About us>About us</a></p>
           </div>
           <div class="col-xs-3 col-sm-3">
-            <p class="footer-text">Terms and conditions</p>
+            <p class="footer-text"><a class="footer-text" href=/Terms and conditions>Terms and conditions</a></p>
           </div>
           <div class="col-xs-3 col-sm-3">
-            <p class="footer-text">Advertise with us</p>
+            <p class="footer-text"><a class="footer-text" href=/Advertise with us>Advertise with us</a></p>
           </div>
           <div class="col-xs-3 col-sm-3">
-            <p class="footer-text">Disclaimer</p>
+            <p class="footer-text"><a class="footer-text" href=/Disclaimer>Disclaimer</a></p>
           </div>
         </div>
         
           
           
       </footer>
-      
 
     </div><!--/.container-->
 
