@@ -9,9 +9,9 @@ Refinery::Core.configure do |config|
   # When true will use Amazon's Simple Storage Service instead of
   # the default file system for storing resources and images
     config.s3_backend = true
-    config.s3_access_key_id = 'AKIAIKRJVICLFDBP7YBQ'
-    config.s3_secret_access_key = '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'
-    config.s3_bucket_name = 'thenewsline'
+    config.s3_access_key_id = 'AKIAJZMZ6FEU2VPYAXXA'
+    config.s3_secret_access_key = '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'
+    config.s3_bucket_name = 'thenewsminute'
     config.s3_region = 'ap-southeast-1'
 
 

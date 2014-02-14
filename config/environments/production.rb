@@ -1,8 +1,8 @@
 Thenewsminute::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-    ENV['S3_KEY']='AKIAIKRJVICLFDBP7YBQ'
-    ENV['S3_SECRET']='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'
-    ENV['S3_BUCKET']='thenewsline'
+    ENV['S3_KEY']='AKIAJZMZ6FEU2VPYAXXA'
+    ENV['S3_SECRET']='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'
+    ENV['S3_BUCKET']='thenewsminute'
     ENV['S3_REGION']='ap-southeast-1'
   # Code is not reloaded between requests
   config.cache_classes = true
