@@ -13,7 +13,7 @@ module Refinery
         url="http://www.google.com"
 
        
-      redirect_to "http://www.google.com"
+      redirect_to url
     end
 
     # This action can be accessed normally, or as nested pages.
