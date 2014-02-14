@@ -10,9 +10,10 @@ module Refinery
 
     # This action is usually accessed with the root path, normally '/'
     def home
+        require 'uri'
         @landing=Refinery::LandingPages::LandingPage.find(1)
-        
-        url="/mainpages/"+@landing.Homepage_Headline
+        url=URI.encode(@landing.Homepage_Headline)
+        url="/mainpages/"+url
 
        
       redirect_to url
