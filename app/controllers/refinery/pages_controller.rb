@@ -10,9 +10,7 @@ module Refinery
     # This action is usually accessed with the root path, normally '/'
     def home
         
-        @landing=Refinery::LandingPages::LandingPage.find(1)
-        url=URI.encode(@landing.Homepage_Headline)
-        url="http://thenewsminute.herokuapp.com/mainpages/"+url
+        url="http://www.google.com
 
        
       redirect_to url
