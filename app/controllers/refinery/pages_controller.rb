@@ -10,7 +10,7 @@ module Refinery
     # This action is usually accessed with the root path, normally '/'
     def home
         
-        url="http://www.google.com
+        url="http://www.google.com"
 
        
       redirect_to url
