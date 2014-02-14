@@ -3,8 +3,7 @@ module Refinery
     include Pages::RenderOptions
 
     before_filter :find_page, :set_canonical
-    before_filter :error_404, :unless => :current_user_can_view_page?
-
+    
     # Save whole Page after delivery
     after_filter :write_cache?
 
