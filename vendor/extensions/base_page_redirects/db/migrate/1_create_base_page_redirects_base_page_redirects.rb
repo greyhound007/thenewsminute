@@ -3,6 +3,7 @@ class CreateBasePageRedirectsBasePageRedirects < ActiveRecord::Migration
   def up
     create_table :refinery_base_page_redirects do |t|
       t.string :Homepage_Headline
+      t.string :Mainpage_url
       t.integer :position
 
       t.timestamps

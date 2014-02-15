@@ -8,6 +8,11 @@
     <%= f.text_field :Homepage_Headline, :class => 'larger widest' -%>
   </div>
 
+  <div class='field'>
+    <%= f.label :Mainpage_url -%>
+    <%= f.text_field :Mainpage_url -%>
+  </div>
+
   <%= render '/refinery/admin/form_actions', :f => f,
              :continue_editing => false,
              :delete_title => t('delete', :scope => 'refinery.landing_pages.admin.landing_pages.landing_page'),

@@ -27,3 +27,4 @@ zh-CN:
     attributes:
       'refinery/base_page_redirects/base_page_redirect':
         Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

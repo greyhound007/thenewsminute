@@ -12,7 +12,7 @@ module Refinery
       end
 
       def show
-          @landing_page = LandingPage.find(params[:id])
+        @landing_page = LandingPage.find(params[:id])
 
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @landing_page in the line below:

@@ -3,6 +3,7 @@ class CreateLandingPagesLandingPages < ActiveRecord::Migration
   def up
     create_table :refinery_landing_pages do |t|
       t.string :Homepage_Headline
+      t.string :Mainpage_url
       t.integer :position
 
       t.timestamps

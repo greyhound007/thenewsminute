@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-landing_pages'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Landing Pages extension for Refinery CMS'
-  s.date              = '2014-02-13'
+  s.date              = '2014-02-15'
   s.summary           = 'Landing Pages extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]

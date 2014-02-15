@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-base_page_redirects'
   s.version           = '1.0'
   s.description       = 'Ruby on Rails Base Page Redirects extension for Refinery CMS'
-  s.date              = '2014-02-12'
+  s.date              = '2014-02-15'
   s.summary           = 'Base Page Redirects extension for Refinery CMS'
   s.require_paths     = %w(lib)
   s.files             = Dir["{app,config,db,lib}/**/*"] + ["readme.md"]
