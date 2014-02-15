@@ -12,8 +12,9 @@ module Refinery
       end
 
       def show
+          @landing=Refinery::Redirects::Redirect.find(1)
         @mainpage = Mainpage.find(params[:id])
-
+          @landing=Refinery::Redirects::Redirect.find(1)
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @mainpage in the line below:
         present(@page)
