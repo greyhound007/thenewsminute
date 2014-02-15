@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+#        article: masculino/femenino
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Crear nuevo redirect
+            reorder: Reordenar redirects
+            reorder_done: Reordenación de redirects completada
+          records:
+            title: Redirects
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay redirects todavía. Pulsa en "Crear nuevo Redirect" para crear tu primer redirect.
+          redirect:
+            view_live_html: Ver este redirect como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este redirect
+            delete: Borrar este redirect para siempre
+      redirects:
+        show:
+          other: Otros redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

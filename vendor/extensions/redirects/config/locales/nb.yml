@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Lag en ny Redirect
+            reorder: Endre rekkefølgen på Redirects
+            reorder_done: Ferdig å endre rekkefølgen Redirects
+          records:
+            title: Redirects
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Redirects enda. Klikk på "Lag en ny Redirect" for å legge til din første redirect.
+          redirect:
+            view_live_html: Vis hvordan denne redirect ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne redirect
+            delete: Fjern denne redirect permanent
+      redirects:
+        show:
+          other: Andre Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

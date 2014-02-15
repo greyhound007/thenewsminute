@@ -12,11 +12,11 @@ module Refinery
         
         
         
-        @landing=Refinery::LandingPages::LandingPage.find(1)
+        @landing=Refinery::Redirects::Redirect.find(1)
         require 'uri'
         
-        url=URI.encode(@landing.Homepage_Headline)
-        url="/mainpages/"+url
+        url=@landing.Mainpage_url
+        
 
        
       redirect_to url

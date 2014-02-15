@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Nieuwe Redirect toevoegen
+            reorder: De volgorde van de Redirects wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Redirect-volgorde
+          records:
+            title: Redirects
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Redirects. Druk op 'Nieuwe Redirect toevoegen' om de eerste toe te voegen.
+          redirect:
+            view_live_html: Deze redirect op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze redirect
+            delete: Deze redirect definitief verwijderen
+      redirects:
+        show:
+          other: Andere Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

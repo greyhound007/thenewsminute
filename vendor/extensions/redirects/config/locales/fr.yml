@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Redirect
+            reorder: Réordonner les Redirects
+            reorder_done: Fin de réordonnancement des Redirects
+          records:
+            title: Redirects
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Redirect. Cliquer sur "Créer un(e) nouve(au/l/lle) Redirect" pour créer votre premi(er/ère) redirect.'
+          redirect:
+            view_live_html: Voir ce(t/tte) redirect <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) redirect
+            delete: Supprimer définitivement ce(t/tte) redirect
+      redirects:
+        show:
+          other: Autres Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

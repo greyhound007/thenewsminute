@@ -13,7 +13,7 @@ module Refinery
 
       def show
         @story = Story.find(params[:id])
-          @landing=Refinery::LandingPages::LandingPage.find(1)
+          @landing=Refinery::Redirects::Redirect.find(1)
           @mainpage = Refinery::Mainpages::Mainpage.find(@landing.Homepage_Headline)       # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @story in the line below:
         present(@page)

@@ -1,9 +1,9 @@
 PATH
   remote: vendor/extensions
   specs:
-    refinerycms-landing_pages (1.0)
-      refinerycms-core (~> 2.1.1)
     refinerycms-mainpages (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-redirects (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-stories (1.0)
       refinerycms-core (~> 2.1.1)
@@ -235,8 +235,8 @@ DEPENDENCIES
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
-  refinerycms-landing_pages!
   refinerycms-mainpages!
+  refinerycms-redirects!
   refinerycms-stories!
   refinerycms-subsections!
   sass-rails (~> 3.2.3)

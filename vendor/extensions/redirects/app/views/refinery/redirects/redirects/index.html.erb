@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="redirects">
+    <% @redirects.each do |redirect| %>
+      <li>
+        <%= link_to redirect.Homepage_Headline, refinery.redirects_redirect_path(redirect) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

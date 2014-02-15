@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Přidat Redirect
+            reorder: Řadit Redirects
+            reorder_done: Konec řazení Redirects
+          records:
+            title: Redirects
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Redirects. Zvolte "Přidat Redirect" pro přidání prvního redirect.
+          redirect:
+            view_live_html: Zobrazit náhled redirect<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit redirect
+            delete: Smazat redirect
+      redirects:
+        show:
+          other: Další Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

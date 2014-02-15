@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: 建立新的 Redirect
+            reorder: 对 Redirects 重新排序
+            reorder_done: 对 Redirects 的重新排序结束
+          records:
+            title: Redirects
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Redirects yet. Click "Add New Redirect" to add your first redirect.
+            no_items_yet: 目前没有 Redirects . 点击 "Add New Redirect" 创建一个redirect.
+          redirect:
+            view_live_html: 查看 redirect 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 redirect
+            delete: 永久删除 redirect
+      redirects:
+        show:
+          other: 其他 Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

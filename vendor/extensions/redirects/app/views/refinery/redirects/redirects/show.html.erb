@@ -1,0 +1,33 @@
+<% content_for :body_content_title do %>
+  <%= @redirect.Homepage_Headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Homepage Headline</h1>
+    <p>
+      <%=raw @redirect.Homepage_Headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Mainpage Url</h1>
+    <p>
+      <%=raw @redirect.Mainpage_url %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="redirects">
+      <% @redirects.each do |redirect| %>
+        <li>
+          <%= link_to redirect.Homepage_Headline, refinery.redirects_redirect_path(redirect) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

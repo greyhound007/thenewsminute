@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Add New Redirect
+            reorder: Reorder Redirects
+            reorder_done: Done Reordering Redirects
+          records:
+            title: Redirects
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Redirects yet. Click "Add New Redirect" to add your first redirect.
+          redirect:
+            view_live_html: View this redirect live <br/><em>(opens in a new window)</em>
+            edit: Edit this redirect
+            delete: Remove this redirect forever
+      redirects:
+        show:
+          other: Other Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url

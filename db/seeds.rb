@@ -62,3 +62,6 @@ Refinery::Subsections::Engine.load_seed
 
 # Added by Refinery CMS LandingPages extension
 Refinery::LandingPages::Engine.load_seed
+
+# Added by Refinery CMS Redirects extension
+Refinery::Redirects::Engine.load_seed

@@ -1,0 +1,28 @@
+it:
+  refinery:
+    plugins:
+      redirects:
+        title: Redirects
+    redirects:
+      admin:
+        redirects:
+          actions:
+            create_new: Aggiungi Nuovo Redirect
+            reorder: Riordina Redirects
+            reorder_done: Termina il Riordino di Redirects
+          records:
+            title: Redirects
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Redirects. Clicca "Aggiungi Nuovo Redirect" per aggiungere il tuo primo redirect.
+          redirect:
+            view_live_html: Guarda live questo redirect <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo redirect
+            delete: Rimuovi per sempre questo redirect
+      redirects:
+        show:
+          other: Altri Redirects
+  activerecord:
+    attributes:
+      'refinery/redirects/redirect':
+        Homepage_Headline: Homepage Headline
+        Mainpage_url: Mainpage Url
