@@ -29,7 +29,7 @@
   <body>
     <div class="container">
       <div class="row" style="text-align: center;margin-top: 0px">
-        <img src="/assets/masthead.png" style="text-align: center;margin-top: 0px"/>
+        <a href="<%= @landing.Mainpage_url %>"><img src="/assets/masthead.png" style="text-align: center;margin-top: 0px"/></a>
       </div>
       <div class="row" style="text-align: right;margin-top: -40px">
         <a href="https://www.facebook.com/pages/TheNewsMinute/1375307999395597?ref=hl" target="_blank"><img src="/assets/fb.png" style="text-align: center;margin-top: 0px; width: 50px; height: 50px"/></a>
@@ -97,7 +97,7 @@
             
             <p  style="font-weight: 500; font-size: 20px;padding-top: 10px"><%=raw @mainpage.main_blurb %></p>
             <div class="col-6 col-sm-6 col-lg-6">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_1 %>><%=raw @mainpage.main_story_link_headline_1 %></a></p>
+              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href="<%=raw @mainpage.main_story_link_1 %>" target="_blank"><%=raw @mainpage.main_story_link_headline_1 %></a></p>
               
                 
                   <div class="span4 top-buffer">
@@ -105,7 +105,7 @@
                   
                 </div>
                 
-              <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_2 %>><%=raw @mainpage.main_story_link_headline_2 %></a></p>
+              <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href="<%=raw @mainpage.main_story_link_2 %>" target="_blank"><%=raw @mainpage.main_story_link_headline_2 %></a></p>
               
                 
                   <div class="span4 top-buffer">
@@ -114,14 +114,14 @@
                 </div>
             </div>
             <div class="col-6 col-sm-6 col-lg-6">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_3 %>><%=raw @mainpage.main_story_link_headline_3 %></a></p>
+              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href="<%=raw @mainpage.main_story_link_3 %>" target="_blank"><%=raw @mainpage.main_story_link_headline_3 %></a></p>
               
                 
                   <div class="span4 top-buffer">
                     <p class="courtesy-row" style="font-size: 14px;"><%=raw @mainpage.main_story_link_source_3 %></p>
                   
                 </div>
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.main_story_link_4 %>><%=raw @mainpage.main_story_link_headline_4 %></a></p>
+              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href="<%=raw @mainpage.main_story_link_4 %>" target="_blank"><%=raw @mainpage.main_story_link_headline_4 %></a></p>
               
                 
                   <div class="span4 top-buffer">
@@ -147,7 +147,7 @@
                 <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><a href=<%=raw @mainpage.politics_link_3 %>><%=raw @mainpage.politics_headline_3 %></a></p>
                 
                 <hr />
-              <h2 class="section-header" >Not to Miss: Editor's choice</h2>
+              <h2 class="section-header" >Editor's Pick</h2>
               <hr />
               <p  style="margin-top: 20px" class="editors" ><a href=<%=raw @mainpage.not_to_miss_link_1 %>><%=raw @mainpage.not_to_miss_headline_1 %></a></p>
               <p class="editors" ><a href=<%=raw @mainpage.not_to_miss_link_2 %>><%=raw @mainpage.not_to_miss_headline_2 %></a></p>
