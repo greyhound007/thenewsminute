@@ -1,7 +1,7 @@
 <meta charset='<%= Rails.application.config.encoding %>' />
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
-
-<%= raw %(<meta name="description" content="#{@meta.meta_description}" />) if @meta.meta_description.present? -%>
+<meta name="wot-verification" content="a9a37f5217ea2c8639b9"/>
+<meta name="description" content="The News Minute - Aggregating India stories, filing India news, collecting Indian and global views" />
 <%= raw %(<link rel="canonical" content="#{@canonical}" />) if @canonical.present? -%>
 <%= csrf_meta_tags if Refinery::Core.authenticity_token_on_frontend -%>
 <%= yield :meta %>
