@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Lag en ny Blog
+            reorder: Endre rekkefølgen på Blogs
+            reorder_done: Ferdig å endre rekkefølgen Blogs
+          records:
+            title: Blogs
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Blogs enda. Klikk på "Lag en ny Blog" for å legge til din første blog.
+          blog:
+            view_live_html: Vis hvordan denne blog ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne blog
+            delete: Fjern denne blog permanent
+      blogs:
+        show:
+          other: Andre Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

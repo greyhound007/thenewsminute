@@ -65,3 +65,12 @@ Refinery::LandingPages::Engine.load_seed
 
 # Added by Refinery CMS Redirects extension
 Refinery::Redirects::Engine.load_seed
+
+# Added by Refinery CMS Elections extension
+Refinery::Elections::Engine.load_seed
+
+# Added by Refinery CMS Randoms extension
+Refinery::Randoms::Engine.load_seed
+
+# Added by Refinery CMS Blogs extension
+Refinery::Blogs::Engine.load_seed

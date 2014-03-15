@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+#        article: masculino/femenino
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Crear nuevo random
+            reorder: Reordenar randoms
+            reorder_done: Reordenación de randoms completada
+          records:
+            title: Randoms
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay randoms todavía. Pulsa en "Crear nuevo Random" para crear tu primer random.
+          random:
+            view_live_html: Ver este random como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este random
+            delete: Borrar este random para siempre
+      randoms:
+        show:
+          other: Otros randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

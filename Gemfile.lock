@@ -1,7 +1,11 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-blogs (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-mainpages (1.0)
+      refinerycms-core (~> 2.1.1)
+    refinerycms-randoms (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-redirects (1.0)
       refinerycms-core (~> 2.1.1)
@@ -235,7 +239,9 @@ DEPENDENCIES
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-blogs!
   refinerycms-mainpages!
+  refinerycms-randoms!
   refinerycms-redirects!
   refinerycms-stories!
   refinerycms-subsections!

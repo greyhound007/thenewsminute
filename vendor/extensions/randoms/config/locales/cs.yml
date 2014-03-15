@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Přidat Random
+            reorder: Řadit Randoms
+            reorder_done: Konec řazení Randoms
+          records:
+            title: Randoms
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Randoms. Zvolte "Přidat Random" pro přidání prvního random.
+          random:
+            view_live_html: Zobrazit náhled random<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit random
+            delete: Smazat random
+      randoms:
+        show:
+          other: Další Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Přidat Blog
+            reorder: Řadit Blogs
+            reorder_done: Konec řazení Blogs
+          records:
+            title: Blogs
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Blogs. Zvolte "Přidat Blog" pro přidání prvního blog.
+          blog:
+            view_live_html: Zobrazit náhled blog<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit blog
+            delete: Smazat blog
+      blogs:
+        show:
+          other: Další Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

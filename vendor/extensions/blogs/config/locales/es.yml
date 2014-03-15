@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+#        article: masculino/femenino
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Crear nuevo blog
+            reorder: Reordenar blogs
+            reorder_done: Reordenación de blogs completada
+          records:
+            title: Blogs
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay blogs todavía. Pulsa en "Crear nuevo Blog" para crear tu primer blog.
+          blog:
+            view_live_html: Ver este blog como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este blog
+            delete: Borrar este blog para siempre
+      blogs:
+        show:
+          other: Otros blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

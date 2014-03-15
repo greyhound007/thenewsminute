@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Aggiungi Nuovo Blog
+            reorder: Riordina Blogs
+            reorder_done: Termina il Riordino di Blogs
+          records:
+            title: Blogs
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Blogs. Clicca "Aggiungi Nuovo Blog" per aggiungere il tuo primo blog.
+          blog:
+            view_live_html: Guarda live questo blog <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo blog
+            delete: Rimuovi per sempre questo blog
+      blogs:
+        show:
+          other: Altri Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

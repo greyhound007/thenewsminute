@@ -75,5 +75,9 @@ gem 'refinerycms-stories', :path => 'vendor/extensions'
 
 
 gem 'refinerycms-subsections', :path => 'vendor/extensions'
-#gem 'refinerycms-landing_pages', :path => 'vendor/extensions'
+
 gem 'refinerycms-redirects', :path => 'vendor/extensions'
+
+gem 'refinerycms-randoms', :path => 'vendor/extensions'
+
+gem 'refinerycms-blogs', :path => 'vendor/extensions'

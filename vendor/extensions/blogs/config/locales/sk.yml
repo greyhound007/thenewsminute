@@ -1,0 +1,31 @@
+sk:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Pridať Blog
+            reorder: Preusporiadať Blogs
+            reorder_done: Koniec radenia Blogs
+          records:
+            title: Blogs
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Blogs. Kliknite na "Pridať Blog" pre pridanie prvého blog.
+          blog:
+            view_live_html: Zobraziť náhľad blog<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť blog
+            delete: Zmazať blog
+      blogs:
+        show:
+          other: Daľšie Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

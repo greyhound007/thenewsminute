@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Yeni Ekle Random
+            reorder: Tekrar sirala Randoms
+            reorder_done: Tekrar siralama tamamlandiRandoms
+          records:
+            title: Randoms
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Randoms yok henuz.  Tikla "Yeni Ekle Random" eklemek senin ilk random.
+          random:
+            view_live_html: Bunu canlu random goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle random
+            delete: Bunu Sil random sonsuza dek
+      randoms:
+        show:
+          other: Diger Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: 建立新的 Random
+            reorder: 对 Randoms 重新排序
+            reorder_done: 对 Randoms 的重新排序结束
+          records:
+            title: Randoms
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Randoms yet. Click "Add New Random" to add your first random.
+            no_items_yet: 目前没有 Randoms . 点击 "Add New Random" 创建一个random.
+          random:
+            view_live_html: 查看 random 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 random
+            delete: 永久删除 random
+      randoms:
+        show:
+          other: 其他 Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

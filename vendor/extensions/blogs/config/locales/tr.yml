@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Yeni Ekle Blog
+            reorder: Tekrar sirala Blogs
+            reorder_done: Tekrar siralama tamamlandiBlogs
+          records:
+            title: Blogs
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Blogs yok henuz.  Tikla "Yeni Ekle Blog" eklemek senin ilk blog.
+          blog:
+            view_live_html: Bunu canlu blog goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle blog
+            delete: Bunu Sil blog sonsuza dek
+      blogs:
+        show:
+          other: Diger Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

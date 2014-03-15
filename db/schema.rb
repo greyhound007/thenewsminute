@@ -11,7 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140215132928) do
+ActiveRecord::Schema.define(:version => 20140315122106) do
+
+  create_table "refinery_blogs", :force => true do |t|
+    t.string   "headline"
+    t.string   "url"
+    t.string   "tags"
+    t.string   "source"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_election2014s_election_2014s", :force => true do |t|
+    t.string   "headline"
+    t.string   "url"
+    t.string   "tags"
+    t.string   "source"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+# Could not dump table "refinery_elections" because of following StandardError
+#   Unknown type 'image' for column 'image'
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -268,6 +293,17 @@ ActiveRecord::Schema.define(:version => 20140215132928) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_randoms", :force => true do |t|
+    t.string   "headline"
+    t.string   "url"
+    t.string   "tags"
+    t.string   "source"
+    t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "refinery_redirects", :force => true do |t|
     t.string   "Homepage_Headline"

@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Lag en ny Random
+            reorder: Endre rekkefølgen på Randoms
+            reorder_done: Ferdig å endre rekkefølgen Randoms
+          records:
+            title: Randoms
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Randoms enda. Klikk på "Lag en ny Random" for å legge til din første random.
+          random:
+            view_live_html: Vis hvordan denne random ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne random
+            delete: Fjern denne random permanent
+      randoms:
+        show:
+          other: Andre Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

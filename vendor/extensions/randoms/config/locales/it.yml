@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Aggiungi Nuovo Random
+            reorder: Riordina Randoms
+            reorder_done: Termina il Riordino di Randoms
+          records:
+            title: Randoms
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Randoms. Clicca "Aggiungi Nuovo Random" per aggiungere il tuo primo random.
+          random:
+            view_live_html: Guarda live questo random <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo random
+            delete: Rimuovi per sempre questo random
+      randoms:
+        show:
+          other: Altri Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

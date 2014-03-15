@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Blog
+            reorder: Réordonner les Blogs
+            reorder_done: Fin de réordonnancement des Blogs
+          records:
+            title: Blogs
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Blog. Cliquer sur "Créer un(e) nouve(au/l/lle) Blog" pour créer votre premi(er/ère) blog.'
+          blog:
+            view_live_html: Voir ce(t/tte) blog <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) blog
+            delete: Supprimer définitivement ce(t/tte) blog
+      blogs:
+        show:
+          other: Autres Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

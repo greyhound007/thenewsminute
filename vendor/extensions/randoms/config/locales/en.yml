@@ -1,0 +1,31 @@
+en:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Add New Random
+            reorder: Reorder Randoms
+            reorder_done: Done Reordering Randoms
+          records:
+            title: Randoms
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Randoms yet. Click "Add New Random" to add your first random.
+          random:
+            view_live_html: View this random live <br/><em>(opens in a new window)</em>
+            edit: Edit this random
+            delete: Remove this random forever
+      randoms:
+        show:
+          other: Other Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

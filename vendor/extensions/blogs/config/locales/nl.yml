@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: Nieuwe Blog toevoegen
+            reorder: De volgorde van de Blogs wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Blog-volgorde
+          records:
+            title: Blogs
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Blogs. Druk op 'Nieuwe Blog toevoegen' om de eerste toe te voegen.
+          blog:
+            view_live_html: Deze blog op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze blog
+            delete: Deze blog definitief verwijderen
+      blogs:
+        show:
+          other: Andere Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

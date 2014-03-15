@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      blogs:
+        title: Blogs
+    blogs:
+      admin:
+        blogs:
+          actions:
+            create_new: 建立新的 Blog
+            reorder: 对 Blogs 重新排序
+            reorder_done: 对 Blogs 的重新排序结束
+          records:
+            title: Blogs
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Blogs yet. Click "Add New Blog" to add your first blog.
+            no_items_yet: 目前没有 Blogs . 点击 "Add New Blog" 创建一个blog.
+          blog:
+            view_live_html: 查看 blog 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 blog
+            delete: 永久删除 blog
+      blogs:
+        show:
+          other: 其他 Blogs
+  activerecord:
+    attributes:
+      'refinery/blogs/blog':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

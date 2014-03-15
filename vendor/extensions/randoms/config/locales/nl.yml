@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      randoms:
+        title: Randoms
+    randoms:
+      admin:
+        randoms:
+          actions:
+            create_new: Nieuwe Random toevoegen
+            reorder: De volgorde van de Randoms wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Random-volgorde
+          records:
+            title: Randoms
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Randoms. Druk op 'Nieuwe Random toevoegen' om de eerste toe te voegen.
+          random:
+            view_live_html: Deze random op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze random
+            delete: Deze random definitief verwijderen
+      randoms:
+        show:
+          other: Andere Randoms
+  activerecord:
+    attributes:
+      'refinery/randoms/random':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image
