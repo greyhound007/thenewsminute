@@ -1,0 +1,32 @@
+es:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+#        article: masculino/femenino
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Crear nuevo special
+            reorder: Reordenar specials
+            reorder_done: Reordenación de specials completada
+          records:
+            title: Specials
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay specials todavía. Pulsa en "Crear nuevo Special" para crear tu primer special.
+          special:
+            view_live_html: Ver este special como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este special
+            delete: Borrar este special para siempre
+      specials:
+        show:
+          other: Otros specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

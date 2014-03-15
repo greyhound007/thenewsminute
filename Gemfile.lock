@@ -9,6 +9,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-redirects (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-specials (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-stories (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-subsections (1.0)
@@ -243,6 +245,7 @@ DEPENDENCIES
   refinerycms-mainpages!
   refinerycms-randoms!
   refinerycms-redirects!
+  refinerycms-specials!
   refinerycms-stories!
   refinerycms-subsections!
   sass-rails (~> 3.2.3)

@@ -1,0 +1,31 @@
+cs:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Přidat Special
+            reorder: Řadit Specials
+            reorder_done: Konec řazení Specials
+          records:
+            title: Specials
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Specials. Zvolte "Přidat Special" pro přidání prvního special.
+          special:
+            view_live_html: Zobrazit náhled special<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit special
+            delete: Smazat special
+      specials:
+        show:
+          other: Další Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

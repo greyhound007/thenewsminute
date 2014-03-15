@@ -81,3 +81,4 @@ gem 'refinerycms-redirects', :path => 'vendor/extensions'
 gem 'refinerycms-randoms', :path => 'vendor/extensions'
 
 gem 'refinerycms-blogs', :path => 'vendor/extensions'
+gem 'refinerycms-specials', :path => 'vendor/extensions'

@@ -74,3 +74,6 @@ Refinery::Randoms::Engine.load_seed
 
 # Added by Refinery CMS Blogs extension
 Refinery::Blogs::Engine.load_seed
+
+# Added by Refinery CMS Specials extension
+Refinery::Specials::Engine.load_seed

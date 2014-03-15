@@ -1,0 +1,31 @@
+tr:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Yeni Ekle Special
+            reorder: Tekrar sirala Specials
+            reorder_done: Tekrar siralama tamamlandiSpecials
+          records:
+            title: Specials
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Specials yok henuz.  Tikla "Yeni Ekle Special" eklemek senin ilk special.
+          special:
+            view_live_html: Bunu canlu special goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle special
+            delete: Bunu Sil special sonsuza dek
+      specials:
+        show:
+          other: Diger Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

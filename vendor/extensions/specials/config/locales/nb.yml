@@ -1,0 +1,31 @@
+nb:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Lag en ny Special
+            reorder: Endre rekkefølgen på Specials
+            reorder_done: Ferdig å endre rekkefølgen Specials
+          records:
+            title: Specials
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Specials enda. Klikk på "Lag en ny Special" for å legge til din første special.
+          special:
+            view_live_html: Vis hvordan denne special ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne special
+            delete: Fjern denne special permanent
+      specials:
+        show:
+          other: Andre Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

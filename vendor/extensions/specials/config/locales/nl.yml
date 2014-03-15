@@ -1,0 +1,31 @@
+nl:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Nieuwe Special toevoegen
+            reorder: De volgorde van de Specials wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Special-volgorde
+          records:
+            title: Specials
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Specials. Druk op 'Nieuwe Special toevoegen' om de eerste toe te voegen.
+          special:
+            view_live_html: Deze special op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze special
+            delete: Deze special definitief verwijderen
+      specials:
+        show:
+          other: Andere Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

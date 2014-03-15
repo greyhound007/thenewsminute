@@ -1,0 +1,33 @@
+zh-CN:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: 建立新的 Special
+            reorder: 对 Specials 重新排序
+            reorder_done: 对 Specials 的重新排序结束
+          records:
+            title: Specials
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Specials yet. Click "Add New Special" to add your first special.
+            no_items_yet: 目前没有 Specials . 点击 "Add New Special" 创建一个special.
+          special:
+            view_live_html: 查看 special 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 special
+            delete: 永久删除 special
+      specials:
+        show:
+          other: 其他 Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

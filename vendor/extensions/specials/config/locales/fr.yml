@@ -1,0 +1,31 @@
+fr:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Special
+            reorder: Réordonner les Specials
+            reorder_done: Fin de réordonnancement des Specials
+          records:
+            title: Specials
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Special. Cliquer sur "Créer un(e) nouve(au/l/lle) Special" pour créer votre premi(er/ère) special.'
+          special:
+            view_live_html: Voir ce(t/tte) special <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) special
+            delete: Supprimer définitivement ce(t/tte) special
+      specials:
+        show:
+          other: Autres Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image

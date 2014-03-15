@@ -1,0 +1,31 @@
+it:
+  refinery:
+    plugins:
+      specials:
+        title: Specials
+    specials:
+      admin:
+        specials:
+          actions:
+            create_new: Aggiungi Nuovo Special
+            reorder: Riordina Specials
+            reorder_done: Termina il Riordino di Specials
+          records:
+            title: Specials
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Specials. Clicca "Aggiungi Nuovo Special" per aggiungere il tuo primo special.
+          special:
+            view_live_html: Guarda live questo special <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo special
+            delete: Rimuovi per sempre questo special
+      specials:
+        show:
+          other: Altri Specials
+  activerecord:
+    attributes:
+      'refinery/specials/special':
+        headline: Headline
+        url: Url
+        tags: Tags
+        source: Source
+        image: Image
