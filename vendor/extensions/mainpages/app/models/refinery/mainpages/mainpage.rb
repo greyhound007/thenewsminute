@@ -70,7 +70,7 @@ module Refinery
       belongs_to :random_photo_4, :class_name => '::Refinery::Image'
       
         extend FriendlyId
-        friendly_id :main_headline,use: :slugged
+        friendly_id :main_headline
     end
   end
 end
