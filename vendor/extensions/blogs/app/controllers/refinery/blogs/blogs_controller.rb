@@ -9,6 +9,8 @@ module Refinery
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @blog in the line below:
         present(@page)
+          @landing=Refinery::Redirects::Redirect.find(1)
+          @mainpage = Refinery::Mainpages::Mainpage.find(@landing.Homepage_Headline)
       end
 
       def show
