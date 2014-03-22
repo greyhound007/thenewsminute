@@ -12,14 +12,17 @@ module Refinery
         
         
         
-        @landing=Refinery::Redirects::Redirect.find(1)
-        require 'uri'
+        # @landing=Refinery::Redirects::Redirect.find(1)
+        #require 'uri'
         
-        url=@landing.Mainpage_url
+        #url=@landing.Mainpage_url
+        
+        @landing=Refinery::Redirects::Redirect.find(1)
+        @mainpage = Refinery::Mainpages::Mainpage.find(@landing.Homepage_Headline)
         
 
        
-      redirect_to url
+        #redirect_to url
     end
 
     # This action can be accessed normally, or as nested pages.
