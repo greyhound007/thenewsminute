@@ -1,0 +1,35 @@
+it:
+  refinery:
+    plugins:
+      opinions:
+        title: Opinions
+    opinions:
+      admin:
+        opinions:
+          actions:
+            create_new: Aggiungi Nuovo Opinion
+            reorder: Riordina Opinions
+            reorder_done: Termina il Riordino di Opinions
+          records:
+            title: Opinions
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Opinions. Clicca "Aggiungi Nuovo Opinion" per aggiungere il tuo primo opinion.
+          opinion:
+            view_live_html: Guarda live questo opinion <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo opinion
+            delete: Rimuovi per sempre questo opinion
+      opinions:
+        show:
+          other: Altri Opinions
+  activerecord:
+    attributes:
+      'refinery/opinions/opinion':
+        headline: Headline
+        url: Url
+        image: Image
+        headline2: Headline2
+        url2: Url2
+        headline3: Headline3
+        url3: Url3
+        headline4: Headline4
+        url4: Url4

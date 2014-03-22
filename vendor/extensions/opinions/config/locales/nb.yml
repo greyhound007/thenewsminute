@@ -1,0 +1,35 @@
+nb:
+  refinery:
+    plugins:
+      opinions:
+        title: Opinions
+    opinions:
+      admin:
+        opinions:
+          actions:
+            create_new: Lag en ny Opinion
+            reorder: Endre rekkefølgen på Opinions
+            reorder_done: Ferdig å endre rekkefølgen Opinions
+          records:
+            title: Opinions
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Opinions enda. Klikk på "Lag en ny Opinion" for å legge til din første opinion.
+          opinion:
+            view_live_html: Vis hvordan denne opinion ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne opinion
+            delete: Fjern denne opinion permanent
+      opinions:
+        show:
+          other: Andre Opinions
+  activerecord:
+    attributes:
+      'refinery/opinions/opinion':
+        headline: Headline
+        url: Url
+        image: Image
+        headline2: Headline2
+        url2: Url2
+        headline3: Headline3
+        url3: Url3
+        headline4: Headline4
+        url4: Url4

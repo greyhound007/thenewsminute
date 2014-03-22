@@ -1,0 +1,35 @@
+tr:
+  refinery:
+    plugins:
+      opinions:
+        title: Opinions
+    opinions:
+      admin:
+        opinions:
+          actions:
+            create_new: Yeni Ekle Opinion
+            reorder: Tekrar sirala Opinions
+            reorder_done: Tekrar siralama tamamlandiOpinions
+          records:
+            title: Opinions
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Opinions yok henuz.  Tikla "Yeni Ekle Opinion" eklemek senin ilk opinion.
+          opinion:
+            view_live_html: Bunu canlu opinion goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle opinion
+            delete: Bunu Sil opinion sonsuza dek
+      opinions:
+        show:
+          other: Diger Opinions
+  activerecord:
+    attributes:
+      'refinery/opinions/opinion':
+        headline: Headline
+        url: Url
+        image: Image
+        headline2: Headline2
+        url2: Url2
+        headline3: Headline3
+        url3: Url3
+        headline4: Headline4
+        url4: Url4

@@ -1,0 +1,75 @@
+<% content_for :body_content_title do %>
+  <%= @opinion.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @opinion.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Url</h1>
+    <p>
+      <%=raw @opinion.url %>
+    </p>
+  </section>
+  <section>
+    <h1>Image</h1>
+    <p>
+      <%= image_fu @opinion.image, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline2</h1>
+    <p>
+      <%=raw @opinion.headline2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Url2</h1>
+    <p>
+      <%=raw @opinion.url2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline3</h1>
+    <p>
+      <%=raw @opinion.headline3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Url3</h1>
+    <p>
+      <%=raw @opinion.url3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline4</h1>
+    <p>
+      <%=raw @opinion.headline4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Url4</h1>
+    <p>
+      <%=raw @opinion.url4 %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="opinions">
+      <% @opinions.each do |opinion| %>
+        <li>
+          <%= link_to opinion.headline, refinery.opinions_opinion_path(opinion) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

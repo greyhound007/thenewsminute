@@ -1,0 +1,35 @@
+fr:
+  refinery:
+    plugins:
+      opinions:
+        title: Opinions
+    opinions:
+      admin:
+        opinions:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Opinion
+            reorder: Réordonner les Opinions
+            reorder_done: Fin de réordonnancement des Opinions
+          records:
+            title: Opinions
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Opinion. Cliquer sur "Créer un(e) nouve(au/l/lle) Opinion" pour créer votre premi(er/ère) opinion.'
+          opinion:
+            view_live_html: Voir ce(t/tte) opinion <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) opinion
+            delete: Supprimer définitivement ce(t/tte) opinion
+      opinions:
+        show:
+          other: Autres Opinions
+  activerecord:
+    attributes:
+      'refinery/opinions/opinion':
+        headline: Headline
+        url: Url
+        image: Image
+        headline2: Headline2
+        url2: Url2
+        headline3: Headline3
+        url3: Url3
+        headline4: Headline4
+        url4: Url4

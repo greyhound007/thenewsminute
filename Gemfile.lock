@@ -5,6 +5,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-mainpages (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-opinions (1.0)
+      refinerycms-core (~> 2.1.1)
     refinerycms-randoms (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-redirects (1.0)
@@ -243,6 +245,7 @@ DEPENDENCIES
   refinerycms-acts-as-indexed (~> 1.0.0)
   refinerycms-blogs!
   refinerycms-mainpages!
+  refinerycms-opinions!
   refinerycms-randoms!
   refinerycms-redirects!
   refinerycms-specials!

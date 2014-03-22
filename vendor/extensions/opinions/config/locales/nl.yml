@@ -1,0 +1,35 @@
+nl:
+  refinery:
+    plugins:
+      opinions:
+        title: Opinions
+    opinions:
+      admin:
+        opinions:
+          actions:
+            create_new: Nieuwe Opinion toevoegen
+            reorder: De volgorde van de Opinions wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Opinion-volgorde
+          records:
+            title: Opinions
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Opinions. Druk op 'Nieuwe Opinion toevoegen' om de eerste toe te voegen.
+          opinion:
+            view_live_html: Deze opinion op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze opinion
+            delete: Deze opinion definitief verwijderen
+      opinions:
+        show:
+          other: Andere Opinions
+  activerecord:
+    attributes:
+      'refinery/opinions/opinion':
+        headline: Headline
+        url: Url
+        image: Image
+        headline2: Headline2
+        url2: Url2
+        headline3: Headline3
+        url3: Url3
+        headline4: Headline4
+        url4: Url4
