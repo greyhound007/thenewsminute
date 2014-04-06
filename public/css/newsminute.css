@@ -38,12 +38,6 @@ footer {
   color: #FFFFFF;
 }
 
-.footer-text:hover
-{
-  font-family: 'Yanone_Light';
-  font-size: 18px;
-  color: #FFFFFF;
-}
 
 @font-face {
   font-family: 'Yanone_Light';
@@ -245,7 +239,7 @@ p
 {
   font-family: 'Yanone_Light';
     background-color: #FFFFFF;
-    text-align: left;
+    text-align: center;
     font-size: 28px;
     color: #000000;
 }
