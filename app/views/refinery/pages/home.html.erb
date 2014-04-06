@@ -65,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><div  width="43px" height="39px"><a href="/"><img src="/assets/home.png" width="43px" height="39px"/></a></div></li>
+            <li><div  width="43px" height="39px"><a href="<%= @landing.Mainpage_url %>"><img src="/assets/home.png" width="43px" height="39px"/></a></div></li>
                         <li><a href="/subsections/Politics">Politics</a></li>
             <li><a href="/subsections/Sports">Sports</a></li>
             <li><a href="/subsections/News">News</a></li>
@@ -82,7 +82,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li><a href="/subsections/Tech">Tech</a></li>
             <li><a href="/subsections/Money">Money</a></li>
             <li><a href="/subsections/World">World</a></li>
-            <li><a href=/blogs>Blogs</a></li>
+            <li><div  width="43px" height="39px"><a href=/blogs><img src="/assets/people.png" width="60px" height="39px"/></a></div></li>
           </ul>
         </div><!-- /.nav-collapse -->
       
@@ -247,7 +247,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           
           <div class="row">
             <div class="col-6 col-sm-6 col-lg-6" style="margin-top: 20px; margin-left: 10px">
-              <a href="/opinions"><img src="/assets/columnists.png" /></a>
+              <img src="/assets/columnists.png" />
                 
                 </div>
             </div>
@@ -388,7 +388,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <!---------  SIDEBAR          ---------   -->
         <!-------------------------------------   -->
         <!-------------------------------------   -->
-        <div class="col-xs-6 col-sm-3 " id="sidebar" role="navigation" style="border-left:1px solid grey;">
+        <div class="col-xs-6 col-sm-3 " id="sidebar" role="navigation">
            <h3 style="font-family: Roboto"><a class="links" href=<%=raw @mainpage.main_link_2 %>><%=raw @mainpage.main_headline_2 %></a></h3>
            <%= image_fu @mainpage.main_photo_2,"235x174" %>
            <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @mainpage.main_blurb_2 %></p>
