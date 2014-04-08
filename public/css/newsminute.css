@@ -243,6 +243,11 @@ p
     font-size: 28px;
     color: #000000;
 }
+
+li {
+display: list-item;
+font-family: 'Cambria';
+}
 /*
  * Off Canvas
  * --------------------------------------------------
