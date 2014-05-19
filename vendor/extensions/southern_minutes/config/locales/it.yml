@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      southern_minutes:
+        title: Southern Minutes
+    southern_minutes:
+      admin:
+        southern_minutes:
+          actions:
+            create_new: Aggiungi Nuovo Southern Minute
+            reorder: Riordina Southern Minutes
+            reorder_done: Termina il Riordino di Southern Minutes
+          records:
+            title: Southern Minutes
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Southern Minutes. Clicca "Aggiungi Nuovo Southern Minute" per aggiungere il tuo primo southern minute.
+          southern_minute:
+            view_live_html: Guarda live questo southern minute <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo southern minute
+            delete: Rimuovi per sempre questo southern minute
+      southern_minutes:
+        show:
+          other: Altri Southern Minutes
+  activerecord:
+    attributes:
+      'refinery/southern_minutes/southern_minute':
+        headline: Headline
+        link: Link
+        photo: Photo

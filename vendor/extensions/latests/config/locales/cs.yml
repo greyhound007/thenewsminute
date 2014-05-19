@@ -1,0 +1,29 @@
+cs:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: Přidat Latest
+            reorder: Řadit Latests
+            reorder_done: Konec řazení Latests
+          records:
+            title: Latests
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Latests. Zvolte "Přidat Latest" pro přidání prvního latest.
+          latest:
+            view_live_html: Zobrazit náhled latest<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit latest
+            delete: Smazat latest
+      latests:
+        show:
+          other: Další Latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

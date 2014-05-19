@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      southern_minutes:
+        title: Southern Minutes
+    southern_minutes:
+      admin:
+        southern_minutes:
+          actions:
+            create_new: 建立新的 Southern Minute
+            reorder: 对 Southern Minutes 重新排序
+            reorder_done: 对 Southern Minutes 的重新排序结束
+          records:
+            title: Southern Minutes
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Southern Minutes yet. Click "Add New Southern Minute" to add your first southern minute.
+            no_items_yet: 目前没有 Southern Minutes . 点击 "Add New Southern Minute" 创建一个southern minute.
+          southern_minute:
+            view_live_html: 查看 southern minute 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 southern minute
+            delete: 永久删除 southern minute
+      southern_minutes:
+        show:
+          other: 其他 Southern Minutes
+  activerecord:
+    attributes:
+      'refinery/southern_minutes/southern_minute':
+        headline: Headline
+        link: Link
+        photo: Photo

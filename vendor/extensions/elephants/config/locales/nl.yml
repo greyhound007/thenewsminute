@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: Nieuwe Elephant toevoegen
+            reorder: De volgorde van de Elephants wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Elephant-volgorde
+          records:
+            title: Elephants
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Elephants. Druk op 'Nieuwe Elephant toevoegen' om de eerste toe te voegen.
+          elephant:
+            view_live_html: Deze elephant op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze elephant
+            delete: Deze elephant definitief verwijderen
+      elephants:
+        show:
+          other: Andere Elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

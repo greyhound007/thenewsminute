@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="elephants">
+    <% @elephants.each do |elephant| %>
+      <li>
+        <%= link_to elephant.headline, refinery.elephants_elephant_path(elephant) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

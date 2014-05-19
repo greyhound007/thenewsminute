@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Lag en ny Opinion Mainpage
+            reorder: Endre rekkefølgen på Opinion Mainpages
+            reorder_done: Ferdig å endre rekkefølgen Opinion Mainpages
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Opinion Mainpages enda. Klikk på "Lag en ny Opinion Mainpage" for å legge til din første opinion mainpage.
+          opinion_mainpage:
+            view_live_html: Vis hvordan denne opinion mainpage ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne opinion mainpage
+            delete: Fjern denne opinion mainpage permanent
+      opinion_mainpages:
+        show:
+          other: Andre Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

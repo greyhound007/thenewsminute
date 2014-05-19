@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="editors_picks">
+    <% @editors_picks.each do |editors_pick| %>
+      <li>
+        <%= link_to editors_pick.headline, refinery.editors_picks_editors_pick_path(editors_pick) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

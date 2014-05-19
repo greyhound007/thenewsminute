@@ -9,6 +9,7 @@ module Refinery
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @mainpage in the line below:
         present(@page)
+          @mainpage = Mainpage.find(1)
       end
 
       def show

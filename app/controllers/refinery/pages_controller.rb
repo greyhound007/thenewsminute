@@ -18,11 +18,36 @@ module Refinery
         #url=@landing.Mainpage_url
         
         @landing=Refinery::Redirects::Redirect.find(1)
-        @mainpage = Refinery::Mainpages::Mainpage.find(@landing.Homepage_Headline)
+        @headline = Refinery::Headlines::Headline.find(1)
+        @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
+        @editors_pick_1=@editors_pick[0]
+        @editors_pick_2=@editors_pick[1]
+        @editors_pick_3=@editors_pick[2]
+        @editors_pick_4=@editors_pick[3]
         
-
+        @south=Refinery::SouthernMinutes::SouthernMinute.order('position ASC')
+        @south_1=@south[0]
+        @south_2=@south[1]
+        @south_3=@south[2]
+        @south_4=@south[3]
+        @elephants=Refinery::Elephants::Elephant.order('position ASC')
+        @elephant=@elephants.first
+        @ears=Refinery::Ears::Ear.order('position ASC')
+        @ear=@ears.first
        
-        #redirect_to url
+        @latest=Refinery::Latests::Latest.order('position ASC')
+        @politics=Refinery::Politics::Politic.order('position ASC')
+        @news=Refinery::NewsSections::NewsSection.order('position ASC')
+        @blog=Refinery::Blogs::Blog.order('position ASC')
+        @sports=Refinery::Sports::Sport.order('position ASC')
+        @enter=Refinery::Entertainments::Entertainment.order('position ASC')
+        @opinion=Refinery::OpinionMainpages::OpinionMainpage.order('position ASC')
+        @money=Refinery::Finances::Finance.order('position ASC')
+        @tech=Refinery::Technologies::Technology.order('position ASC')
+        @world=Refinery::Worlds::World.order('position ASC')
+        @random=Refinery::Randoms::Random.order('position ASC')
+        
+        redirect_to "/maintenance.html"
     end
 
     # This action can be accessed normally, or as nested pages.

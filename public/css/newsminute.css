@@ -4,10 +4,12 @@
  */
 html,
 body {
-  overflow-x: hidden; /* Prevent scroll on narrow devices */
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */
 }
 body {
-  padding-top: 70px;
+  padding-top: 0px;
+  
 }
 footer {
   padding: 30px 0;
@@ -71,6 +73,9 @@ footer {
     font-size: 22px;
 }
 
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;    
+}
 
 hr {
  
@@ -88,6 +93,7 @@ hr {
 h2{
   margin-top: 5px;
 margin-bottom: 5px;
+  
 }
 a
 {
@@ -111,7 +117,7 @@ a:hover
     border: hidden;
     height: 20px;
     font-family: 'Yanone_Light';
-    font-size: 28px;
+    font-size: 18px;
     color: #000000;
 }
 
@@ -248,6 +254,7 @@ li {
 display: list-item;
 font-family: 'Cambria';
 }
+
 /*
  * Off Canvas
  * --------------------------------------------------
@@ -284,3 +291,5 @@ font-family: 'Cambria';
     width: 50%; /* 6 columns */
   }
 }
+
+

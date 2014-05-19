@@ -80,3 +80,30 @@ Refinery::Specials::Engine.load_seed
 
 # Added by Refinery CMS Opinions extension
 Refinery::Opinions::Engine.load_seed
+
+# Added by Refinery CMS Headlines extension
+Refinery::Headlines::Engine.load_seed
+
+# Added by Refinery CMS EditorsPicks extension
+Refinery::EditorsPicks::Engine.load_seed
+
+# Added by Refinery CMS SouthernMinutes extension
+Refinery::SouthernMinutes::Engine.load_seed
+
+# Added by Refinery CMS Elephants extension
+Refinery::Elephants::Engine.load_seed
+
+# Added by Refinery CMS Ears extension
+Refinery::Ears::Engine.load_seed
+
+# Added by Refinery CMS Latests extension
+Refinery::Latests::Engine.load_seed
+
+# Added by Refinery CMS NewsSections extension
+Refinery::NewsSections::Engine.load_seed
+
+# Added by Refinery CMS OpinionMainpages extension
+Refinery::OpinionMainpages::Engine.load_seed
+
+# Added by Refinery CMS Finances extension
+Refinery::Finances::Engine.load_seed

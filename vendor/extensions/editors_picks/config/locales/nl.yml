@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Nieuwe Editors Pick toevoegen
+            reorder: De volgorde van de Editors Picks wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Editors Pick-volgorde
+          records:
+            title: Editors Picks
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Editors Picks. Druk op 'Nieuwe Editors Pick toevoegen' om de eerste toe te voegen.
+          editors_pick:
+            view_live_html: Deze editors pick op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze editors pick
+            delete: Deze editors pick definitief verwijderen
+      editors_picks:
+        show:
+          other: Andere Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

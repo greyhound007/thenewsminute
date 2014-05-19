@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::SouthernMinutes::Admin::SouthernMinutesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.southern_minutes_admin_southern_minutes_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_southern_minutes_admin_southern_minute_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::SouthernMinutes::Admin::SouthernMinutesController.sortable? && ::Refinery::SouthernMinutes::SouthernMinute.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Southern Minutes"),
+                 refinery.southern_minutes_admin_southern_minutes_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Southern Minutes"),
+                 refinery.southern_minutes_admin_southern_minutes_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

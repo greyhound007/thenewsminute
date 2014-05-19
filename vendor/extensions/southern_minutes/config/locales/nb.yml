@@ -1,0 +1,29 @@
+nb:
+  refinery:
+    plugins:
+      southern_minutes:
+        title: Southern Minutes
+    southern_minutes:
+      admin:
+        southern_minutes:
+          actions:
+            create_new: Lag en ny Southern Minute
+            reorder: Endre rekkefølgen på Southern Minutes
+            reorder_done: Ferdig å endre rekkefølgen Southern Minutes
+          records:
+            title: Southern Minutes
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Southern Minutes enda. Klikk på "Lag en ny Southern Minute" for å legge til din første southern minute.
+          southern_minute:
+            view_live_html: Vis hvordan denne southern minute ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne southern minute
+            delete: Fjern denne southern minute permanent
+      southern_minutes:
+        show:
+          other: Andre Southern Minutes
+  activerecord:
+    attributes:
+      'refinery/southern_minutes/southern_minute':
+        headline: Headline
+        link: Link
+        photo: Photo

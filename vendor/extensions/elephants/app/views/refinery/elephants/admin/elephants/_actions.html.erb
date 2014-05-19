@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Elephants::Admin::ElephantsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.elephants_admin_elephants_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_elephants_admin_elephant_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Elephants::Admin::ElephantsController.sortable? && ::Refinery::Elephants::Elephant.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Elephants"),
+                 refinery.elephants_admin_elephants_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Elephants"),
+                 refinery.elephants_admin_elephants_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: Aggiungi Nuovo Elephant
+            reorder: Riordina Elephants
+            reorder_done: Termina il Riordino di Elephants
+          records:
+            title: Elephants
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Elephants. Clicca "Aggiungi Nuovo Elephant" per aggiungere il tuo primo elephant.
+          elephant:
+            view_live_html: Guarda live questo elephant <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo elephant
+            delete: Rimuovi per sempre questo elephant
+      elephants:
+        show:
+          other: Altri Elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

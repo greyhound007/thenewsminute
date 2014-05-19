@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Latest
+            reorder: Réordonner les Latests
+            reorder_done: Fin de réordonnancement des Latests
+          records:
+            title: Latests
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Latest. Cliquer sur "Créer un(e) nouve(au/l/lle) Latest" pour créer votre premi(er/ère) latest.'
+          latest:
+            view_live_html: Voir ce(t/tte) latest <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) latest
+            delete: Supprimer définitivement ce(t/tte) latest
+      latests:
+        show:
+          other: Autres Latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

@@ -1,0 +1,29 @@
+<%= form_for [refinery, :latests_admin, @latest] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @latest,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :headline -%>
+    <%= f.text_field :headline, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link -%>
+    <%= f.text_field :link -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @latest.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.latests.admin.latests.latest'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @latest.headline) -%>
+<% end -%>

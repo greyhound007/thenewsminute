@@ -1,0 +1,57 @@
+it:
+  refinery:
+    plugins:
+      politics:
+        title: Politics
+    politics:
+      admin:
+        politics:
+          actions:
+            create_new: Aggiungi Nuovo Politic
+            reorder: Riordina Politics
+            reorder_done: Termina il Riordino di Politics
+          records:
+            title: Politics
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Politics. Clicca "Aggiungi Nuovo Politic" per aggiungere il tuo primo politic.
+          politic:
+            view_live_html: Guarda live questo politic <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo politic
+            delete: Rimuovi per sempre questo politic
+      politics:
+        show:
+          other: Altri Politics
+  activerecord:
+    attributes:
+      'refinery/politics/politic':
+        Main_headline: Main Headline
+        photo: Photo
+        youtube: Youtube
+        image_blurb: Image Blurb
+        blurb: Blurb
+        summary: Summary
+        tags: Tags
+        headline_1: Headline 1
+        link_1: Link 1
+        source_1: Source 1
+        headline_2: Headline 2
+        link_2: Link 2
+        source_2: Source 2
+        headline_3: Headline 3
+        link_3: Link 3
+        source_3: Source 3
+        headline_4: Headline 4
+        link_4: Link 4
+        source_4: Source 4
+        headline_5: Headline 5
+        link_5: Link 5
+        source_5: Source 5
+        headline_6: Headline 6
+        link_6: Link 6
+        source_6: Source 6
+        headline_7: Headline 7
+        link_7: Link 7
+        source_7: Source 7
+        headline_8: Headline 8
+        link_8: Link 8
+        source_8: Source 8

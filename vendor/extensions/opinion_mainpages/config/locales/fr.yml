@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Opinion Mainpage
+            reorder: Réordonner les Opinion Mainpages
+            reorder_done: Fin de réordonnancement des Opinion Mainpages
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Opinion Mainpage. Cliquer sur "Créer un(e) nouve(au/l/lle) Opinion Mainpage" pour créer votre premi(er/ère) opinion mainpage.'
+          opinion_mainpage:
+            view_live_html: Voir ce(t/tte) opinion mainpage <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) opinion mainpage
+            delete: Supprimer définitivement ce(t/tte) opinion mainpage
+      opinion_mainpages:
+        show:
+          other: Autres Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

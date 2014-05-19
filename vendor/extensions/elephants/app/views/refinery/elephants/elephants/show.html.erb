@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @elephant.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @elephant.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @elephant.link %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @elephant.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Author</h1>
+    <p>
+      <%=raw @elephant.author %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="elephants">
+      <% @elephants.each do |elephant| %>
+        <li>
+          <%= link_to elephant.headline, refinery.elephants_elephant_path(elephant) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

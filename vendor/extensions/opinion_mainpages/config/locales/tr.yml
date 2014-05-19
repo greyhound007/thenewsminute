@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Yeni Ekle Opinion Mainpage
+            reorder: Tekrar sirala Opinion Mainpages
+            reorder_done: Tekrar siralama tamamlandiOpinion Mainpages
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Opinion Mainpages yok henuz.  Tikla "Yeni Ekle Opinion Mainpage" eklemek senin ilk opinion mainpage.
+          opinion_mainpage:
+            view_live_html: Bunu canlu opinion mainpage goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle opinion mainpage
+            delete: Bunu Sil opinion mainpage sonsuza dek
+      opinion_mainpages:
+        show:
+          other: Diger Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

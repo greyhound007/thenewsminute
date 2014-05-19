@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Nieuwe Ear toevoegen
+            reorder: De volgorde van de Ears wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Ear-volgorde
+          records:
+            title: Ears
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Ears. Druk op 'Nieuwe Ear toevoegen' om de eerste toe te voegen.
+          ear:
+            view_live_html: Deze ear op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze ear
+            delete: Deze ear definitief verwijderen
+      ears:
+        show:
+          other: Andere Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

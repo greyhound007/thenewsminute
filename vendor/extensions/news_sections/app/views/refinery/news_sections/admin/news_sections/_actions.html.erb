@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::NewsSections::Admin::NewsSectionsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.news_sections_admin_news_sections_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_news_sections_admin_news_section_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::NewsSections::Admin::NewsSectionsController.sortable? && ::Refinery::NewsSections::NewsSection.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "News Sections"),
+                 refinery.news_sections_admin_news_sections_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "News Sections"),
+                 refinery.news_sections_admin_news_sections_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

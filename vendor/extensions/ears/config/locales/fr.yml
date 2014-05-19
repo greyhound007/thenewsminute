@@ -1,0 +1,30 @@
+fr:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Ear
+            reorder: Réordonner les Ears
+            reorder_done: Fin de réordonnancement des Ears
+          records:
+            title: Ears
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Ear. Cliquer sur "Créer un(e) nouve(au/l/lle) Ear" pour créer votre premi(er/ère) ear.'
+          ear:
+            view_live_html: Voir ce(t/tte) ear <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) ear
+            delete: Supprimer définitivement ce(t/tte) ear
+      ears:
+        show:
+          other: Autres Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

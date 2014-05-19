@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: Přidat Elephant
+            reorder: Řadit Elephants
+            reorder_done: Konec řazení Elephants
+          records:
+            title: Elephants
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Elephants. Zvolte "Přidat Elephant" pro přidání prvního elephant.
+          elephant:
+            view_live_html: Zobrazit náhled elephant<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit elephant
+            delete: Smazat elephant
+      elephants:
+        show:
+          other: Další Elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

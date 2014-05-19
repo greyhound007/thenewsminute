@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Lag en ny Ear
+            reorder: Endre rekkefølgen på Ears
+            reorder_done: Ferdig å endre rekkefølgen Ears
+          records:
+            title: Ears
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Ears enda. Klikk på "Lag en ny Ear" for å legge til din første ear.
+          ear:
+            view_live_html: Vis hvordan denne ear ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne ear
+            delete: Fjern denne ear permanent
+      ears:
+        show:
+          other: Andre Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

@@ -1,0 +1,16 @@
+<%= render 'refinery/admin/search_header', :url => refinery.southern_minutes_admin_southern_minutes_path %>
+<div class='pagination_container'>
+  <% if @southern_minutes.any? %>
+    <%= render 'southern_minutes' %>
+  <% else %>
+    <p>
+      <% unless searching? %>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      <% else %>
+        <%= t('no_results', :scope => 'refinery.admin.search') %>
+      <% end %>
+    </p>
+  <% end %>
+</div>

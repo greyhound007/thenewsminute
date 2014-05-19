@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Latests::Admin::LatestsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.latests_admin_latests_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_latests_admin_latest_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Latests::Admin::LatestsController.sortable? && ::Refinery::Latests::Latest.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Latests"),
+                 refinery.latests_admin_latests_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Latests"),
+                 refinery.latests_admin_latests_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

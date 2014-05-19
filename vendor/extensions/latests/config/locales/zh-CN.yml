@@ -1,0 +1,31 @@
+zh-CN:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: 建立新的 Latest
+            reorder: 对 Latests 重新排序
+            reorder_done: 对 Latests 的重新排序结束
+          records:
+            title: Latests
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Latests yet. Click "Add New Latest" to add your first latest.
+            no_items_yet: 目前没有 Latests . 点击 "Add New Latest" 创建一个latest.
+          latest:
+            view_live_html: 查看 latest 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 latest
+            delete: 永久删除 latest
+      latests:
+        show:
+          other: 其他 Latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

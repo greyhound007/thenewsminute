@@ -1,0 +1,28 @@
+sk:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Pridať Editors Pick
+            reorder: Preusporiadať Editors Picks
+            reorder_done: Koniec radenia Editors Picks
+          records:
+            title: Editors Picks
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Editors Picks. Kliknite na "Pridať Editors Pick" pre pridanie prvého editors pick.
+          editors_pick:
+            view_live_html: Zobraziť náhľad editors pick<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť editors pick
+            delete: Zmazať editors pick
+      editors_picks:
+        show:
+          other: Daľšie Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

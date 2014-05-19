@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140322183157) do
+ActiveRecord::Schema.define(:version => 20140517081010) do
 
   create_table "refinery_blogs", :force => true do |t|
     t.string   "headline"
@@ -19,6 +19,24 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
     t.string   "tags"
     t.string   "source"
     t.integer  "image_id"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_ears", :force => true do |t|
+    t.string   "headline"
+    t.string   "link"
+    t.integer  "photo_id"
+    t.string   "author"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_editors_picks", :force => true do |t|
+    t.string   "headline"
+    t.string   "link"
     t.integer  "position"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -38,6 +56,112 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
 # Could not dump table "refinery_elections" because of following StandardError
 #   Unknown type 'image' for column 'image'
 
+  create_table "refinery_elephants", :force => true do |t|
+    t.string   "headline"
+    t.string   "link"
+    t.integer  "photo_id"
+    t.string   "author"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_entertainments", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "refinery_finances", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "refinery_headlines", :force => true do |t|
+    t.string   "main_headline"
+    t.integer  "main_photo_id"
+    t.string   "main_blurb"
+    t.string   "main_link"
+    t.string   "main_story_link_headline_1"
+    t.string   "main_story_link_1"
+    t.string   "main_story_link_source_1"
+    t.string   "main_story_link_headline_2"
+    t.string   "main_story_link_2"
+    t.string   "main_story_link_source_2"
+    t.string   "main_story_link_headline_3"
+    t.string   "main_story_link_3"
+    t.string   "main_story_link_source_3"
+    t.string   "main_story_link_headline_4"
+    t.string   "main_story_link_4"
+    t.string   "main_story_link_source_4"
+    t.integer  "position"
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
+  end
+
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -54,6 +178,15 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
     t.integer  "position"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
+  end
+
+  create_table "refinery_latests", :force => true do |t|
+    t.string   "headline"
+    t.string   "link"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_mainpages", :force => true do |t|
@@ -232,6 +365,90 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
     t.datetime "updated_at",                 :null => false
   end
 
+  create_table "refinery_news", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "refinery_news_sections", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "refinery_opinion_mainpages", :force => true do |t|
+    t.string   "headline"
+    t.string   "url"
+    t.integer  "image_id"
+    t.string   "author"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "refinery_opinions", :force => true do |t|
     t.string   "headline"
     t.string   "url"
@@ -308,6 +525,43 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
   add_index "refinery_pages", ["lft"], :name => "index_refinery_pages_on_lft"
   add_index "refinery_pages", ["parent_id"], :name => "index_refinery_pages_on_parent_id"
   add_index "refinery_pages", ["rgt"], :name => "index_refinery_pages_on_rgt"
+
+  create_table "refinery_politics", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "refinery_randoms", :force => true do |t|
     t.string   "headline"
@@ -429,6 +683,15 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
     t.datetime "updated_at",        :null => false
   end
 
+  create_table "refinery_southern_minutes", :force => true do |t|
+    t.string   "headline"
+    t.string   "link"
+    t.integer  "photo_id"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "refinery_specials", :force => true do |t|
     t.string   "headline"
     t.string   "url"
@@ -438,6 +701,43 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
     t.integer  "position"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "refinery_sports", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "refinery_stories", :force => true do |t|
@@ -571,6 +871,43 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
     t.datetime "updated_at",        :null => false
   end
 
+  create_table "refinery_technologies", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
   create_table "refinery_user_plugins", :force => true do |t|
     t.integer "user_id"
     t.string  "name"
@@ -599,6 +936,43 @@ ActiveRecord::Schema.define(:version => 20140322183157) do
 
   add_index "refinery_users", ["id"], :name => "index_refinery_users_on_id"
   add_index "refinery_users", ["slug"], :name => "index_refinery_users_on_slug"
+
+  create_table "refinery_worlds", :force => true do |t|
+    t.string   "Main_headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
 
   create_table "seo_meta", :force => true do |t|
     t.integer  "seo_meta_id"

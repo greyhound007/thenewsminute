@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+#        article: masculino/femenino
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: Crear nuevo elephant
+            reorder: Reordenar elephants
+            reorder_done: Reordenación de elephants completada
+          records:
+            title: Elephants
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay elephants todavía. Pulsa en "Crear nuevo Elephant" para crear tu primer elephant.
+          elephant:
+            view_live_html: Ver este elephant como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este elephant
+            delete: Borrar este elephant para siempre
+      elephants:
+        show:
+          other: Otros elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

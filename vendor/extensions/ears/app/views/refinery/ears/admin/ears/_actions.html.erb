@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Ears::Admin::EarsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.ears_admin_ears_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_ears_admin_ear_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Ears::Admin::EarsController.sortable? && ::Refinery::Ears::Ear.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Ears"),
+                 refinery.ears_admin_ears_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Ears"),
+                 refinery.ears_admin_ears_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

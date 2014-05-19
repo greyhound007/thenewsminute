@@ -1,0 +1,20 @@
+<%= form_for [refinery, :editors_picks_admin, @editors_pick] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @editors_pick,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :headline -%>
+    <%= f.text_field :headline, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link -%>
+    <%= f.text_field :link -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.editors_picks.admin.editors_picks.editors_pick'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @editors_pick.headline) -%>
+<% end -%>

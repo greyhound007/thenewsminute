@@ -1,0 +1,30 @@
+zh-CN:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: 建立新的 Editors Pick
+            reorder: 对 Editors Picks 重新排序
+            reorder_done: 对 Editors Picks 的重新排序结束
+          records:
+            title: Editors Picks
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Editors Picks yet. Click "Add New Editors Pick" to add your first editors pick.
+            no_items_yet: 目前没有 Editors Picks . 点击 "Add New Editors Pick" 创建一个editors pick.
+          editors_pick:
+            view_live_html: 查看 editors pick 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 editors pick
+            delete: 永久删除 editors pick
+      editors_picks:
+        show:
+          other: 其他 Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

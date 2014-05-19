@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @latest.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @latest.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @latest.link %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @latest.photo, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="latests">
+      <% @latests.each do |latest| %>
+        <li>
+          <%= link_to latest.headline, refinery.latests_latest_path(latest) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,42 @@
+fr:
+  refinery:
+    plugins:
+      headlines:
+        title: Headlines
+    headlines:
+      admin:
+        headlines:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Headline
+            reorder: Réordonner les Headlines
+            reorder_done: Fin de réordonnancement des Headlines
+          records:
+            title: Headlines
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Headline. Cliquer sur "Créer un(e) nouve(au/l/lle) Headline" pour créer votre premi(er/ère) headline.'
+          headline:
+            view_live_html: Voir ce(t/tte) headline <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) headline
+            delete: Supprimer définitivement ce(t/tte) headline
+      headlines:
+        show:
+          other: Autres Headlines
+  activerecord:
+    attributes:
+      'refinery/headlines/headline':
+        main_headline: Main Headline
+        main_photo: Main Photo
+        main_blurb: Main Blurb
+        main_link: Main Link
+        main_story_link_headline_1: Main Story Link Headline 1
+        main_story_link_1: Main Story Link 1
+        main_story_link_source_1: Main Story Link Source 1
+        main_story_link_headline_2: Main Story Link Headline 2
+        main_story_link_2: Main Story Link 2
+        main_story_link_source_2: Main Story Link Source 2
+        main_story_link_headline_3: Main Story Link Headline 3
+        main_story_link_3: Main Story Link 3
+        main_story_link_source_3: Main Story Link Source 3
+        main_story_link_headline_4: Main Story Link Headline 4
+        main_story_link_4: Main Story Link 4
+        main_story_link_source_4: Main Story Link Source 4

@@ -1,0 +1,29 @@
+fr:
+  refinery:
+    plugins:
+      southern_minutes:
+        title: Southern Minutes
+    southern_minutes:
+      admin:
+        southern_minutes:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Southern Minute
+            reorder: Réordonner les Southern Minutes
+            reorder_done: Fin de réordonnancement des Southern Minutes
+          records:
+            title: Southern Minutes
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Southern Minute. Cliquer sur "Créer un(e) nouve(au/l/lle) Southern Minute" pour créer votre premi(er/ère) southern minute.'
+          southern_minute:
+            view_live_html: Voir ce(t/tte) southern minute <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) southern minute
+            delete: Supprimer définitivement ce(t/tte) southern minute
+      southern_minutes:
+        show:
+          other: Autres Southern Minutes
+  activerecord:
+    attributes:
+      'refinery/southern_minutes/southern_minute':
+        headline: Headline
+        link: Link
+        photo: Photo

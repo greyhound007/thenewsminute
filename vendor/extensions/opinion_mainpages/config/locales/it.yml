@@ -1,0 +1,30 @@
+it:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Aggiungi Nuovo Opinion Mainpage
+            reorder: Riordina Opinion Mainpages
+            reorder_done: Termina il Riordino di Opinion Mainpages
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Opinion Mainpages. Clicca "Aggiungi Nuovo Opinion Mainpage" per aggiungere il tuo primo opinion mainpage.
+          opinion_mainpage:
+            view_live_html: Guarda live questo opinion mainpage <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo opinion mainpage
+            delete: Rimuovi per sempre questo opinion mainpage
+      opinion_mainpages:
+        show:
+          other: Altri Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

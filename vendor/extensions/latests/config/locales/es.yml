@@ -1,0 +1,30 @@
+es:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+#        article: masculino/femenino
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: Crear nuevo latest
+            reorder: Reordenar latests
+            reorder_done: Reordenación de latests completada
+          records:
+            title: Latests
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay latests todavía. Pulsa en "Crear nuevo Latest" para crear tu primer latest.
+          latest:
+            view_live_html: Ver este latest como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este latest
+            delete: Borrar este latest para siempre
+      latests:
+        show:
+          other: Otros latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

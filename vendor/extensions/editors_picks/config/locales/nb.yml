@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Lag en ny Editors Pick
+            reorder: Endre rekkefølgen på Editors Picks
+            reorder_done: Ferdig å endre rekkefølgen Editors Picks
+          records:
+            title: Editors Picks
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Editors Picks enda. Klikk på "Lag en ny Editors Pick" for å legge til din første editors pick.
+          editors_pick:
+            view_live_html: Vis hvordan denne editors pick ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne editors pick
+            delete: Fjern denne editors pick permanent
+      editors_picks:
+        show:
+          other: Andre Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

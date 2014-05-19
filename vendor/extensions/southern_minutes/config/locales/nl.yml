@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      southern_minutes:
+        title: Southern Minutes
+    southern_minutes:
+      admin:
+        southern_minutes:
+          actions:
+            create_new: Nieuwe Southern Minute toevoegen
+            reorder: De volgorde van de Southern Minutes wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Southern Minute-volgorde
+          records:
+            title: Southern Minutes
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Southern Minutes. Druk op 'Nieuwe Southern Minute toevoegen' om de eerste toe te voegen.
+          southern_minute:
+            view_live_html: Deze southern minute op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze southern minute
+            delete: Deze southern minute definitief verwijderen
+      southern_minutes:
+        show:
+          other: Andere Southern Minutes
+  activerecord:
+    attributes:
+      'refinery/southern_minutes/southern_minute':
+        headline: Headline
+        link: Link
+        photo: Photo

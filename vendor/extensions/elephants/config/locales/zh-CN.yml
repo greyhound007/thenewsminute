@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: 建立新的 Elephant
+            reorder: 对 Elephants 重新排序
+            reorder_done: 对 Elephants 的重新排序结束
+          records:
+            title: Elephants
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Elephants yet. Click "Add New Elephant" to add your first elephant.
+            no_items_yet: 目前没有 Elephants . 点击 "Add New Elephant" 创建一个elephant.
+          elephant:
+            view_live_html: 查看 elephant 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 elephant
+            delete: 永久删除 elephant
+      elephants:
+        show:
+          other: 其他 Elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

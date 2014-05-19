@@ -1,0 +1,30 @@
+nl:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Nieuwe Opinion Mainpage toevoegen
+            reorder: De volgorde van de Opinion Mainpages wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Opinion Mainpage-volgorde
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Opinion Mainpages. Druk op 'Nieuwe Opinion Mainpage toevoegen' om de eerste toe te voegen.
+          opinion_mainpage:
+            view_live_html: Deze opinion mainpage op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze opinion mainpage
+            delete: Deze opinion mainpage definitief verwijderen
+      opinion_mainpages:
+        show:
+          other: Andere Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

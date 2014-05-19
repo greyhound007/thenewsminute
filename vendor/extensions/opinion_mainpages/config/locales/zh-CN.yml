@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: 建立新的 Opinion Mainpage
+            reorder: 对 Opinion Mainpages 重新排序
+            reorder_done: 对 Opinion Mainpages 的重新排序结束
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Opinion Mainpages yet. Click "Add New Opinion Mainpage" to add your first opinion mainpage.
+            no_items_yet: 目前没有 Opinion Mainpages . 点击 "Add New Opinion Mainpage" 创建一个opinion mainpage.
+          opinion_mainpage:
+            view_live_html: 查看 opinion mainpage 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 opinion mainpage
+            delete: 永久删除 opinion mainpage
+      opinion_mainpages:
+        show:
+          other: 其他 Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

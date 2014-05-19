@@ -1,0 +1,207 @@
+<% content_for :body_content_title do %>
+  <%= @new.Main_headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Main Headline</h1>
+    <p>
+      <%=raw @new.Main_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @new.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Youtube</h1>
+    <p>
+      <%=raw @new.youtube %>
+    </p>
+  </section>
+  <section>
+    <h1>Image Blurb</h1>
+    <p>
+      <%=raw @new.image_blurb %>
+    </p>
+  </section>
+  <section>
+    <h1>Blurb</h1>
+    <p>
+      <%=raw @new.blurb %>
+    </p>
+  </section>
+  <section>
+    <h1>Summary</h1>
+    <p>
+      <%=raw @new.summary %>
+    </p>
+  </section>
+  <section>
+    <h1>Tags</h1>
+    <p>
+      <%=raw @new.tags %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 1</h1>
+    <p>
+      <%=raw @new.headline_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 1</h1>
+    <p>
+      <%=raw @new.link_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 1</h1>
+    <p>
+      <%=raw @new.source_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 2</h1>
+    <p>
+      <%=raw @new.headline_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 2</h1>
+    <p>
+      <%=raw @new.link_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 2</h1>
+    <p>
+      <%=raw @new.source_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 3</h1>
+    <p>
+      <%=raw @new.headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 3</h1>
+    <p>
+      <%=raw @new.link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 3</h1>
+    <p>
+      <%=raw @new.source_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 4</h1>
+    <p>
+      <%=raw @new.headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 4</h1>
+    <p>
+      <%=raw @new.link_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 4</h1>
+    <p>
+      <%=raw @new.source_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 5</h1>
+    <p>
+      <%=raw @new.headline_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 5</h1>
+    <p>
+      <%=raw @new.link_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 5</h1>
+    <p>
+      <%=raw @new.source_5 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 6</h1>
+    <p>
+      <%=raw @new.headline_6 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 6</h1>
+    <p>
+      <%=raw @new.link_6 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 6</h1>
+    <p>
+      <%=raw @new.source_6 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 7</h1>
+    <p>
+      <%=raw @new.headline_7 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 7</h1>
+    <p>
+      <%=raw @new.link_7 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 7</h1>
+    <p>
+      <%=raw @new.source_7 %>
+    </p>
+  </section>
+  <section>
+    <h1>Headline 8</h1>
+    <p>
+      <%=raw @new.headline_8 %>
+    </p>
+  </section>
+  <section>
+    <h1>Link 8</h1>
+    <p>
+      <%=raw @new.link_8 %>
+    </p>
+  </section>
+  <section>
+    <h1>Source 8</h1>
+    <p>
+      <%=raw @new.source_8 %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="news">
+      <% @news.each do |new| %>
+        <li>
+          <%= link_to new.Main_headline, refinery.news_new_path(new) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

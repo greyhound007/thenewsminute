@@ -1,0 +1,30 @@
+cs:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Přidat Opinion Mainpage
+            reorder: Řadit Opinion Mainpages
+            reorder_done: Konec řazení Opinion Mainpages
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Opinion Mainpages. Zvolte "Přidat Opinion Mainpage" pro přidání prvního opinion mainpage.
+          opinion_mainpage:
+            view_live_html: Zobrazit náhled opinion mainpage<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit opinion mainpage
+            delete: Smazat opinion mainpage
+      opinion_mainpages:
+        show:
+          other: Další Opinion Mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

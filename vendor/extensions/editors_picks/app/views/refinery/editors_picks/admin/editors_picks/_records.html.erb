@@ -1,0 +1,16 @@
+<%= render 'refinery/admin/search_header', :url => refinery.editors_picks_admin_editors_picks_path %>
+<div class='pagination_container'>
+  <% if @editors_picks.any? %>
+    <%= render 'editors_picks' %>
+  <% else %>
+    <p>
+      <% unless searching? %>
+        <strong>
+          <%= t('.no_items_yet') %>
+        </strong>
+      <% else %>
+        <%= t('no_results', :scope => 'refinery.admin.search') %>
+      <% end %>
+    </p>
+  <% end %>
+</div>

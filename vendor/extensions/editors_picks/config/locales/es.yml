@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+#        article: masculino/femenino
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Crear nuevo editors pick
+            reorder: Reordenar editors picks
+            reorder_done: Reordenación de editors picks completada
+          records:
+            title: Editors Picks
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay editors picks todavía. Pulsa en "Crear nuevo Editors Pick" para crear tu primer editors pick.
+          editors_pick:
+            view_live_html: Ver este editors pick como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este editors pick
+            delete: Borrar este editors pick para siempre
+      editors_picks:
+        show:
+          other: Otros editors picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="southern_minutes">
+    <% @southern_minutes.each do |southern_minute| %>
+      <li>
+        <%= link_to southern_minute.headline, refinery.southern_minutes_southern_minute_path(southern_minute) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

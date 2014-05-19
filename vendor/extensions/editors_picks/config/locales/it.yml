@@ -1,0 +1,28 @@
+it:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Aggiungi Nuovo Editors Pick
+            reorder: Riordina Editors Picks
+            reorder_done: Termina il Riordino di Editors Picks
+          records:
+            title: Editors Picks
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Editors Picks. Clicca "Aggiungi Nuovo Editors Pick" per aggiungere il tuo primo editors pick.
+          editors_pick:
+            view_live_html: Guarda live questo editors pick <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo editors pick
+            delete: Rimuovi per sempre questo editors pick
+      editors_picks:
+        show:
+          other: Altri Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

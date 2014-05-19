@@ -1,0 +1,42 @@
+en:
+  refinery:
+    plugins:
+      headlines:
+        title: Headlines
+    headlines:
+      admin:
+        headlines:
+          actions:
+            create_new: Add New Headline
+            reorder: Reorder Headlines
+            reorder_done: Done Reordering Headlines
+          records:
+            title: Headlines
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Headlines yet. Click "Add New Headline" to add your first headline.
+          headline:
+            view_live_html: View this headline live <br/><em>(opens in a new window)</em>
+            edit: Edit this headline
+            delete: Remove this headline forever
+      headlines:
+        show:
+          other: Other Headlines
+  activerecord:
+    attributes:
+      'refinery/headlines/headline':
+        main_headline: Main Headline
+        main_photo: Main Photo
+        main_blurb: Main Blurb
+        main_link: Main Link
+        main_story_link_headline_1: Main Story Link Headline 1
+        main_story_link_1: Main Story Link 1
+        main_story_link_source_1: Main Story Link Source 1
+        main_story_link_headline_2: Main Story Link Headline 2
+        main_story_link_2: Main Story Link 2
+        main_story_link_source_2: Main Story Link Source 2
+        main_story_link_headline_3: Main Story Link Headline 3
+        main_story_link_3: Main Story Link 3
+        main_story_link_source_3: Main Story Link Source 3
+        main_story_link_headline_4: Main Story Link Headline 4
+        main_story_link_4: Main Story Link 4
+        main_story_link_source_4: Main Story Link Source 4

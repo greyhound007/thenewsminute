@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Yeni Ekle Ear
+            reorder: Tekrar sirala Ears
+            reorder_done: Tekrar siralama tamamlandiEars
+          records:
+            title: Ears
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Ears yok henuz.  Tikla "Yeni Ekle Ear" eklemek senin ilk ear.
+          ear:
+            view_live_html: Bunu canlu ear goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle ear
+            delete: Bunu Sil ear sonsuza dek
+      ears:
+        show:
+          other: Diger Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

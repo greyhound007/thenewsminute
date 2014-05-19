@@ -1,0 +1,29 @@
+tr:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: Yeni Ekle Latest
+            reorder: Tekrar sirala Latests
+            reorder_done: Tekrar siralama tamamlandiLatests
+          records:
+            title: Latests
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Latests yok henuz.  Tikla "Yeni Ekle Latest" eklemek senin ilk latest.
+          latest:
+            view_live_html: Bunu canlu latest goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle latest
+            delete: Bunu Sil latest sonsuza dek
+      latests:
+        show:
+          other: Diger Latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

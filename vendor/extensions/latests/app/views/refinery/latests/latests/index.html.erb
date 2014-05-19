@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="latests">
+    <% @latests.each do |latest| %>
+      <li>
+        <%= link_to latest.headline, refinery.latests_latest_path(latest) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

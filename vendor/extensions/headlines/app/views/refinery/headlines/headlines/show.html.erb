@@ -1,0 +1,117 @@
+<% content_for :body_content_title do %>
+  <%= @headline.main_headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Main Headline</h1>
+    <p>
+      <%=raw @headline.main_headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Photo</h1>
+    <p>
+      <%= image_fu @headline.main_photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Blurb</h1>
+    <p>
+      <%=raw @headline.main_blurb %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Link</h1>
+    <p>
+      <%=raw @headline.main_link %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 1</h1>
+    <p>
+      <%=raw @headline.main_story_link_headline_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link 1</h1>
+    <p>
+      <%=raw @headline.main_story_link_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 1</h1>
+    <p>
+      <%=raw @headline.main_story_link_source_1 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 2</h1>
+    <p>
+      <%=raw @headline.main_story_link_headline_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link 2</h1>
+    <p>
+      <%=raw @headline.main_story_link_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 2</h1>
+    <p>
+      <%=raw @headline.main_story_link_source_2 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 3</h1>
+    <p>
+      <%=raw @headline.main_story_link_headline_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link 3</h1>
+    <p>
+      <%=raw @headline.main_story_link_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 3</h1>
+    <p>
+      <%=raw @headline.main_story_link_source_3 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Headline 4</h1>
+    <p>
+      <%=raw @headline.main_story_link_headline_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link 4</h1>
+    <p>
+      <%=raw @headline.main_story_link_4 %>
+    </p>
+  </section>
+  <section>
+    <h1>Main Story Link Source 4</h1>
+    <p>
+      <%=raw @headline.main_story_link_source_4 %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="headlines">
+      <% @headlines.each do |headline| %>
+        <li>
+          <%= link_to headline.main_headline, refinery.headlines_headline_path(headline) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,30 @@
+en:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Add New Ear
+            reorder: Reorder Ears
+            reorder_done: Done Reordering Ears
+          records:
+            title: Ears
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Ears yet. Click "Add New Ear" to add your first ear.
+          ear:
+            view_live_html: View this ear live <br/><em>(opens in a new window)</em>
+            edit: Edit this ear
+            delete: Remove this ear forever
+      ears:
+        show:
+          other: Other Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

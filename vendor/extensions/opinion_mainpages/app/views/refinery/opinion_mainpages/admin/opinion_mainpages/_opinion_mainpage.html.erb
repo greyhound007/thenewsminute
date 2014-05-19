@@ -1,0 +1,20 @@
+<li class='clearfix record <%= cycle("on", "on-hover") %>' id="<%= dom_id(opinion_mainpage) -%>">
+  <span class='title'>
+    <%= opinion_mainpage.headline %>
+
+  </span>
+  <span class='actions'>
+    
+    <%= link_to refinery_icon_tag("application_go.png"), refinery.opinion_mainpages_opinion_mainpage_path(opinion_mainpage),
+        :title => t('.view_live_html'),
+        :target => "_blank" %>
+    
+    <%= link_to refinery_icon_tag("application_edit.png"), refinery.edit_opinion_mainpages_admin_opinion_mainpage_path(opinion_mainpage),
+         :title => t('.edit') %>
+    <%= link_to refinery_icon_tag("delete.png"), refinery.opinion_mainpages_admin_opinion_mainpage_path(opinion_mainpage),
+        :class => "cancel confirm-delete",
+        :title => t('.delete'),
+        :confirm => t('message', :scope => 'refinery.admin.delete', :title => opinion_mainpage.headline),
+        :method => :delete %>
+  </span>
+</li>

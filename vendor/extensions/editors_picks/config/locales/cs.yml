@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Přidat Editors Pick
+            reorder: Řadit Editors Picks
+            reorder_done: Konec řazení Editors Picks
+          records:
+            title: Editors Picks
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Editors Picks. Zvolte "Přidat Editors Pick" pro přidání prvního editors pick.
+          editors_pick:
+            view_live_html: Zobrazit náhled editors pick<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit editors pick
+            delete: Smazat editors pick
+      editors_picks:
+        show:
+          other: Další Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

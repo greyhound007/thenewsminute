@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      opinion_mainpages:
+        title: Opinion Mainpages
+#        article: masculino/femenino
+    opinion_mainpages:
+      admin:
+        opinion_mainpages:
+          actions:
+            create_new: Crear nuevo opinion mainpage
+            reorder: Reordenar opinion mainpages
+            reorder_done: Reordenación de opinion mainpages completada
+          records:
+            title: Opinion Mainpages
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay opinion mainpages todavía. Pulsa en "Crear nuevo Opinion Mainpage" para crear tu primer opinion mainpage.
+          opinion_mainpage:
+            view_live_html: Ver este opinion mainpage como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este opinion mainpage
+            delete: Borrar este opinion mainpage para siempre
+      opinion_mainpages:
+        show:
+          other: Otros opinion mainpages
+  activerecord:
+    attributes:
+      'refinery/opinion_mainpages/opinion_mainpage':
+        headline: Headline
+        url: Url
+        image: Image
+        author: Author

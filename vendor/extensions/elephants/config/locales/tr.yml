@@ -1,0 +1,30 @@
+tr:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: Yeni Ekle Elephant
+            reorder: Tekrar sirala Elephants
+            reorder_done: Tekrar siralama tamamlandiElephants
+          records:
+            title: Elephants
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Elephants yok henuz.  Tikla "Yeni Ekle Elephant" eklemek senin ilk elephant.
+          elephant:
+            view_live_html: Bunu canlu elephant goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle elephant
+            delete: Bunu Sil elephant sonsuza dek
+      elephants:
+        show:
+          other: Diger Elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

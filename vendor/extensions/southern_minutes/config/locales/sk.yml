@@ -1,0 +1,29 @@
+sk:
+  refinery:
+    plugins:
+      southern_minutes:
+        title: Southern Minutes
+    southern_minutes:
+      admin:
+        southern_minutes:
+          actions:
+            create_new: Pridať Southern Minute
+            reorder: Preusporiadať Southern Minutes
+            reorder_done: Koniec radenia Southern Minutes
+          records:
+            title: Southern Minutes
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Southern Minutes. Kliknite na "Pridať Southern Minute" pre pridanie prvého southern minute.
+          southern_minute:
+            view_live_html: Zobraziť náhľad southern minute<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť southern minute
+            delete: Zmazať southern minute
+      southern_minutes:
+        show:
+          other: Daľšie Southern Minutes
+  activerecord:
+    attributes:
+      'refinery/southern_minutes/southern_minute':
+        headline: Headline
+        link: Link
+        photo: Photo

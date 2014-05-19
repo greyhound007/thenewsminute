@@ -1,0 +1,31 @@
+es:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+#        article: masculino/femenino
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Crear nuevo ear
+            reorder: Reordenar ears
+            reorder_done: Reordenación de ears completada
+          records:
+            title: Ears
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay ears todavía. Pulsa en "Crear nuevo Ear" para crear tu primer ear.
+          ear:
+            view_live_html: Ver este ear como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este ear
+            delete: Borrar este ear para siempre
+      ears:
+        show:
+          other: Otros ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

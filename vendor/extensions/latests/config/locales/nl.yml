@@ -1,0 +1,29 @@
+nl:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: Nieuwe Latest toevoegen
+            reorder: De volgorde van de Latests wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Latest-volgorde
+          records:
+            title: Latests
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Latests. Druk op 'Nieuwe Latest toevoegen' om de eerste toe te voegen.
+          latest:
+            view_live_html: Deze latest op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze latest
+            delete: Deze latest definitief verwijderen
+      latests:
+        show:
+          other: Andere Latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

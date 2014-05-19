@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="ears">
+    <% @ears.each do |ear| %>
+      <li>
+        <%= link_to ear.headline, refinery.ears_ear_path(ear) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,42 @@
+sk:
+  refinery:
+    plugins:
+      headlines:
+        title: Headlines
+    headlines:
+      admin:
+        headlines:
+          actions:
+            create_new: Pridať Headline
+            reorder: Preusporiadať Headlines
+            reorder_done: Koniec radenia Headlines
+          records:
+            title: Headlines
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Headlines. Kliknite na "Pridať Headline" pre pridanie prvého headline.
+          headline:
+            view_live_html: Zobraziť náhľad headline<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť headline
+            delete: Zmazať headline
+      headlines:
+        show:
+          other: Daľšie Headlines
+  activerecord:
+    attributes:
+      'refinery/headlines/headline':
+        main_headline: Main Headline
+        main_photo: Main Photo
+        main_blurb: Main Blurb
+        main_link: Main Link
+        main_story_link_headline_1: Main Story Link Headline 1
+        main_story_link_1: Main Story Link 1
+        main_story_link_source_1: Main Story Link Source 1
+        main_story_link_headline_2: Main Story Link Headline 2
+        main_story_link_2: Main Story Link 2
+        main_story_link_source_2: Main Story Link Source 2
+        main_story_link_headline_3: Main Story Link Headline 3
+        main_story_link_3: Main Story Link 3
+        main_story_link_source_3: Main Story Link Source 3
+        main_story_link_headline_4: Main Story Link Headline 4
+        main_story_link_4: Main Story Link 4
+        main_story_link_source_4: Main Story Link Source 4

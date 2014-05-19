@@ -1,0 +1,32 @@
+zh-CN:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: 建立新的 Ear
+            reorder: 对 Ears 重新排序
+            reorder_done: 对 Ears 的重新排序结束
+          records:
+            title: Ears
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Ears yet. Click "Add New Ear" to add your first ear.
+            no_items_yet: 目前没有 Ears . 点击 "Add New Ear" 创建一个ear.
+          ear:
+            view_live_html: 查看 ear 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 ear
+            delete: 永久删除 ear
+      ears:
+        show:
+          other: 其他 Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

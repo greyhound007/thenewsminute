@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Finances::Admin::FinancesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.finances_admin_finances_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_finances_admin_finance_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Finances::Admin::FinancesController.sortable? && ::Refinery::Finances::Finance.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Finances"),
+                 refinery.finances_admin_finances_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Finances"),
+                 refinery.finances_admin_finances_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

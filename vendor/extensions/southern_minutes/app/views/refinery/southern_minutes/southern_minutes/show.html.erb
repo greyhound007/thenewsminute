@@ -1,0 +1,39 @@
+<% content_for :body_content_title do %>
+  <%= @southern_minute.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @southern_minute.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @southern_minute.link %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @southern_minute.photo, nil %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="southern_minutes">
+      <% @southern_minutes.each do |southern_minute| %>
+        <li>
+          <%= link_to southern_minute.headline, refinery.southern_minutes_southern_minute_path(southern_minute) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

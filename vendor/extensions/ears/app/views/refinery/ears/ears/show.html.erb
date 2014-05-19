@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @ear.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @ear.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Link</h1>
+    <p>
+      <%=raw @ear.link %>
+    </p>
+  </section>
+  <section>
+    <h1>Photo</h1>
+    <p>
+      <%= image_fu @ear.photo, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Author</h1>
+    <p>
+      <%=raw @ear.author %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="ears">
+      <% @ears.each do |ear| %>
+        <li>
+          <%= link_to ear.headline, refinery.ears_ear_path(ear) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Yeni Ekle Editors Pick
+            reorder: Tekrar sirala Editors Picks
+            reorder_done: Tekrar siralama tamamlandiEditors Picks
+          records:
+            title: Editors Picks
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Editors Picks yok henuz.  Tikla "Yeni Ekle Editors Pick" eklemek senin ilk editors pick.
+          editors_pick:
+            view_live_html: Bunu canlu editors pick goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle editors pick
+            delete: Bunu Sil editors pick sonsuza dek
+      editors_picks:
+        show:
+          other: Diger Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

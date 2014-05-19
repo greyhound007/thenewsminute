@@ -1,0 +1,45 @@
+<% content_for :body_content_title do %>
+  <%= @opinion_mainpage.headline %>
+<% end %>
+
+<% content_for :body do %>
+  <section>
+    <h1>Headline</h1>
+    <p>
+      <%=raw @opinion_mainpage.headline %>
+    </p>
+  </section>
+  <section>
+    <h1>Url</h1>
+    <p>
+      <%=raw @opinion_mainpage.url %>
+    </p>
+  </section>
+  <section>
+    <h1>Image</h1>
+    <p>
+      <%= image_fu @opinion_mainpage.image, nil %>
+    </p>
+  </section>
+  <section>
+    <h1>Author</h1>
+    <p>
+      <%=raw @opinion_mainpage.author %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="opinion_mainpages">
+      <% @opinion_mainpages.each do |opinion_mainpage| %>
+        <li>
+          <%= link_to opinion_mainpage.headline, refinery.opinion_mainpages_opinion_mainpage_path(opinion_mainpage) %>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

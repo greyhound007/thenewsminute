@@ -1,0 +1,30 @@
+nb:
+  refinery:
+    plugins:
+      elephants:
+        title: Elephants
+    elephants:
+      admin:
+        elephants:
+          actions:
+            create_new: Lag en ny Elephant
+            reorder: Endre rekkefølgen på Elephants
+            reorder_done: Ferdig å endre rekkefølgen Elephants
+          records:
+            title: Elephants
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Elephants enda. Klikk på "Lag en ny Elephant" for å legge til din første elephant.
+          elephant:
+            view_live_html: Vis hvordan denne elephant ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne elephant
+            delete: Fjern denne elephant permanent
+      elephants:
+        show:
+          other: Andre Elephants
+  activerecord:
+    attributes:
+      'refinery/elephants/elephant':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

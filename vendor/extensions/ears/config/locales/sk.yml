@@ -1,0 +1,30 @@
+sk:
+  refinery:
+    plugins:
+      ears:
+        title: Ears
+    ears:
+      admin:
+        ears:
+          actions:
+            create_new: Pridať Ear
+            reorder: Preusporiadať Ears
+            reorder_done: Koniec radenia Ears
+          records:
+            title: Ears
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Ears. Kliknite na "Pridať Ear" pre pridanie prvého ear.
+          ear:
+            view_live_html: Zobraziť náhľad ear<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť ear
+            delete: Zmazať ear
+      ears:
+        show:
+          other: Daľšie Ears
+  activerecord:
+    attributes:
+      'refinery/ears/ear':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author

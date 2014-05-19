@@ -1,0 +1,28 @@
+fr:
+  refinery:
+    plugins:
+      editors_picks:
+        title: Editors Picks
+    editors_picks:
+      admin:
+        editors_picks:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Editors Pick
+            reorder: Réordonner les Editors Picks
+            reorder_done: Fin de réordonnancement des Editors Picks
+          records:
+            title: Editors Picks
+            sorry_no_results: "Désolé ! Aucun résultat."
+            no_items_yet: 'Il n''y a actuellement aucun(e) Editors Pick. Cliquer sur "Créer un(e) nouve(au/l/lle) Editors Pick" pour créer votre premi(er/ère) editors pick.'
+          editors_pick:
+            view_live_html: Voir ce(t/tte) editors pick <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) editors pick
+            delete: Supprimer définitivement ce(t/tte) editors pick
+      editors_picks:
+        show:
+          other: Autres Editors Picks
+  activerecord:
+    attributes:
+      'refinery/editors_picks/editors_pick':
+        headline: Headline
+        link: Link

@@ -1,0 +1,29 @@
+it:
+  refinery:
+    plugins:
+      latests:
+        title: Latests
+    latests:
+      admin:
+        latests:
+          actions:
+            create_new: Aggiungi Nuovo Latest
+            reorder: Riordina Latests
+            reorder_done: Termina il Riordino di Latests
+          records:
+            title: Latests
+            sorry_no_results: "Spiacenti! Nessun risultato trovato"
+            no_items_yet: Non ci sono ancora Latests. Clicca "Aggiungi Nuovo Latest" per aggiungere il tuo primo latest.
+          latest:
+            view_live_html: Guarda live questo latest <br/><em>(apre una nuova finestra)</em>
+            edit: Modifica questo latest
+            delete: Rimuovi per sempre questo latest
+      latests:
+        show:
+          other: Altri Latests
+  activerecord:
+    attributes:
+      'refinery/latests/latest':
+        headline: Headline
+        link: Link
+        photo: Photo

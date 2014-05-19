@@ -1,0 +1,131 @@
+
+
+<TITLE><%=raw @world.Main_headline %></TITLE>
+<META NAME="keywords" CONTENT="<%=raw @world.tags %>">
+
+<meta property="og:title" content=<%=raw @world.Main_headline %> />
+<meta property="og:image" content=<%= @world.photo %> />
+<meta property="og:description" content=<%= @world.blurb %> />
+<meta property="og:url" content=<%= @world.id %> />
+<meta property="og:url" content=<%= @world.id %> />
+<div class="container">
+
+      <div class="row row-offcanvas-right">
+
+        <div class="col-xs-12 col-sm-12">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="panel">
+            <h2 style="font-family: Roboto"><%=raw @world.Main_headline %></h2>
+            <p class="links" style="font-weight: 500; padding-top: 10px"><%=raw @world.blurb %></p>
+            
+                
+            <%= image_fu @world.photo,"660x390",:class=> "img-responsive" %>
+            
+            <p class="links" style="font-weight: 500; padding-top: 10px"><%=raw @world.image_blurb %></p>
+            
+            <div class="col-12 col-sm-12 col-lg-12">
+              <p style="font-weight: 400; padding-top: 10px; padding-left: -10px; font-size: 18px"><%=raw @world.summary %></p>
+              
+                
+                  
+            </div>
+            
+            <div class="row">
+<!-- AddThis Smart Layers BEGIN -->
+<!-- Go to http://www.addthis.com/get/smart-layers to customize -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-530a087f37f2ce9b"></script>
+<script type="text/javascript">
+addthis.layers({
+    'theme' : 'transparent',
+    'share' : {
+        'position' : 'left',
+        'numPreferredServices' : 5
+    },
+    'follow' : {
+        'services' : [
+        {'service': 'facebook', 'id': 'TheNewsMinute'},
+        {'service': 'twitter', 'id': 'thenewsminute1'}
+        ]
+    },
+    'whatsnext' : {},
+    'recommended' : {}
+});
+</script>
+<!-- AddThis Smart Layers END --> </div>
+            
+          </div>
+         
+         
+          
+           <div class="col-12 col-sm-12 col-lg-12" style="margin-top: 20px">
+               <hr />
+                <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_1 %>" target="_blank" ><%=raw @world.headline_1 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_1 %></p></div>
+             
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_2 %>" target="_blank" > <%=raw @world.headline_2 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_2 %></p></div>
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_3 %>" target="_blank" ><%=raw @world.headline_3 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_3 %></p></div>
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_4 %>" target="_blank" ><%=raw @world.headline_4 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_4 %></p></div>
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_5 %>" target="_blank" ><%=raw @world.headline_5 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_5 %></p></div>
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_6 %>" target="_blank" ><%=raw @world.headline_6 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_6 %></p></div>
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_7 %>" target="_blank"><%=raw @world.headline_7 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_7 %></p></div>
+             <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @world.link_8 %>" target="_blank" ><%=raw @world.headline_8 %></a></p>
+                
+                </div>
+             <div class="row"><p class="courtesy-row-world" style="font-size: 12px;"><%=raw @world.source_8 %></p></div>
+                            
+  
+         
+        </div><!--/span-->
+          <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'thenewsminutecom'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+          <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'wwwthenewsminutecom'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    
+        
+</div>  
+
+   
+   </div><!--/.container-->
+
