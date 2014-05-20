@@ -47,7 +47,7 @@ module Refinery
         @world=Refinery::Worlds::World.order('position ASC')
         @random=Refinery::Randoms::Random.order('position ASC')
         
-        redirect_to "/maintenance.html"
+        
     end
 
     # This action can be accessed normally, or as nested pages.
