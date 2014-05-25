@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Headline2s::Admin::Headline2sController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.headline2s_admin_headline_2s_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_headline2s_admin_headline_2_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Headline2s::Admin::Headline2sController.sortable? && ::Refinery::Headline2s::Headline2.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Headline 2s"),
+                 refinery.headline2s_admin_headline_2s_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Headline 2s"),
+                 refinery.headline2s_admin_headline_2s_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

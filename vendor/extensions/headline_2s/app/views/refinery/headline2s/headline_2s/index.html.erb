@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="headline_2s">
+    <% @headline_2s.each do |headline_2| %>
+      <li>
+        <%= link_to headline_2.headline, refinery.headline2s_headline_2_path(headline_2) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

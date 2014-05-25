@@ -252,9 +252,10 @@
 <div class="visible-desktop">
 <div class="col-sm-0 col-md-4 col-lg-4">
         <div>
-         <h2 style="font-family: Roboto"><a class="links" href=/specials>ELECTION SPECIAL</a></h2>
-           <img alt="Polling Voting" height="156" src="/system/images/W1siZiIsIjIwMTQvMDQvMTEvMDcvMTUvNDgvODg3L3BvbGxpbmdfdm90aW5nLkpQRyJdLFsicCIsInRodW1iIiwiMjM1eDE3NCJdXQ/polling%20voting.JPG" width="235" class="img-responsive" />
-           <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"></p>
+<h3 style="font-family: Roboto"><%= link_to @side_headline[0].headline, refinery.side_headlines_side_headline_path(@side_headline[0]) %></h3>
+<%= image_fu @side_headline[0].photo, "240x160" %>
+<p style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @side_headline[0].blurb %></p>
+
         </div>
         <div class="table-responsive">
             <table class="table table-hover">

@@ -1,6 +1,8 @@
 PATH
   remote: vendor/extensions
   specs:
+    refinerycms-andhras (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-blogs (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-ears (1.0)
@@ -13,8 +15,14 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-finances (1.0)
       refinerycms-core (~> 2.1.2)
+    refinerycms-headline_2s (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-headlines (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-karnatakas (1.0)
+      refinerycms-core (~> 2.1.2)
+    refinerycms-keralas (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-latests (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-mainpages (1.0)
@@ -31,6 +39,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-redirects (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-side_headlines (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-southern_minutes (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-specials (1.0)
@@ -41,6 +51,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-subsections (1.0)
       refinerycms-core (~> 2.1.1)
+    refinerycms-tamils (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-technologies (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-worlds (1.0)
@@ -273,13 +285,17 @@ DEPENDENCIES
   rails (= 3.2.15)
   refinerycms (~> 2.1.0)
   refinerycms-acts-as-indexed (~> 1.0.0)
+  refinerycms-andhras!
   refinerycms-blogs!
   refinerycms-ears!
   refinerycms-editors_picks!
   refinerycms-elephants!
   refinerycms-entertainments!
   refinerycms-finances!
+  refinerycms-headline_2s!
   refinerycms-headlines!
+  refinerycms-karnatakas!
+  refinerycms-keralas!
   refinerycms-latests!
   refinerycms-mainpages!
   refinerycms-news_sections!
@@ -288,11 +304,13 @@ DEPENDENCIES
   refinerycms-politics!
   refinerycms-randoms!
   refinerycms-redirects!
+  refinerycms-side_headlines!
   refinerycms-southern_minutes!
   refinerycms-specials!
   refinerycms-sports!
   refinerycms-stories!
   refinerycms-subsections!
+  refinerycms-tamils!
   refinerycms-technologies!
   refinerycms-worlds!
   sass-rails (~> 3.2.3)

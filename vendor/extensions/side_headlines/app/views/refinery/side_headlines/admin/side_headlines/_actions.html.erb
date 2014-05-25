@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::SideHeadlines::Admin::SideHeadlinesController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.side_headlines_admin_side_headlines_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_side_headlines_admin_side_headline_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::SideHeadlines::Admin::SideHeadlinesController.sortable? && ::Refinery::SideHeadlines::SideHeadline.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Side Headlines"),
+                 refinery.side_headlines_admin_side_headlines_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Side Headlines"),
+                 refinery.side_headlines_admin_side_headlines_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

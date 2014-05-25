@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Andhras::Admin::AndhrasController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.andhras_admin_andhras_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_andhras_admin_andhra_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Andhras::Admin::AndhrasController.sortable? && ::Refinery::Andhras::Andhra.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Andhras"),
+                 refinery.andhras_admin_andhras_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Andhras"),
+                 refinery.andhras_admin_andhras_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

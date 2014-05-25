@@ -1,59 +1,130 @@
-    <div class="container">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/css/bootstrap-responsive.css" rel="stylesheet">
+<div class="row">
 
-            <div class="row row-offcanvas row-offcanvas-right">
-
-        <div class="col-xs-12 col-sm-9">
-          
-            
-            <div class="row">
+<div class="col-sm-12 col-md-8 col-lg-8" >
+<div class="row">
 <% i=0 %>
-             <% @randoms.reverse.each do |random| %>
-              <div class="col-6 col-sm-6 col-lg-6">
-               <div style="margin-top: 20px; float: left; width: 85px; height: 88px"> <%= image_fu random.image,"85x88" %> </div>
-              <p class="links" style="font-weight: 400; padding-top: 40px; padding-left: 100px; font-size: 18px"><a href=<%= random.url %> > <%= random.headline%></a></p>
-              <p class="courtesy-row-story" style="padding-left: 100px; font-size: 14px;"><%= random.tags %></p>
-              </div>
-                
-               
-               
-               
-               
-               
-                
-              
-          
-            
-            <% i=i+1 %>
-            <% if i%2==0 %>
-             </div>
-            
-            <hr />
-            
-             <div class="row">            
-                 <% end %>
-
-            
-        <% end %>
-    
-          </div>
-                     </div>
-
-        
-          
-        
-        
-
-   
-       </div><!--/.container-->
+<% @randoms.each do |random| %>
+<div class="col-12 col-md-6 col-lg-6">
+<div class="col-4 col-md-6 col-lg-4"> <%= image_fu random.image,"85x88" %> </div>
+<div class="col-8 col-md-6 col-lg-8"> <p class="links" style=" font-size: 18px"><a href=<%= random.url %> > <%= random.headline%></a></p>
+<p class="courtesy-row-story" style=" font-size: 14px;"><%= random.tags %></p>
+<p class="courtesy-row-story" style=" font-size: 14px;"><%= random.source %></p>
+</div>
+</div>
 
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery-1.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/offcanvas.js"></script>
-  
+
+
+
+
+
+
+<% i=i+1 %>
+<% if i%2==0 %>
+</div>
+<div class="visible-desktop">
+
+<hr style="margin-bottom:10px;"/>
+</div>
+
+<div class="row">
+<% end %>
+<div class="hidden-desktop">
+
+<hr style="margin-bottom:10px;"/>
+</div>
+
+<% end %>
+
+</div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="visible-desktop">
+<div class="col-sm-0 col-md-4 col-lg-4">
+<div>
+<h3 style="font-family: Roboto"><%= link_to @side_headline[0].headline, refinery.side_headlines_side_headline_path(@side_headline[0]) %></h3>
+<%= image_fu @side_headline[0].photo, "240x160" %>
+<p style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @side_headline[0].blurb %></p>
+
+</div>
+<div class="table-responsive">
+<table class="table table-hover">
+<tr><th><h2 class="section-header" style="text-align:center">Editor's Pick</h2></th></tr>
+
+<tr><td><p  style="margin-top: 20px" class="editors" ><a class="links" href=<%=raw @editors_pick_1.link %> ><%=raw @editors_pick_1.headline %></a></p></td></tr>
+<tr><td><p  style="margin-top: 20px" class="editors" ><a class="links" href=<%=raw @editors_pick_2.link %> ><%=raw @editors_pick_2.headline %></a></p></td></tr>
+<tr><td><p  style="margin-top: 20px" class="editors" ><a class="links" href=<%=raw @editors_pick_3.link %> ><%=raw @editors_pick_3.headline %></a></p></td></tr>
+<tr><td><p  style="margin-top: 20px" class="editors" ><a class="links" href=<%=raw @editors_pick_4.link %> ><%=raw @editors_pick_4.headline %></a></p></td></tr>
+
+</table>
+</div>
+<hr style="margin-top: 23px;width:100%"/>
+<h2 class="section-header" style="margin-top: 10px;text-align:center">Southern Minute</h2>
+<hr style="width:100%"/>
+<div class="row">
+<div class="col-4 col-sm-4 col-lg-4">
+<div style="margin-top: 20px; width:100%;"><%= image_fu @south_1.photo,"85x88", :class=> "img-responsive" %></div>
+
+</div>
+<div class="col-8 col-sm-8 col-lg-8">
+<p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @south_1.link %> ><%= @south_1.headline %></a></p>
+</div>
+
+</div>
+
+<div class="row">
+<div class="col-4 col-sm-4 col-lg-4">
+<div style="margin-top: 20px; width:100%;"><%= image_fu @south_2.photo,"85x88", :class=> "img-responsive" %></div>
+
+</div>
+<div class="col-8 col-sm-8 col-lg-8">
+<p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @south_2.link %> ><%= @south_2.headline %></a></p>
+</div>
+
+</div>
+<div class="row">
+<div class="col-4 col-sm-4 col-lg-4">
+<div style="margin-top: 20px; width:100%;"><%= image_fu @south_3.photo,"85x88", :class=> "img-responsive" %></div>
+
+</div>
+<div class="col-8 col-sm-8 col-lg-8">
+<p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @south_3.link %> ><%= @south_3.headline %></a></p>
+</div>
+
+</div>
+<div class="row">
+<div class="col-4 col-sm-4 col-lg-4">
+<div style="margin-top: 20px; width:100%;"><%= image_fu @south_4.photo,"85x88", :class=> "img-responsive" %></div>
+
+</div>
+<div class="col-8 col-sm-8 col-lg-8">
+<p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @south_4.link %> ><%= @south_4.headline %></a></p>
+</div>
+
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+
+</div><!--/.container-->
+
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery-1.js"></script>
+<script src="/js/bootstrap.js"></script>
+<script src="/js/offcanvas.js"></script>
+
 
 </body></html>

@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Karnatakas::Admin::KarnatakasController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.karnatakas_admin_karnatakas_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_karnatakas_admin_karnataka_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Karnatakas::Admin::KarnatakasController.sortable? && ::Refinery::Karnatakas::Karnataka.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Karnatakas"),
+                 refinery.karnatakas_admin_karnatakas_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Karnatakas"),
+                 refinery.karnatakas_admin_karnatakas_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

@@ -110,3 +110,18 @@ Refinery::Finances::Engine.load_seed
 
 # Added by Refinery CMS OpinionCorners extension
 Refinery::OpinionCorners::Engine.load_seed
+
+# Added by Refinery CMS SideHeadlines extension
+Refinery::SideHeadlines::Engine.load_seed
+
+# Added by Refinery CMS Karnatakas extension
+Refinery::Karnatakas::Engine.load_seed
+
+# Added by Refinery CMS Tamils extension
+Refinery::Tamils::Engine.load_seed
+
+# Added by Refinery CMS Keralas extension
+Refinery::Keralas::Engine.load_seed
+
+# Added by Refinery CMS Andhras extension
+Refinery::Andhras::Engine.load_seed

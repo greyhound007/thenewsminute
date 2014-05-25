@@ -1,0 +1,179 @@
+<%= form_for [refinery, :side_headlines_admin, @side_headline] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @side_headline,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :headline -%>
+    <%= f.text_field :headline, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @side_headline.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :youtube -%>
+    <%= f.text_field :youtube -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :image_blurb -%>
+    <%= f.text_field :image_blurb -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :blurb -%>
+    <%= f.text_field :blurb -%>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:summary],
+                :object => "side_headlines/side_headline" -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :tags -%>
+    <%= f.text_field :tags -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_1 -%>
+    <%= f.text_field :headline_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_1 -%>
+    <%= f.text_field :link_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_1 -%>
+    <%= f.text_field :source_1 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_2 -%>
+    <%= f.text_field :headline_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_2 -%>
+    <%= f.text_field :link_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_2 -%>
+    <%= f.text_field :source_2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_3 -%>
+    <%= f.text_field :headline_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_3 -%>
+    <%= f.text_field :link_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_3 -%>
+    <%= f.text_field :source_3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_4 -%>
+    <%= f.text_field :headline_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_4 -%>
+    <%= f.text_field :link_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_4 -%>
+    <%= f.text_field :source_4 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_5 -%>
+    <%= f.text_field :headline_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_5 -%>
+    <%= f.text_field :link_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_5 -%>
+    <%= f.text_field :source_5 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_6 -%>
+    <%= f.text_field :headline_6 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_6 -%>
+    <%= f.text_field :link_6 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_6 -%>
+    <%= f.text_field :source_6 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_7 -%>
+    <%= f.text_field :headline_7 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_7 -%>
+    <%= f.text_field :link_7 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_7 -%>
+    <%= f.text_field :source_7 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline_8 -%>
+    <%= f.text_field :headline_8 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link_8 -%>
+    <%= f.text_field :link_8 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :source_8 -%>
+    <%= f.text_field :source_8 -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.side_headlines.admin.side_headlines.side_headline'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @side_headline.headline) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

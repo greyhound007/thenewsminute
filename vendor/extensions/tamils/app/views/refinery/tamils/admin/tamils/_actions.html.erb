@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Tamils::Admin::TamilsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.tamils_admin_tamils_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_tamils_admin_tamil_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Tamils::Admin::TamilsController.sortable? && ::Refinery::Tamils::Tamil.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Tamils"),
+                 refinery.tamils_admin_tamils_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Tamils"),
+                 refinery.tamils_admin_tamils_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>
