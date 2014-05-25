@@ -70,13 +70,13 @@ gem 'friendly_id'
 #gem 'refinerycms-base_page_redirects', :path => 'vendor/extensions'
 #gem 'refinerycms-topstories', :path => 'vendor/extensions'
 
-gem 'refinerycms-mainpages', :path => 'vendor/extensions'
+#gem 'refinerycms-mainpages', :path => 'vendor/extensions'
 gem 'refinerycms-stories', :path => 'vendor/extensions'
 
 
-gem 'refinerycms-subsections', :path => 'vendor/extensions'
+#gem 'refinerycms-subsections', :path => 'vendor/extensions'
 
-gem 'refinerycms-redirects', :path => 'vendor/extensions'
+#gem 'refinerycms-redirects', :path => 'vendor/extensions'
 
 gem 'refinerycms-randoms', :path => 'vendor/extensions'
 
@@ -98,7 +98,7 @@ gem 'refinerycms-technologies', :path => 'vendor/extensions'
 gem 'refinerycms-worlds', :path => 'vendor/extensions'
 
 gem 'refinerycms-opinion_corners', :path => 'vendor/extensions'
-gem 'refinerycms-headline_2s', :path => 'vendor/extensions'
+#gem 'refinerycms-headline_2s', :path => 'vendor/extensions'
 gem 'refinerycms-side_headlines', :path => 'vendor/extensions'
 gem 'refinerycms-karnatakas', :path => 'vendor/extensions'
 gem 'refinerycms-tamils', :path => 'vendor/extensions'
