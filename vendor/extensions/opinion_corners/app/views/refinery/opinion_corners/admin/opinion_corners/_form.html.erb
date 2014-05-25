@@ -1,0 +1,54 @@
+<%= form_for [refinery, :opinion_corners_admin, @opinion_corner] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @opinion_corner,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :headline -%>
+    <%= f.text_field :headline, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link -%>
+    <%= f.text_field :link -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @opinion_corner.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :author -%>
+    <%= f.text_field :author -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline2 -%>
+    <%= f.text_field :headline2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link2 -%>
+    <%= f.text_field :link2 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :headline3 -%>
+    <%= f.text_field :headline3 -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :link3 -%>
+    <%= f.text_field :link3 -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.opinion_corners.admin.opinion_corners.opinion_corner'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @opinion_corner.headline) -%>
+<% end -%>

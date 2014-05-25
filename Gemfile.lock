@@ -21,10 +21,10 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-news_sections (1.0)
       refinerycms-core (~> 2.1.2)
+    refinerycms-opinion_corners (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-opinion_mainpages (1.0)
       refinerycms-core (~> 2.1.2)
-    refinerycms-opinions (1.0)
-      refinerycms-core (~> 2.1.1)
     refinerycms-politics (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-randoms (1.0)
@@ -283,8 +283,8 @@ DEPENDENCIES
   refinerycms-latests!
   refinerycms-mainpages!
   refinerycms-news_sections!
+  refinerycms-opinion_corners!
   refinerycms-opinion_mainpages!
-  refinerycms-opinions!
   refinerycms-politics!
   refinerycms-randoms!
   refinerycms-redirects!

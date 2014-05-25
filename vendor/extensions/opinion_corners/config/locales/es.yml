@@ -1,0 +1,35 @@
+es:
+  refinery:
+    plugins:
+      opinion_corners:
+        title: Opinion Corners
+#        article: masculino/femenino
+    opinion_corners:
+      admin:
+        opinion_corners:
+          actions:
+            create_new: Crear nuevo opinion corner
+            reorder: Reordenar opinion corners
+            reorder_done: Reordenación de opinion corners completada
+          records:
+            title: Opinion Corners
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay opinion corners todavía. Pulsa en "Crear nuevo Opinion Corner" para crear tu primer opinion corner.
+          opinion_corner:
+            view_live_html: Ver este opinion corner como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este opinion corner
+            delete: Borrar este opinion corner para siempre
+      opinion_corners:
+        show:
+          other: Otros opinion corners
+  activerecord:
+    attributes:
+      'refinery/opinion_corners/opinion_corner':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author
+        headline2: Headline2
+        link2: Link2
+        headline3: Headline3
+        link3: Link3

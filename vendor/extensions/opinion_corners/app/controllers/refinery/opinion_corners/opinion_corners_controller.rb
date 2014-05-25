@@ -1,13 +1,13 @@
 module Refinery
-  module Blogs
-    class BlogsController < ::ApplicationController
+  module OpinionCorners
+    class OpinionCornersController < ::ApplicationController
 
-      before_filter :find_all_blogs
+      before_filter :find_all_opinion_corners
       before_filter :find_page
 
       def index
         # you can use meta fields from your model instead (e.g. browser_title)
-        # by swapping @page for @blog in the line below:
+        # by swapping @page for @opinion_corner in the line below:
         present(@page)
           @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
           @editors_pick_1=@editors_pick[0]
@@ -24,25 +24,24 @@ module Refinery
           @elephant=@elephants.first
           @ears=Refinery::Ears::Ear.order('position ASC')
           @ear=@ears.first
-
       end
 
       def show
-        @blog = Blog.find(params[:id])
+        @opinion_corner = OpinionCorner.find(params[:id])
 
         # you can use meta fields from your model instead (e.g. browser_title)
-        # by swapping @page for @blog in the line below:
+        # by swapping @page for @opinion_corner in the line below:
         present(@page)
       end
 
     protected
 
-      def find_all_blogs
-        @blogs = Blog.order('position ASC')
+      def find_all_opinion_corners
+        @opinion_corners = OpinionCorner.order('position ASC')
       end
 
       def find_page
-        @page = ::Refinery::Page.where(:link_url => "/blogs").first
+        @page = ::Refinery::Page.where(:link_url => "/opinion_corners").first
       end
 
     end

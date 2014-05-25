@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140517081010) do
+ActiveRecord::Schema.define(:version => 20140524125505) do
 
   create_table "refinery_blogs", :force => true do |t|
     t.string   "headline"
@@ -437,6 +437,20 @@ ActiveRecord::Schema.define(:version => 20140517081010) do
     t.integer  "position"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "refinery_opinion_corners", :force => true do |t|
+    t.string   "headline"
+    t.string   "link"
+    t.integer  "photo_id"
+    t.string   "author"
+    t.string   "headline2"
+    t.string   "link2"
+    t.string   "headline3"
+    t.string   "link3"
+    t.integer  "position"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "refinery_opinion_mainpages", :force => true do |t|

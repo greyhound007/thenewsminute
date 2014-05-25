@@ -82,7 +82,6 @@ gem 'refinerycms-randoms', :path => 'vendor/extensions'
 
 gem 'refinerycms-blogs', :path => 'vendor/extensions'
 gem 'refinerycms-specials', :path => 'vendor/extensions'
-gem 'refinerycms-opinions', :path => 'vendor/extensions'
 gem 'refinerycms-headlines', :path => 'vendor/extensions'
 gem 'refinerycms-editors_picks', :path => 'vendor/extensions'
 gem 'refinerycms-southern_minutes', :path => 'vendor/extensions'
@@ -97,3 +96,5 @@ gem 'refinerycms-opinion_mainpages', :path => 'vendor/extensions'
 gem 'refinerycms-finances', :path => 'vendor/extensions'
 gem 'refinerycms-technologies', :path => 'vendor/extensions'
 gem 'refinerycms-worlds', :path => 'vendor/extensions'
+
+gem 'refinerycms-opinion_corners', :path => 'vendor/extensions'

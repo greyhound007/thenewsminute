@@ -1,0 +1,34 @@
+nl:
+  refinery:
+    plugins:
+      opinion_corners:
+        title: Opinion Corners
+    opinion_corners:
+      admin:
+        opinion_corners:
+          actions:
+            create_new: Nieuwe Opinion Corner toevoegen
+            reorder: De volgorde van de Opinion Corners wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Opinion Corner-volgorde
+          records:
+            title: Opinion Corners
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Opinion Corners. Druk op 'Nieuwe Opinion Corner toevoegen' om de eerste toe te voegen.
+          opinion_corner:
+            view_live_html: Deze opinion corner op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze opinion corner
+            delete: Deze opinion corner definitief verwijderen
+      opinion_corners:
+        show:
+          other: Andere Opinion Corners
+  activerecord:
+    attributes:
+      'refinery/opinion_corners/opinion_corner':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author
+        headline2: Headline2
+        link2: Link2
+        headline3: Headline3
+        link3: Link3

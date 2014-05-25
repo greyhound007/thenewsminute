@@ -1,0 +1,36 @@
+zh-CN:
+  refinery:
+    plugins:
+      opinion_corners:
+        title: Opinion Corners
+    opinion_corners:
+      admin:
+        opinion_corners:
+          actions:
+            create_new: 建立新的 Opinion Corner
+            reorder: 对 Opinion Corners 重新排序
+            reorder_done: 对 Opinion Corners 的重新排序结束
+          records:
+            title: Opinion Corners
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Opinion Corners yet. Click "Add New Opinion Corner" to add your first opinion corner.
+            no_items_yet: 目前没有 Opinion Corners . 点击 "Add New Opinion Corner" 创建一个opinion corner.
+          opinion_corner:
+            view_live_html: 查看 opinion corner 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 opinion corner
+            delete: 永久删除 opinion corner
+      opinion_corners:
+        show:
+          other: 其他 Opinion Corners
+  activerecord:
+    attributes:
+      'refinery/opinion_corners/opinion_corner':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author
+        headline2: Headline2
+        link2: Link2
+        headline3: Headline3
+        link3: Link3

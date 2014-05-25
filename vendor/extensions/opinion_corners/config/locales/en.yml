@@ -1,0 +1,34 @@
+en:
+  refinery:
+    plugins:
+      opinion_corners:
+        title: Opinion Corners
+    opinion_corners:
+      admin:
+        opinion_corners:
+          actions:
+            create_new: Add New Opinion Corner
+            reorder: Reorder Opinion Corners
+            reorder_done: Done Reordering Opinion Corners
+          records:
+            title: Opinion Corners
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Opinion Corners yet. Click "Add New Opinion Corner" to add your first opinion corner.
+          opinion_corner:
+            view_live_html: View this opinion corner live <br/><em>(opens in a new window)</em>
+            edit: Edit this opinion corner
+            delete: Remove this opinion corner forever
+      opinion_corners:
+        show:
+          other: Other Opinion Corners
+  activerecord:
+    attributes:
+      'refinery/opinion_corners/opinion_corner':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author
+        headline2: Headline2
+        link2: Link2
+        headline3: Headline3
+        link3: Link3

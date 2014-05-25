@@ -3,44 +3,42 @@
 <div class="row">
 
 <div class="col-sm-12 col-md-8 col-lg-8" >
-<div class="row">
-<% i=0 %>
-<% @blogs.each do |blog| %>
-<div class="col-12 col-md-6 col-lg-6">
-<div class="col-4 col-md-6 col-lg-4"> <%= image_fu blog.image,"85x88" %> </div>
-<div class="col-8 col-md-6 col-lg-8"> <p class="links" style=" font-size: 18px"><a href=<%= blog.url %> > <%= blog.headline%></a></p>
-<p class="courtesy-row-story" style=" font-size: 14px;"><%= blog.tags %></p>
-<p class="courtesy-row-story" style=" font-size: 14px;"><%= blog.source %></p>
+<% @opinion_corners.each do |opinion| %>
+<div class="col-sm-12 col-md-6 col-lg-6">
+<div class="col-sm-4 col-md-4 col-lg-4" >
+
+<%= image_fu opinion.photo,"200x100", :class=> "img-responsive" %>
 </div>
+<div class="col-sm-8 col-md-8 col-lg-8" >
+<a href=<%= opinion.link%> class="links"><%= opinion.headline%></a>
+</br>
+<%= opinion.author %>
 </div>
-
-
-
-
-
-
-
-
-
-<% i=i+1 %>
-<% if i%2==0 %>
-</div>
-<div class="visible-desktop">
-
-<hr style="margin-bottom:10px;"/>
-</div>
-
-<div class="row">
-<% end %>
 <div class="hidden-desktop">
 
 <hr style="margin-bottom:10px;"/>
 </div>
+</div>
+
+<div class="col-sm-12 col-md-6 col-lg-6" >
+
+<a href=<%= opinion.link2%> class="links"><%= opinion.headline2%></a>
+<br/>
+<div class="hidden-desktop">
+
+<hr style="margin-bottom:10px;"/>
+</div>
+<a href=<%= opinion.link3%> class="links"><%= opinion.headline3%></a>
+
+
+</div>
+<hr style="margin:20px;"/>
 
 <% end %>
 
+
 </div>
-</div>
+
 <div class="clearfix visible-xs"></div>
 <div class="visible-desktop">
 <div class="col-sm-0 col-md-4 col-lg-4">
@@ -108,22 +106,4 @@
 
 </div>
 </div>
-
-
-
-
-
-
-</div><!--/.container-->
-
-
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="/js/jquery-1.js"></script>
-<script src="/js/bootstrap.js"></script>
-<script src="/js/offcanvas.js"></script>
-
-
-</body></html>
+</div>

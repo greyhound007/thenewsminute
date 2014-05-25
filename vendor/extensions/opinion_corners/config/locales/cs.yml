@@ -1,0 +1,34 @@
+cs:
+  refinery:
+    plugins:
+      opinion_corners:
+        title: Opinion Corners
+    opinion_corners:
+      admin:
+        opinion_corners:
+          actions:
+            create_new: Přidat Opinion Corner
+            reorder: Řadit Opinion Corners
+            reorder_done: Konec řazení Opinion Corners
+          records:
+            title: Opinion Corners
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Opinion Corners. Zvolte "Přidat Opinion Corner" pro přidání prvního opinion corner.
+          opinion_corner:
+            view_live_html: Zobrazit náhled opinion corner<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit opinion corner
+            delete: Smazat opinion corner
+      opinion_corners:
+        show:
+          other: Další Opinion Corners
+  activerecord:
+    attributes:
+      'refinery/opinion_corners/opinion_corner':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author
+        headline2: Headline2
+        link2: Link2
+        headline3: Headline3
+        link3: Link3

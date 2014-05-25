@@ -1,0 +1,34 @@
+tr:
+  refinery:
+    plugins:
+      opinion_corners:
+        title: Opinion Corners
+    opinion_corners:
+      admin:
+        opinion_corners:
+          actions:
+            create_new: Yeni Ekle Opinion Corner
+            reorder: Tekrar sirala Opinion Corners
+            reorder_done: Tekrar siralama tamamlandiOpinion Corners
+          records:
+            title: Opinion Corners
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Opinion Corners yok henuz.  Tikla "Yeni Ekle Opinion Corner" eklemek senin ilk opinion corner.
+          opinion_corner:
+            view_live_html: Bunu canlu opinion corner goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle opinion corner
+            delete: Bunu Sil opinion corner sonsuza dek
+      opinion_corners:
+        show:
+          other: Diger Opinion Corners
+  activerecord:
+    attributes:
+      'refinery/opinion_corners/opinion_corner':
+        headline: Headline
+        link: Link
+        photo: Photo
+        author: Author
+        headline2: Headline2
+        link2: Link2
+        headline3: Headline3
+        link3: Link3

@@ -107,3 +107,6 @@ Refinery::OpinionMainpages::Engine.load_seed
 
 # Added by Refinery CMS Finances extension
 Refinery::Finances::Engine.load_seed
+
+# Added by Refinery CMS OpinionCorners extension
+Refinery::OpinionCorners::Engine.load_seed
