@@ -15,8 +15,6 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-finances (1.0)
       refinerycms-core (~> 2.1.2)
-    refinerycms-headline_2s (1.0)
-      refinerycms-core (~> 2.1.2)
     refinerycms-headlines (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-karnatakas (1.0)
@@ -25,8 +23,6 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-latests (1.0)
       refinerycms-core (~> 2.1.2)
-    refinerycms-mainpages (1.0)
-      refinerycms-core (~> 2.1.1)
     refinerycms-news_sections (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-opinion_corners (1.0)
@@ -37,8 +33,6 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-randoms (1.0)
       refinerycms-core (~> 2.1.1)
-    refinerycms-redirects (1.0)
-      refinerycms-core (~> 2.1.1)
     refinerycms-side_headlines (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-southern_minutes (1.0)
@@ -48,8 +42,6 @@ PATH
     refinerycms-sports (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-stories (1.0)
-      refinerycms-core (~> 2.1.1)
-    refinerycms-subsections (1.0)
       refinerycms-core (~> 2.1.1)
     refinerycms-tamils (1.0)
       refinerycms-core (~> 2.1.2)
@@ -292,24 +284,20 @@ DEPENDENCIES
   refinerycms-elephants!
   refinerycms-entertainments!
   refinerycms-finances!
-  refinerycms-headline_2s!
   refinerycms-headlines!
   refinerycms-karnatakas!
   refinerycms-keralas!
   refinerycms-latests!
-  refinerycms-mainpages!
   refinerycms-news_sections!
   refinerycms-opinion_corners!
   refinerycms-opinion_mainpages!
   refinerycms-politics!
   refinerycms-randoms!
-  refinerycms-redirects!
   refinerycms-side_headlines!
   refinerycms-southern_minutes!
   refinerycms-specials!
   refinerycms-sports!
   refinerycms-stories!
-  refinerycms-subsections!
   refinerycms-tamils!
   refinerycms-technologies!
   refinerycms-worlds!
