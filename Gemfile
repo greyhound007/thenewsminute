@@ -15,7 +15,7 @@ end
 group :production do
   gem 'fog'
 end
-ruby '1.9.3p392'
+
 
 # Gems used only for assets and not required
 # in production environments by default.
