@@ -252,7 +252,7 @@
 <div class="visible-desktop">
 <div class="col-sm-0 col-md-4 col-lg-4">
 <div>
-<h3 style="font-family: Roboto"><%= link_to @side_headline[0].headline, refinery.side_headlines_side_headline_path(@side_headline[0]) %></h3>
+<h3 style="font-family: Roboto"><%= link_to @side_headline[0].headline, refinery.side_headlines_side_headline_path(@side_headline[0]) ,:class=>"links"%></h3>
 <%= image_fu @side_headline[0].photo, "240x160" %>
 <p style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @side_headline[0].blurb %></p>
 
