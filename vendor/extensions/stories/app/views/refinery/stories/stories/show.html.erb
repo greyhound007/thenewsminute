@@ -1,35 +1,59 @@
 
 
-
+<link href="css/blog-post.css" rel="stylesheet">
 
 <meta property="og:title" content=<%=raw @story.Main_headline %> />
 <meta property="og:image" content=<%= @story.photo %> />
 <meta property="og:description" content=<%= @story.blurb %> />
 <meta property="og:url" content=<%= @story.id %> />
 
+
 <div class="container">
 
-      <div class="row row-offcanvas-right">
+<div class="row">
+<div class="col-lg-8">
 
-        <div class="col-xs-12 col-sm-12">
-          <p class="pull-right visible-xs">
-            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-          </p>
-          <div class="panel">
-            <h2 style="font-family: Roboto"><%=raw @story.Main_headline %></h2>
-            
-                
-            <%= image_fu @story.photo,"660x390",:class=> "img-responsive" %>
-            
-            
-            <p class="links" style="font-weight: 500; padding-top: 10px"><%=raw @story.blurb %></p>
-            <div class="col-12 col-sm-12 col-lg-12">
-              <p style="font-weight: 400; padding-top: 10px; padding-left: -10px; font-size: 18px"><%=raw @story.summary %></p>
-              
-                
-                  
-            </div>
-            
+<!-- the actual blog post: title/author/date/content -->
+<h1>New plantation project to boost mango farming, pulp yield</h1>
+
+</p>
+
+<p>
+Posted on May 26, 2014 3:00 PM IST </p>
+<hr>
+<p class="lead">Science cuts two ways, of course; its products can be used for both good and evil. But theres no turning back from science. The early warnings about technological dangers also come from science.</p>
+
+<img src="http://beta.thenewsminute.com/system/images/W1siZiIsIjIwMTQvMDUvMjYvMDkvMjYvNTQvNjEyL01hbmdvLmpwZyJdLFsicCIsInRodW1iIiwiNjYweDM5MCJdXQ/Mango.jpg0" class="img-responsive" style="float:left;width:300px; height:300px; padding:10px">
+
+
+<p>You know, being a test pilot isnt always the healthiest business in the world.</p>
+<p>Cookie jelly beans soufflé icing. Gummi bears tootsie roll powder chupa chups cheesecake chocolate jelly-o lollipop lollipop. Halvah applicake chupa chups. Marshmallow chocolate jujubes icing lollipop gummi bears chupa chups pudding bonbon. Jelly beans jelly soufflé jujubes. Sesame snaps lollipop icing donut lemon drops soufflé.</p>
+<p>Donut caramels gingerbread. Sweet roll macaroon pastry cotton candy oat cake sesame snaps biscuit lemon drops dessert. Candy canes carrot cake danish carrot cake soufflé jelly chocolate cake muffin. Topping brownie donut. Oat cake marzipan dragée cheesecake. Donut chocolate cake jujubes tart dragée toffee.</p>
+<p>Tilefish electric knifefish salmon shark southern Dolly Varden. Pacific argentine tope golden shiner ilisha barreleye loosejaw catla, dogteeth tetra catfish tenpounder nase scup Ragfish brotula." Codlet brook lamprey pleco, Japanese eel convict cichlid titan triggerfish, plownose chimaera topminnow Black scalyfin. Walleye pollock, blue shark Sacramento blackfish prickleback airbreathing catfish yellowfin cutthroat trout, goby southern sandfish. North Pacific daggertooth dorab cepalin weever flying gurnard.</p>
+</div>
+
+<div class="col-lg-4">
+<div class="well">
+<h4>Trending on The News Minute</h4>
+<p><!-- AddThis Trending Content BEGIN -->
+<div id="addthis_trendingcontent"></div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-530a087f37f2ce9b"></script>
+<script type="text/javascript">
+addthis.box("#addthis_trendingcontent", {
+    feed_title : "",
+    feed_type : "trending",
+    feed_period : "month",
+    num_links : 15,
+    height : "auto",
+    width : "auto",
+    domain : "www.thenewsminute.com"});
+</script>
+<!-- AddThis Trending Content END --></p>
+</div>
+<!-- /well -->
+</div>
+</div>
+
             <div class="row">
 <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
@@ -52,20 +76,20 @@ addthis.layers({
 });
 </script>
 <!-- AddThis Smart Layers END --> </div>
-            
+
           </div>
-         
-         
-          
+
+
+
            <div class="col-12 col-sm-12 col-lg-12" style="margin-top: 20px">
                <hr />
                 <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @story.link_1 %>" target="_blank" ><%=raw @story.headline_1 %></a></p>
-                
+
                 </div>
              <div class="row"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_1 %></p></div>
-             
+
              <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @story.link_2 %>" target="_blank" > <%=raw @story.headline_2 %></a></p>
-                
+
                 </div>
              <div class="row"><p class="courtesy-row-story" style="font-size: 12px;"><%=raw @story.source_2 %></p></div>
              <div class="row"><p class="links latest-text" style="font-weight: 400; font-size: 14px"><a href="<%=raw @story.link_3 %>" target="_blank" ><%=raw @story.headline_3 %></a></p>
