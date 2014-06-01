@@ -38,7 +38,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
-
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="/css/newsminute.css" rel="stylesheet">
 <link href="/css/bootstrap.icon-large.min.css" rel="stylesheet">
@@ -84,10 +84,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">South</a>
               <ul class="dropdown-menu"style="color: #000;font-size: 14px;font-family: 'Cambria';">
-                <li ><a href="keralas">Kerala</a></li>
-                <li><a href="karnatakas">Karnataka</a></li>
-                <li><a href="tamils">Tamil Nadu</a></li>
-                <li><a href="andhras">Andhra Pradesh</a></li>
+                <li ><a href="/keralas">Kerala</a></li>
+                <li><a href="/karnatakas">Karnataka</a></li>
+                <li><a href="/tamils">Tamil Nadu</a></li>
+                <li><a href="/andhras">Andhra Pradesh</a></li>
               </ul>
             </li>
             <li><a href="/technologies">Science</a></li>
@@ -96,12 +96,42 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li><a href="/randoms">Random</a></li>
             <li><a href="/blogs">Blogs</a></li>
             <li><a href="/opinion_corners">Opinion</a></li>
-          </ul>
+            <li>
+            <a onclick="hideform();"><span class="glyphicon glyphicon-search"></span></a>
+</li>
+</ul>
+<script type="text/javascript">
+function hideform()
+{
+    
+    
+    var e = document.getElementById("search");
+    if(e.style.display=='none')
+    e.style.display='block';
+    else
+    e.style.display='none';
+}
+
+</script>
+<script>
+(function() {
+    var cx = '015563245444933055861:belyqmedylm';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+    '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+})();
+</script>
+
+
+
         </div><!-- /.nav-collapse -->
-      
+      <div id="search" style="display:none"><gcse:search></gcse:search></div>
     </div><!-- /.navbar -->
-     
-      </div>
+          </div>
 
 <!-- AddThis Smart Layers BEGIN -->
 <!-- Go to http://www.addthis.com/get/smart-layers to customize -->
@@ -117,6 +147,7 @@ addthis.layers({
     }
 });
 </script>
+
 <!-- AddThis Smart Layers END -->
 
 
@@ -137,6 +168,7 @@ addthis.bar.initialize({'default':{"backgroundColor":"#000000","buttonColor":"#0
   ga('send', 'pageview');
 
 </script>
+
 
 <meta name="keywords" content="Latest News, Breaking News, Breaking News, World News, Politics News, Market News, News Live, Latest News India, Live News, News Today, News 24, News Online" />
 <meta name="description" content="The News Minute - Aggregating India stories, filing India news, collecting Indian and global views" />
