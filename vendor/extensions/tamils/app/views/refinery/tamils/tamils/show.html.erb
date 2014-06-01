@@ -2,13 +2,13 @@
 
 <link href="css/blog-post.css" rel="stylesheet">
 
-<meta property="og:title" content=<%=raw @tamil.Main_headline %> />
+<meta property="og:title" content=<%=raw @tamil.headline %> />
 <meta property="og:image" content=<%= @tamil.photo %> />
 <meta property="og:description" content=<%= @tamil.blurb %> />
 <meta property="og:url" content=<%= @tamil.id %> />
 
 <TITLE>The News Minute</TITLE>
-<META NAME="description" CONTENT="<%=raw @tamil.Main_headline %>">
+<META NAME="description" CONTENT="<%=raw @tamil.headline %>">
 <META NAME="keywords" CONTENT="<%=raw @tamil.blurb %>">
 <META NAME="robot" CONTENT="index,follow">
 <META NAME="author" CONTENT="The NewsMinute">
@@ -18,7 +18,7 @@
 <div class="col-lg-8">
 
 <!-- the actual blog post: title/author/date/content -->
-<h1><%=raw @tamil.Main_headline %></h1>
+<h1><%=raw @tamil.headline %></h1>
 
 
 
