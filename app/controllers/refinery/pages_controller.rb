@@ -18,7 +18,7 @@ module Refinery
         #url=@landing.Mainpage_url
         
         
-        @headline = Refinery::Headlines::Headline.find(1)
+        @headline = Refinery::Headlines::Headline.find(2)
         @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
         @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
         @editors_pick_1=@editors_pick[0]
