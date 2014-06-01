@@ -3,296 +3,855 @@
 <div class="container" style="padding-top:10px">
 
 
-   <div class="row" style="padding-bottom:10px">
+<div class="row" style="padding-bottom:10px">
 
-      <div class="col-sm-12 col-md-6 col-lg-8" style="border-right: 1px solid grey;">
+<div class="col-sm-12 col-md-6 col-lg-8 visible-desktop" style="border-right: 1px solid grey;">
 
-      <h2><a class="links" href=<%=raw @headline.main_link %>><%=raw @headline.main_headline %></a></h2>
-            
-            <div class="col-sm-6 col-md-6 col-lg-8">
-         
-           <a href=<%=raw @headline.main_link %>> <%= image_fu @headline.main_photo,"600x300", :class=> "img-responsive" %></a>
+<h2><a class="links" href=<%=raw @headline.main_link %>><%=raw @headline.main_headline %></a></h2>
 
-            <p  style="font-weight: 500; font-size: 20px;padding-top: 10px;padding-left: 0px;"><%=raw @headline.main_blurb %></p>
-         
-            </div>
+<div class="col-sm-6 col-md-6 col-lg-8">
 
-        <div class="col-sm-6 col-md-6 col-lg-4">
-            <p class="links" style="font-weight: 400; font-size: 14px;padding-top: 10px;"><a href="<%=raw @headline.main_story_link_1 %>" target="_blank"><%=raw @headline.main_story_link_headline_1 %></a></p>
-              
-                
-            
-                        <p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_1 %></p>
-                  
-          
-                
-            <p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_2 %>" target="_blank"><%=raw @headline.main_story_link_headline_2 %></a></p>
-              
-                
-            
-                        <p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_2 %></p>
-                  
-           
+<a href=<%=raw @headline.main_link %>> <%= image_fu @headline.main_photo,"600x300", :class=> "img-responsive" %></a>
 
+<p  style="font-weight: 500; font-size: 20px;padding-top: 10px;padding-left: 0px;"><%=raw @headline.main_blurb %></p>
 
-                        <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%= raw @headline.main_story_link_3 %>" target="_blank"><%= raw @headline.main_story_link_headline_3 %></a></p>
-              
-                
-            
-                        <p class="courtesy-row" style="font-size: 14px;"><%= raw @headline.main_story_link_source_3 %></p>
-                  
-          
-            <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_4 %>" target="_blank"><%=raw @headline.main_story_link_headline_4 %></a></p>
-              
-                
-           
-                        <p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_4 %></p>
-                  
-            
-        </div>
-        <div class="row">
-  
-  <img src="/assets/latest.png" width=100% class="img-responsive"/>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[0].link %> ><%= @latest[0].headline %></a></p></div>
-  <%= image_fu @latest[0].photo,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[1].link %> ><%= @latest[1].headline %></a></p></div>
-  <%= image_fu @latest[1].photo,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[2].link %> ><%= @latest[2].headline %></a></p></div>
-  <%= image_fu @latest[2].photo,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[3].link %> ><%= @latest[3].headline %></a></p></div>
-  <%= image_fu @latest[3].photo,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  </div>
-  <div class="row" style="padding:0;margin-top:1px;">
-                <hr width=100%/>
-              <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/politics">Politics</a></h2>
-              <hr width=100%/>
-              
-              
-            <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @politics[0].Main_headline, refinery.politics_politic_path(@politics[0])  %> </p>
-              <div style="text-align: center"><%= image_fu @politics[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>
-              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[1].Main_headline, refinery.politics_politic_path(@politics[1]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[2].Main_headline, refinery.politics_politic_path(@politics[2]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[3].Main_headline, refinery.politics_politic_path(@politics[3]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[4].Main_headline, refinery.politics_politic_path(@politics[4]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[5].Main_headline, refinery.politics_politic_path(@politics[5]) %></p>
-             </div>
 </div>
-  <div class="row" style="padding:0;margin-top:10px;">
-                <hr width=100%/>
-              <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/news">News</a></h2>
-              <hr width=100%/>
-              
-              
-            <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @news[0].Main_headline, refinery.news_sections_news_section_path(@news[0]) %> </p>
-              <div style="text-align: center"><%= image_fu @news[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[1].Main_headline, refinery.news_sections_news_section_path(@news[1])  %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[2].Main_headline, refinery.news_sections_news_section_path(@news[2])  %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[3].Main_headline, refinery.news_sections_news_section_path(@news[3])  %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[4].Main_headline, refinery.news_sections_news_section_path(@news[4])  %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[5].Main_headline, refinery.news_sections_news_section_path(@news[5])  %></p>
-             </div></div>
+
+<div class="col-sm-6 col-md-6 col-lg-4">
+<p class="links" style="font-weight: 400; font-size: 14px;padding-top: 10px;"><a href="<%=raw @headline.main_story_link_1 %>" target="_blank"><%=raw @headline.main_story_link_headline_1 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_1 %></p>
+
+
+
+<p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_2 %>" target="_blank"><%=raw @headline.main_story_link_headline_2 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_2 %></p>
+
+
+
+
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%= raw @headline.main_story_link_3 %>" target="_blank"><%= raw @headline.main_story_link_headline_3 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%= raw @headline.main_story_link_source_3 %></p>
+
+
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_4 %>" target="_blank"><%=raw @headline.main_story_link_headline_4 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_4 %></p>
+
+
+</div>
 <div class="row">
-  
-  <a href="/blogs"><img src="/assets/voices.png" width=100% class="img-responsive"/></a>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[0].url %> > <%= @blog[0].headline%></a></p></div>
-  <%= image_fu @blog[0].image,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;" >
-    <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[1].url %> > <%= @blog[1].headline%></a></p></div>
-  <%= image_fu @blog[1].image,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-    <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[2].url %> > <%= @blog[2].headline%></a></p></div>
-  <%= image_fu @blog[2].image,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-    <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[3].url %> > <%= @blog[3].headline%></a></p></div>
-  <%= image_fu @blog[3].image,"180x120", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  </div>
-  <div class="row" style="padding:0;margin-top:1px;">
-                <hr width=100%/>
-              <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/sports">Buzzing</a></h2>
-              <hr width=100%/>
-              
-              
-            <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @sports[0].Main_headline, refinery.sports_sport_path(@sports[0])  %> </p>
-              <div style="text-align: center"><%= image_fu @sports[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[1].Main_headline, refinery.sports_sport_path(@sports[1]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[2].Main_headline, refinery.sports_sport_path(@sports[2]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[3].Main_headline, refinery.sports_sport_path(@sports[3]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[4].Main_headline, refinery.sports_sport_path(@sports[4]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[5].Main_headline, refinery.sports_sport_path(@sports[5]) %></p>
-             </div>
-             
-             </div>
-  <div class="row" style="padding:0;margin-top:10px;">
-                <hr width=100%/>
-              <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/entertainments">Entertainment</a></h2>
-              <hr width=100%/>
-              
-              
-            <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @enter[0].Main_headline, refinery.entertainments_entertainment_path(@enter[0]) %> </p>
-              <div style="text-align: center"><%= image_fu @enter[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[1].Main_headline, refinery.entertainments_entertainment_path(@enter[1]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[2].Main_headline, refinery.entertainments_entertainment_path(@enter[2]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[3].Main_headline, refinery.entertainments_entertainment_path(@enter[3]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[4].Main_headline, refinery.entertainments_entertainment_path(@enter[4]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[5].Main_headline, refinery.entertainments_entertainment_path(@enter[5]) %></p>
-             </div></div>
+
+<img src="/assets/latest.png" width=100% class="img-responsive"/>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[0].link %> ><%= @latest[0].headline %></a></p></div>
+<%= image_fu @latest[0].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[1].link %> ><%= @latest[1].headline %></a></p></div>
+<%= image_fu @latest[1].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[2].link %> ><%= @latest[2].headline %></a></p></div>
+<%= image_fu @latest[2].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[3].link %> ><%= @latest[3].headline %></a></p></div>
+<%= image_fu @latest[3].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/politics">Politics</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @politics[0].Main_headline, refinery.politics_politic_path(@politics[0])  %> </p>
+<div style="text-align: center"><%= image_fu @politics[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[1].Main_headline, refinery.politics_politic_path(@politics[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[2].Main_headline, refinery.politics_politic_path(@politics[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[3].Main_headline, refinery.politics_politic_path(@politics[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[4].Main_headline, refinery.politics_politic_path(@politics[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[5].Main_headline, refinery.politics_politic_path(@politics[5]) %></p>
+</div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/news">News</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @news[0].Main_headline, refinery.news_sections_news_section_path(@news[0]) %> </p>
+<div style="text-align: center"><%= image_fu @news[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[1].Main_headline, refinery.news_sections_news_section_path(@news[1])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[2].Main_headline, refinery.news_sections_news_section_path(@news[2])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[3].Main_headline, refinery.news_sections_news_section_path(@news[3])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[4].Main_headline, refinery.news_sections_news_section_path(@news[4])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[5].Main_headline, refinery.news_sections_news_section_path(@news[5])  %></p>
+</div></div>
 <div class="row">
-  
-  <a href="/opinions"><img src="/assets/columnists.png" width=100% class="img-responsive"/></a>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  <%= image_fu @opinion[0].image,"200x150", :class=> "img-responsive" %>
+
+<a href="/blogs"><img src="/assets/voices.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[0].url %> > <%= @blog[0].headline%></a></p></div>
+<%= image_fu @blog[0].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[1].url %> > <%= @blog[1].headline%></a></p></div>
+<%= image_fu @blog[1].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[2].url %> > <%= @blog[2].headline%></a></p></div>
+<%= image_fu @blog[2].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[3].url %> > <%= @blog[3].headline%></a></p></div>
+<%= image_fu @blog[3].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/sports">Buzzing</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @sports[0].Main_headline, refinery.sports_sport_path(@sports[0])  %> </p>
+<div style="text-align: center"><%= image_fu @sports[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[1].Main_headline, refinery.sports_sport_path(@sports[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[2].Main_headline, refinery.sports_sport_path(@sports[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[3].Main_headline, refinery.sports_sport_path(@sports[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[4].Main_headline, refinery.sports_sport_path(@sports[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[5].Main_headline, refinery.sports_sport_path(@sports[5]) %></p>
+</div>
+
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/entertainments">Entertainment</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @enter[0].Main_headline, refinery.entertainments_entertainment_path(@enter[0]) %> </p>
+<div style="text-align: center"><%= image_fu @enter[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[1].Main_headline, refinery.entertainments_entertainment_path(@enter[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[2].Main_headline, refinery.entertainments_entertainment_path(@enter[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[3].Main_headline, refinery.entertainments_entertainment_path(@enter[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[4].Main_headline, refinery.entertainments_entertainment_path(@enter[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[5].Main_headline, refinery.entertainments_entertainment_path(@enter[5]) %></p>
+</div></div>
+<div class="row">
+
+<a href="/opinions"><img src="/assets/columnists.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<%= image_fu @opinion[0].image,"200x150", :class=> "img-responsive" %>
 <p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[0].url %>><%=raw @opinion[0].headline %></a></p>
-   <p class="columnists"><%=raw @opinion[0].author %></p>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;" >
-  
-  <%= image_fu @opinion[1].image,"200x150", :class=> "img-responsive" %>
-<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[1].url %>><%=raw @opinion[1].headline %></a></p>
-   <p class="columnists"><%=raw @opinion[0].author %></p>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <%= image_fu @opinion[2].image,"200x150", :class=> "img-responsive" %>
-<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[2].url %>><%=raw @opinion[2].headline %></a></p>
-   <p class="columnists"><%=raw @opinion[0].author %></p>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <%= image_fu @opinion[3].image,"200x150", :class=> "img-responsive" %>
-<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[3].url %>><%=raw @opinion[3].headline %></a></p>
-   <p class="columnists"><%=raw @opinion[0].author %></p>
-  </div>
-  <div class="clearfix visible-xs"></div>  </div>
-  
-  <div class="row" style="padding:0;margin-top:1px;">
-                <hr width=100%/>
-              <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/technologies">Science</a></h2>
-              <hr width=100%/>
-              
-              
-            <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @tech[0].Main_headline, refinery.technologies_technology_path(@tech[0]) %> </p>
-              <div style="text-align: center"><%= image_fu @tech[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[1].Main_headline, refinery.technologies_technology_path(@tech[1]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[2].Main_headline, refinery.technologies_technology_path(@tech[2]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[3].Main_headline, refinery.technologies_technology_path(@tech[3]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[4].Main_headline, refinery.technologies_technology_path(@tech[4]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[5].Main_headline, refinery.technologies_technology_path(@tech[5]) %></p>
-             </div>
+<p class="columnists"><%=raw @opinion[0].author %></p>
 </div>
-  <div class="row" style="padding:0;margin-top:10px;">
-                <hr width=100%/>
-              <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/finances">Life</a></h2>
-              <hr width=100%/>
-              
-              
-            <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @money[0].Main_headline, refinery.finances_finance_path(@money[0]) %> </p>
-              <div style="text-align: center"><%= image_fu @money[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[1].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[2].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[3].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[4].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[5].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
-             </div></div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+
+<%= image_fu @opinion[1].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[1].url %>><%=raw @opinion[1].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<%= image_fu @opinion[2].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[2].url %>><%=raw @opinion[2].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<%= image_fu @opinion[3].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[3].url %>><%=raw @opinion[3].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>  </div>
+
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/technologies">Science</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @tech[0].Main_headline, refinery.technologies_technology_path(@tech[0]) %> </p>
+<div style="text-align: center"><%= image_fu @tech[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[1].Main_headline, refinery.technologies_technology_path(@tech[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[2].Main_headline, refinery.technologies_technology_path(@tech[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[3].Main_headline, refinery.technologies_technology_path(@tech[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[4].Main_headline, refinery.technologies_technology_path(@tech[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[5].Main_headline, refinery.technologies_technology_path(@tech[5]) %></p>
+</div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/finances">Life</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @money[0].Main_headline, refinery.finances_finance_path(@money[0]) %> </p>
+<div style="text-align: center"><%= image_fu @money[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[1].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[2].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[3].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[4].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[5].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+</div></div>
 <div class="row">
-  
-  <a href="/randoms"><img src="/assets/random.png" width=100% class="img-responsive"/></a>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[0].url %>><%=raw @random[0].headline %></a></p></div>
-  <%= image_fu @random[0].image,"200x150", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;" >
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[1].url %>><%=raw @random[1].headline %></a></p></div>
-  <%= image_fu @random[1].image,"200x150", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[2].url %>><%=raw @random[2].headline %></a></p></div>
-  <%= image_fu @random[2].image,"200x150", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  <div class="col-xs-6 col-sm-3" style="padding:10px;">
-  <div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[3].url %>><%=raw @random[3].headline %></a></p></div>
-  <%= image_fu @random[3].image,"200x150", :class=> "img-responsive" %>
-  </div>
-  <div class="clearfix visible-xs"></div>
-  </div>
+
+<a href="/randoms"><img src="/assets/random.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[0].url %>><%=raw @random[0].headline %></a></p></div>
+<%= image_fu @random[0].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[1].url %>><%=raw @random[1].headline %></a></p></div>
+<%= image_fu @random[1].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[2].url %>><%=raw @random[2].headline %></a></p></div>
+<%= image_fu @random[2].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[3].url %>><%=raw @random[3].headline %></a></p></div>
+<%= image_fu @random[3].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
 <div class="row" style="padding:0;margin-top:10px;">
 <hr width=100%/>
 <h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/worlds">World</a></h2>
 <hr width=100%/>
 
 
- <div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
-            <p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @world[0].Main_headline, refinery.worlds_world_path(@world[0]) %> </p>
-              <div style="text-align: center"><%= image_fu @world[0].photo,"230x150", :class=> "img-responsive" %></div>
-              </div>              <div class="clearfix visible-xs"></div>
-              <div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
-              <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[1].Main_headline, refinery.worlds_world_path(@world[1]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[2].Main_headline, refinery.worlds_world_path(@world[2]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[3].Main_headline, refinery.worlds_world_path(@world[3]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[4].Main_headline, refinery.worlds_world_path(@world[4]) %></p>
-                <p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[5].Main_headline, refinery.worlds_world_path(@world[5]) %></p>
-             </div></div>
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @world[0].Main_headline, refinery.worlds_world_path(@world[0]) %> </p>
+<div style="text-align: center"><%= image_fu @world[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[1].Main_headline, refinery.worlds_world_path(@world[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[2].Main_headline, refinery.worlds_world_path(@world[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[3].Main_headline, refinery.worlds_world_path(@world[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[4].Main_headline, refinery.worlds_world_path(@world[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[5].Main_headline, refinery.worlds_world_path(@world[5]) %></p>
+</div></div>
+
+</div>
+<div class="col-sm-12 col-md-6 col-lg-8 visible-tablet">
+
+<h2><a class="links" href=<%=raw @headline.main_link %>><%=raw @headline.main_headline %></a></h2>
+
+<div class="col-sm-6 col-md-6 col-lg-8">
+
+<a href=<%=raw @headline.main_link %>> <%= image_fu @headline.main_photo,"600x300", :class=> "img-responsive" %></a>
+
+<p  style="font-weight: 500; font-size: 20px;padding-top: 10px;padding-left: 0px;"><%=raw @headline.main_blurb %></p>
 
 </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-4" >
-      <div class="visible-desktop">
-        <div>
+<div class="col-sm-6 col-md-6 col-lg-4">
+<p class="links" style="font-weight: 400; font-size: 14px;padding-top: 10px;"><a href="<%=raw @headline.main_story_link_1 %>" target="_blank"><%=raw @headline.main_story_link_headline_1 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_1 %></p>
+
+
+
+<p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_2 %>" target="_blank"><%=raw @headline.main_story_link_headline_2 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_2 %></p>
+
+
+
+
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%= raw @headline.main_story_link_3 %>" target="_blank"><%= raw @headline.main_story_link_headline_3 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%= raw @headline.main_story_link_source_3 %></p>
+
+
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_4 %>" target="_blank"><%=raw @headline.main_story_link_headline_4 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_4 %></p>
+
+
+</div>
+<div class="row">
+
+<img src="/assets/latest.png" width=100% class="img-responsive"/>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[0].link %> ><%= @latest[0].headline %></a></p></div>
+<%= image_fu @latest[0].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[1].link %> ><%= @latest[1].headline %></a></p></div>
+<%= image_fu @latest[1].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[2].link %> ><%= @latest[2].headline %></a></p></div>
+<%= image_fu @latest[2].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[3].link %> ><%= @latest[3].headline %></a></p></div>
+<%= image_fu @latest[3].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/politics">Politics</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @politics[0].Main_headline, refinery.politics_politic_path(@politics[0])  %> </p>
+<div style="text-align: center"><%= image_fu @politics[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[1].Main_headline, refinery.politics_politic_path(@politics[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[2].Main_headline, refinery.politics_politic_path(@politics[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[3].Main_headline, refinery.politics_politic_path(@politics[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[4].Main_headline, refinery.politics_politic_path(@politics[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[5].Main_headline, refinery.politics_politic_path(@politics[5]) %></p>
+</div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/news">News</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @news[0].Main_headline, refinery.news_sections_news_section_path(@news[0]) %> </p>
+<div style="text-align: center"><%= image_fu @news[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[1].Main_headline, refinery.news_sections_news_section_path(@news[1])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[2].Main_headline, refinery.news_sections_news_section_path(@news[2])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[3].Main_headline, refinery.news_sections_news_section_path(@news[3])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[4].Main_headline, refinery.news_sections_news_section_path(@news[4])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[5].Main_headline, refinery.news_sections_news_section_path(@news[5])  %></p>
+</div></div>
+<div class="row">
+
+<a href="/blogs"><img src="/assets/voices.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[0].url %> > <%= @blog[0].headline%></a></p></div>
+<%= image_fu @blog[0].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[1].url %> > <%= @blog[1].headline%></a></p></div>
+<%= image_fu @blog[1].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[2].url %> > <%= @blog[2].headline%></a></p></div>
+<%= image_fu @blog[2].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[3].url %> > <%= @blog[3].headline%></a></p></div>
+<%= image_fu @blog[3].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/sports">Buzzing</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @sports[0].Main_headline, refinery.sports_sport_path(@sports[0])  %> </p>
+<div style="text-align: center"><%= image_fu @sports[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[1].Main_headline, refinery.sports_sport_path(@sports[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[2].Main_headline, refinery.sports_sport_path(@sports[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[3].Main_headline, refinery.sports_sport_path(@sports[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[4].Main_headline, refinery.sports_sport_path(@sports[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[5].Main_headline, refinery.sports_sport_path(@sports[5]) %></p>
+</div>
+
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/entertainments">Entertainment</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @enter[0].Main_headline, refinery.entertainments_entertainment_path(@enter[0]) %> </p>
+<div style="text-align: center"><%= image_fu @enter[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[1].Main_headline, refinery.entertainments_entertainment_path(@enter[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[2].Main_headline, refinery.entertainments_entertainment_path(@enter[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[3].Main_headline, refinery.entertainments_entertainment_path(@enter[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[4].Main_headline, refinery.entertainments_entertainment_path(@enter[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[5].Main_headline, refinery.entertainments_entertainment_path(@enter[5]) %></p>
+</div></div>
+<div class="row">
+
+<a href="/opinions"><img src="/assets/columnists.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<%= image_fu @opinion[0].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[0].url %>><%=raw @opinion[0].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+
+<%= image_fu @opinion[1].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[1].url %>><%=raw @opinion[1].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<%= image_fu @opinion[2].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[2].url %>><%=raw @opinion[2].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<%= image_fu @opinion[3].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[3].url %>><%=raw @opinion[3].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>  </div>
+
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/technologies">Science</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @tech[0].Main_headline, refinery.technologies_technology_path(@tech[0]) %> </p>
+<div style="text-align: center"><%= image_fu @tech[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[1].Main_headline, refinery.technologies_technology_path(@tech[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[2].Main_headline, refinery.technologies_technology_path(@tech[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[3].Main_headline, refinery.technologies_technology_path(@tech[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[4].Main_headline, refinery.technologies_technology_path(@tech[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[5].Main_headline, refinery.technologies_technology_path(@tech[5]) %></p>
+</div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/finances">Life</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @money[0].Main_headline, refinery.finances_finance_path(@money[0]) %> </p>
+<div style="text-align: center"><%= image_fu @money[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[1].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[2].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[3].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[4].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[5].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+</div></div>
+<div class="row">
+
+<a href="/randoms"><img src="/assets/random.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[0].url %>><%=raw @random[0].headline %></a></p></div>
+<%= image_fu @random[0].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[1].url %>><%=raw @random[1].headline %></a></p></div>
+<%= image_fu @random[1].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[2].url %>><%=raw @random[2].headline %></a></p></div>
+<%= image_fu @random[2].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[3].url %>><%=raw @random[3].headline %></a></p></div>
+<%= image_fu @random[3].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/worlds">World</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @world[0].Main_headline, refinery.worlds_world_path(@world[0]) %> </p>
+<div style="text-align: center"><%= image_fu @world[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;border-left:1px solid grey;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[1].Main_headline, refinery.worlds_world_path(@world[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[2].Main_headline, refinery.worlds_world_path(@world[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[3].Main_headline, refinery.worlds_world_path(@world[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[4].Main_headline, refinery.worlds_world_path(@world[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[5].Main_headline, refinery.worlds_world_path(@world[5]) %></p>
+</div></div>
+
+</div>
+<div class="col-sm-12 col-md-6 col-lg-8 visible-phone">
+
+<h2><a class="links" href=<%=raw @headline.main_link %>><%=raw @headline.main_headline %></a></h2>
+
+<div class="col-sm-6 col-md-6 col-lg-8">
+
+<a href=<%=raw @headline.main_link %>> <%= image_fu @headline.main_photo,"600x300", :class=> "img-responsive" %></a>
+
+<p  style="font-weight: 500; font-size: 20px;padding-top: 10px;padding-left: 0px;"><%=raw @headline.main_blurb %></p>
+
+</div>
+
+<div class="col-sm-6 col-md-6 col-lg-4">
+<p class="links" style="font-weight: 400; font-size: 14px;padding-top: 10px;"><a href="<%=raw @headline.main_story_link_1 %>" target="_blank"><%=raw @headline.main_story_link_headline_1 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_1 %></p>
+
+
+
+<p  class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_2 %>" target="_blank"><%=raw @headline.main_story_link_headline_2 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_2 %></p>
+
+
+
+
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%= raw @headline.main_story_link_3 %>" target="_blank"><%= raw @headline.main_story_link_headline_3 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%= raw @headline.main_story_link_source_3 %></p>
+
+
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px;"><a href="<%=raw @headline.main_story_link_4 %>" target="_blank"><%=raw @headline.main_story_link_headline_4 %></a></p>
+
+
+
+<p class="courtesy-row" style="font-size: 14px;"><%=raw @headline.main_story_link_source_4 %></p>
+
+
+</div>
+<div class="row">
+
+<img src="/assets/latest.png" width=100% class="img-responsive"/>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[0].link %> ><%= @latest[0].headline %></a></p></div>
+<%= image_fu @latest[0].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[1].link %> ><%= @latest[1].headline %></a></p></div>
+<%= image_fu @latest[1].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[2].link %> ><%= @latest[2].headline %></a></p></div>
+<%= image_fu @latest[2].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @latest[3].link %> ><%= @latest[3].headline %></a></p></div>
+<%= image_fu @latest[3].photo,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/politics">Politics</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @politics[0].Main_headline, refinery.politics_politic_path(@politics[0])  %> </p>
+<div style="text-align: center"><%= image_fu @politics[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[1].Main_headline, refinery.politics_politic_path(@politics[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[2].Main_headline, refinery.politics_politic_path(@politics[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[3].Main_headline, refinery.politics_politic_path(@politics[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[4].Main_headline, refinery.politics_politic_path(@politics[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @politics[5].Main_headline, refinery.politics_politic_path(@politics[5]) %></p>
+</div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/news">News</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @news[0].Main_headline, refinery.news_sections_news_section_path(@news[0]) %> </p>
+<div style="text-align: center"><%= image_fu @news[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[1].Main_headline, refinery.news_sections_news_section_path(@news[1])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[2].Main_headline, refinery.news_sections_news_section_path(@news[2])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[3].Main_headline, refinery.news_sections_news_section_path(@news[3])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[4].Main_headline, refinery.news_sections_news_section_path(@news[4])  %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @news[5].Main_headline, refinery.news_sections_news_section_path(@news[5])  %></p>
+</div></div>
+<div class="row">
+
+<a href="/blogs"><img src="/assets/voices.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[0].url %> > <%= @blog[0].headline%></a></p></div>
+<%= image_fu @blog[0].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[1].url %> > <%= @blog[1].headline%></a></p></div>
+<%= image_fu @blog[1].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[2].url %> > <%= @blog[2].headline%></a></p></div>
+<%= image_fu @blog[2].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%= @blog[3].url %> > <%= @blog[3].headline%></a></p></div>
+<%= image_fu @blog[3].image,"180x120", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/sports">Buzzing</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @sports[0].Main_headline, refinery.sports_sport_path(@sports[0])  %> </p>
+<div style="text-align: center"><%= image_fu @sports[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[1].Main_headline, refinery.sports_sport_path(@sports[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[2].Main_headline, refinery.sports_sport_path(@sports[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[3].Main_headline, refinery.sports_sport_path(@sports[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[4].Main_headline, refinery.sports_sport_path(@sports[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @sports[5].Main_headline, refinery.sports_sport_path(@sports[5]) %></p>
+</div>
+
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/entertainments">Entertainment</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @enter[0].Main_headline, refinery.entertainments_entertainment_path(@enter[0]) %> </p>
+<div style="text-align: center"><%= image_fu @enter[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[1].Main_headline, refinery.entertainments_entertainment_path(@enter[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[2].Main_headline, refinery.entertainments_entertainment_path(@enter[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[3].Main_headline, refinery.entertainments_entertainment_path(@enter[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[4].Main_headline, refinery.entertainments_entertainment_path(@enter[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @enter[5].Main_headline, refinery.entertainments_entertainment_path(@enter[5]) %></p>
+</div></div>
+<div class="row">
+
+<a href="/opinions"><img src="/assets/columnists.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<%= image_fu @opinion[0].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[0].url %>><%=raw @opinion[0].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+
+<%= image_fu @opinion[1].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[1].url %>><%=raw @opinion[1].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<%= image_fu @opinion[2].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[2].url %>><%=raw @opinion[2].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<%= image_fu @opinion[3].image,"200x150", :class=> "img-responsive" %>
+<p class="links" style="font-weight: 600; padding-top: 10px; font-size: 14px"><a href=/<%=raw @opinion[3].url %>><%=raw @opinion[3].headline %></a></p>
+<p class="columnists"><%=raw @opinion[0].author %></p>
+</div>
+<div class="clearfix visible-xs"></div>  </div>
+
+<div class="row" style="padding:0;margin-top:1px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/technologies">Science</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @tech[0].Main_headline, refinery.technologies_technology_path(@tech[0]) %> </p>
+<div style="text-align: center"><%= image_fu @tech[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[1].Main_headline, refinery.technologies_technology_path(@tech[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[2].Main_headline, refinery.technologies_technology_path(@tech[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[3].Main_headline, refinery.technologies_technology_path(@tech[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[4].Main_headline, refinery.technologies_technology_path(@tech[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @tech[5].Main_headline, refinery.technologies_technology_path(@tech[5]) %></p>
+</div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/finances">Life</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @money[0].Main_headline, refinery.finances_finance_path(@money[0]) %> </p>
+<div style="text-align: center"><%= image_fu @money[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[1].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[2].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[3].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[4].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @money[5].Main_headline, refinery.finances_finance_path(@money[0]) %></p>
+</div></div>
+<div class="row">
+
+<a href="/randoms"><img src="/assets/random.png" width=100% class="img-responsive"/></a>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[0].url %>><%=raw @random[0].headline %></a></p></div>
+<%= image_fu @random[0].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;" >
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[1].url %>><%=raw @random[1].headline %></a></p></div>
+<%= image_fu @random[1].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[2].url %>><%=raw @random[2].headline %></a></p></div>
+<%= image_fu @random[2].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+<div class="col-xs-6 col-sm-3" style="padding:10px;">
+<div ><p class="links latest-text" style="font-weight: 400; font-size: 14px; margin-top: 20px"><a href=<%=raw @random[3].url %>><%=raw @random[3].headline %></a></p></div>
+<%= image_fu @random[3].image,"200x150", :class=> "img-responsive" %>
+</div>
+<div class="clearfix visible-xs"></div>
+</div>
+<div class="row" style="padding:0;margin-top:10px;">
+<hr width=100%/>
+<h2 class="section-header" style="align:left;padding-left:10px"><a class="links" href="/worlds">World</a></h2>
+<hr width=100%/>
+
+
+<div class="col-4 col-sm-4 col-lg-4" style="margin-top: 10px;">
+<p class="links" style="font-weight: 600; padding-top: 0px; font-size: 16px"><%= link_to @world[0].Main_headline, refinery.worlds_world_path(@world[0]) %> </p>
+<div style="text-align: center"><%= image_fu @world[0].photo,"230x150", :class=> "img-responsive" %></div>
+</div>              <div class="clearfix visible-xs"></div>
+<div class="col-8 col-sm-8 col-lg-8" style="margin-top: 20px;margin-bottom: 10px;">
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[1].Main_headline, refinery.worlds_world_path(@world[1]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[2].Main_headline, refinery.worlds_world_path(@world[2]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[3].Main_headline, refinery.worlds_world_path(@world[3]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[4].Main_headline, refinery.worlds_world_path(@world[4]) %></p>
+<p class="links" style="font-weight: 400; padding-top: 10px; font-size: 14px"><%= link_to @world[5].Main_headline, refinery.worlds_world_path(@world[5]) %></p>
+</div></div>
+
+</div>
+<div class="col-sm-12 col-md-6 col-lg-4" >
+<div class="visible-desktop">
+<div>
 <h3  style="font-family: Roboto"><%= link_to @side_headline[0].headline, refinery.side_headlines_side_headline_path(@side_headline[0]),:class=>"links"%></h3>
 <%= image_fu @side_headline[0].photo, "320x240", :class=> "img-responsive" %>
 <p style="font-weight: 400; padding-top: 10px; font-size: 14px"><%=raw @side_headline[0].blurb %></p>
-        </div>
+</div>
 <hr style="width:100%"/>
 <h2 class="section-header" style="margin-top: 10px;text-align:center">Southern Minute</h2>
 <hr style="width:100%"/>
@@ -342,21 +901,21 @@
 <div style="margin-left: 20px; margin-top: 0px"><%= image_fu @elephant.photo,"226x320", :class=> "img-responsive" %></div>
 
 
-        <div class="table-responsive">
-            <table class="table table-hover">
-            <tr><th><h2 class="section-header" style="text-align:center;">Editor's Pick</h2></th></tr>
+<div class="table-responsive">
+<table class="table table-hover">
+<tr><th><h2 class="section-header" style="text-align:center;">Editor's Pick</h2></th></tr>
 
-            <tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_1.link %> ><%=raw @editors_pick_1.headline %></a></p></td></tr>
-            <tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_2.link %> ><%=raw @editors_pick_2.headline %></a></p></td></tr>
-            <tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_3.link %> ><%=raw @editors_pick_3.headline %></a></p></td></tr>
-            <tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_4.link %> ><%=raw @editors_pick_4.headline %></a></p></td></tr>
-    
-            </table>
-        </div>
+<tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_1.link %> ><%=raw @editors_pick_1.headline %></a></p></td></tr>
+<tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_2.link %> ><%=raw @editors_pick_2.headline %></a></p></td></tr>
+<tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_3.link %> ><%=raw @editors_pick_3.headline %></a></p></td></tr>
+<tr><td><p  style="margin-top: 20px;font-size:14px;" class="editors" ><a class="links" href=<%=raw @editors_pick_4.link %> ><%=raw @editors_pick_4.headline %></a></p></td></tr>
 
-        <hr style="margin-top: 23px;width:100%"/>
-                  
-               <!-- start feedwind code --><script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><\/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://timesofindia.feedsportal.com/c/33039/f/533965/index.rss|http://feeds.hindustantimes.com/HT-HomePage-TopStories",rssmikle_frame_width: "300",rssmikle_frame_height: "800",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "on",responsive: "on",rssmikle_css_url: "",text_align: "left",corner: "off",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#9ACD32",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#000000",rssmikle_item_border_bottom: "off",rssmikle_item_description: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl2",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",rssmikle_item_description_tag: "off",rssmikle_item_description_image_scaling: "off",rssmikle_item_podcast: "off"};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; "><!-- end feedwind code -->
+</table>
+</div>
+
+<hr style="margin-top: 23px;width:100%"/>
+
+<!-- start feedwind code --><script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><\/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "http://timesofindia.feedsportal.com/c/33039/f/533965/index.rss|http://feeds.hindustantimes.com/HT-HomePage-TopStories",rssmikle_frame_width: "300",rssmikle_frame_height: "800",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "12",rssmikle_border: "on",responsive: "on",rssmikle_css_url: "",text_align: "left",corner: "off",autoscroll: "on",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#9ACD32",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#FFFFFF",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#000000",rssmikle_item_border_bottom: "off",rssmikle_item_description: "off",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#666666",rssmikle_item_date: "gl2",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",rssmikle_item_description_tag: "off",rssmikle_item_description_image_scaling: "off",rssmikle_item_podcast: "off"};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; "><!-- end feedwind code -->
 <div style="padding:40px">
 </div>
 
@@ -364,5 +923,5 @@
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 </div>
-   </div>
+</div>
 </div>
