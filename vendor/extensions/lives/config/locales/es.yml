@@ -1,0 +1,58 @@
+es:
+  refinery:
+    plugins:
+      lives:
+        title: Lives
+#        article: masculino/femenino
+    lives:
+      admin:
+        lives:
+          actions:
+            create_new: Crear nuevo life
+            reorder: Reordenar lives
+            reorder_done: Reordenación de lives completada
+          records:
+            title: Lives
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay lives todavía. Pulsa en "Crear nuevo Life" para crear tu primer life.
+          life:
+            view_live_html: Ver este life como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este life
+            delete: Borrar este life para siempre
+      lives:
+        show:
+          other: Otros lives
+  activerecord:
+    attributes:
+      'refinery/lives/life':
+        Main_headline: Main Headline
+        photo: Photo
+        youtube: Youtube
+        image_blurb: Image Blurb
+        blurb: Blurb
+        summary: Summary
+        tags: Tags
+        headline_1: Headline 1
+        link_1: Link 1
+        source_1: Source 1
+        headline_2: Headline 2
+        link_2: Link 2
+        source_2: Source 2
+        headline_3: Headline 3
+        link_3: Link 3
+        source_3: Source 3
+        headline_4: Headline 4
+        link_4: Link 4
+        source_4: Source 4
+        headline_5: Headline 5
+        link_5: Link 5
+        source_5: Source 5
+        headline_6: Headline 6
+        link_6: Link 6
+        source_6: Source 6
+        headline_7: Headline 7
+        link_7: Link 7
+        source_7: Source 7
+        headline_8: Headline 8
+        link_8: Link 8
+        source_8: Source 8

@@ -125,3 +125,6 @@ Refinery::Keralas::Engine.load_seed
 
 # Added by Refinery CMS Andhras extension
 Refinery::Andhras::Engine.load_seed
+
+# Added by Refinery CMS Lives extension
+Refinery::Lives::Engine.load_seed
