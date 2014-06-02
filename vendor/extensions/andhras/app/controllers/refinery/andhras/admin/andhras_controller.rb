@@ -5,6 +5,7 @@ module Refinery
 
         crudify :'refinery/andhras/andhra',
                 :title_attribute => 'headline',
+                :per_page => '1000',
                 :xhr_paging => true
 
       end

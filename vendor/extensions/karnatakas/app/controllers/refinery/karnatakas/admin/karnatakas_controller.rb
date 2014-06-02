@@ -5,6 +5,7 @@ module Refinery
 
         crudify :'refinery/karnatakas/karnataka',
                 :title_attribute => 'headline',
+                :per_page => '1000',
                 :xhr_paging => true
 
       end

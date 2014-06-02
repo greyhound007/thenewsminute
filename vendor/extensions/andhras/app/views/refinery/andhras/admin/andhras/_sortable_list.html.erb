@@ -1,5 +1,5 @@
 <ul id='sortable_list'>
-  <%= render :partial => 'andhra', :collection => @andhras %>
+  <%= render :partial => 'andhra', :collection => @andhras.reverse %>
 </ul>
 <%= render '/refinery/admin/sortable_list',
             :continue_reordering => (local_assigns.keys.include?(:continue_reordering)) ? continue_reordering : true %>

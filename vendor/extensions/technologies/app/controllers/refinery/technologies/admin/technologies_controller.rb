@@ -5,6 +5,7 @@ module Refinery
 
         crudify :'refinery/technologies/technology',
                 :title_attribute => 'Main_headline',
+                :per_page => '1000',
                 :xhr_paging => true
 
       end
