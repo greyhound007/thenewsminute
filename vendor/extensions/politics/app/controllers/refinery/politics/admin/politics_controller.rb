@@ -5,6 +5,7 @@ module Refinery
 
         crudify :'refinery/politics/politic',
                 :title_attribute => 'Main_headline',
+                :per_page => '1000',
                 :xhr_paging => true
 
       end
