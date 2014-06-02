@@ -15,7 +15,7 @@ module Refinery
           @editors_pick_2=@editors_pick[1]
           @editors_pick_3=@editors_pick[2]
           @editors_pick_4=@editors_pick[3]
-          
+          @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
           @south=Refinery::SouthernMinutes::SouthernMinute.order('position ASC')
           @south_1=@south[0]
           @south_2=@south[1]
