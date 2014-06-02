@@ -37,6 +37,8 @@ PATH
       refinerycms-core (~> 2.1.1)
     refinerycms-side_headlines (1.0)
       refinerycms-core (~> 2.1.2)
+    refinerycms-socials (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-southern_minutes (1.0)
       refinerycms-core (~> 2.1.2)
     refinerycms-specials (1.0)
@@ -297,6 +299,7 @@ DEPENDENCIES
   refinerycms-politics!
   refinerycms-randoms!
   refinerycms-side_headlines!
+  refinerycms-socials!
   refinerycms-southern_minutes!
   refinerycms-specials!
   refinerycms-sports!

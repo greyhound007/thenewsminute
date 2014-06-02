@@ -128,3 +128,6 @@ Refinery::Andhras::Engine.load_seed
 
 # Added by Refinery CMS Lives extension
 Refinery::Lives::Engine.load_seed
+
+# Added by Refinery CMS Socials extension
+Refinery::Socials::Engine.load_seed

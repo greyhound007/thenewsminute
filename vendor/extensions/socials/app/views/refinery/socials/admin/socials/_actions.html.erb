@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Socials::Admin::SocialsController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.socials_admin_socials_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_socials_admin_social_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Socials::Admin::SocialsController.sortable? && ::Refinery::Socials::Social.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Socials"),
+                 refinery.socials_admin_socials_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Socials"),
+                 refinery.socials_admin_socials_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

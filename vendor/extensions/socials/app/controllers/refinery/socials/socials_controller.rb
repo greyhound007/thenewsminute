@@ -1,15 +1,15 @@
 module Refinery
-  module Lives
-    class LivesController < ::ApplicationController
+  module Socials
+    class SocialsController < ::ApplicationController
 
-      before_filter :find_all_lives
+      before_filter :find_all_socials
       before_filter :find_page
 
       def index
         # you can use meta fields from your model instead (e.g. browser_title)
-        # by swapping @page for @life in the line below:
+        # by swapping @page for @social in the line below:
         present(@page)
-          @politic=Refinery::Lives::Life.order('position ASC')
+          @politic=Refinery::Socials::Social.order('position ASC')
           @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
           @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
           @editors_pick_1=@editors_pick[0]
@@ -30,21 +30,21 @@ module Refinery
       end
 
       def show
-        @life = Life.find(params[:id])
+        @social = Social.find(params[:id])
 
         # you can use meta fields from your model instead (e.g. browser_title)
-        # by swapping @page for @life in the line below:
+        # by swapping @page for @social in the line below:
         present(@page)
       end
 
     protected
 
-      def find_all_lives
-        @lives = Life.order('position ASC')
+      def find_all_socials
+        @socials = Social.order('position ASC')
       end
 
       def find_page
-        @page = ::Refinery::Page.where(:link_url => "/lives").first
+        @page = ::Refinery::Page.where(:link_url => "/socials").first
       end
 
     end
