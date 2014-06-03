@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140602182528) do
+ActiveRecord::Schema.define(:version => 20140603080308) do
 
   create_table "refinery_andhras", :force => true do |t|
     t.string   "headline"
@@ -1179,6 +1179,43 @@ ActiveRecord::Schema.define(:version => 20140602182528) do
     t.integer  "position"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
+  end
+
+  create_table "refinery_telanganas", :force => true do |t|
+    t.string   "headline"
+    t.integer  "photo_id"
+    t.string   "youtube"
+    t.string   "image_blurb"
+    t.string   "blurb"
+    t.text     "summary"
+    t.string   "tags"
+    t.string   "headline_1"
+    t.string   "link_1"
+    t.string   "source_1"
+    t.string   "headline_2"
+    t.string   "link_2"
+    t.string   "source_2"
+    t.string   "headline_3"
+    t.string   "link_3"
+    t.string   "source_3"
+    t.string   "headline_4"
+    t.string   "link_4"
+    t.string   "source_4"
+    t.string   "headline_5"
+    t.string   "link_5"
+    t.string   "source_5"
+    t.string   "headline_6"
+    t.string   "link_6"
+    t.string   "source_6"
+    t.string   "headline_7"
+    t.string   "link_7"
+    t.string   "source_7"
+    t.string   "headline_8"
+    t.string   "link_8"
+    t.string   "source_8"
+    t.integer  "position"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
   create_table "refinery_user_plugins", :force => true do |t|

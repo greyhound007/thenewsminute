@@ -1,0 +1,25 @@
+<ul>
+  <% if ::Refinery::Telanganas::Admin::TelanganasController.searchable? %>
+    <li>
+      <%= render '/refinery/admin/search', :url => refinery.telanganas_admin_telanganas_path %>
+    </li>
+  <% end %>
+  <li>
+    <%= link_to t('.create_new'), refinery.new_telanganas_admin_telangana_path,
+                 :class => "add_icon" %>
+  </li>
+<% if !searching? && ::Refinery::Telanganas::Admin::TelanganasController.sortable? && ::Refinery::Telanganas::Telangana.many? %>
+  <li>
+    <%= link_to t('.reorder', :what => "Telanganas"),
+                 refinery.telanganas_admin_telanganas_path,
+                 :id => "reorder_action",
+                 :class => "reorder_icon" %>
+
+    <%= link_to t('.reorder_done', :what => "Telanganas"),
+                 refinery.telanganas_admin_telanganas_path,
+                 :id => "reorder_action_done",
+                 :style => "display: none;",
+                 :class => "reorder_icon" %>
+  </li>
+<% end %>
+</ul>

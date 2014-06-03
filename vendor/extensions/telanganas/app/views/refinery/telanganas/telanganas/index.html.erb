@@ -1,0 +1,11 @@
+<% content_for :body do %>
+  <ul id="telanganas">
+    <% @telanganas.each do |telangana| %>
+      <li>
+        <%= link_to telangana.headline, refinery.telanganas_telangana_path(telangana) %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

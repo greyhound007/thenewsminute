@@ -131,3 +131,6 @@ Refinery::Lives::Engine.load_seed
 
 # Added by Refinery CMS Socials extension
 Refinery::Socials::Engine.load_seed
+
+# Added by Refinery CMS Telanganas extension
+Refinery::Telanganas::Engine.load_seed

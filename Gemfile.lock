@@ -51,6 +51,8 @@ PATH
       refinerycms-core (~> 2.1.2)
     refinerycms-technologies (1.0)
       refinerycms-core (~> 2.1.2)
+    refinerycms-telanganas (1.0)
+      refinerycms-core (~> 2.1.2)
     refinerycms-worlds (1.0)
       refinerycms-core (~> 2.1.2)
 
@@ -306,6 +308,7 @@ DEPENDENCIES
   refinerycms-stories!
   refinerycms-tamils!
   refinerycms-technologies!
+  refinerycms-telanganas!
   refinerycms-worlds!
   sass-rails (~> 3.2.3)
   sqlite3
