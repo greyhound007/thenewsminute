@@ -9,7 +9,7 @@ module Refinery
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @opinion_corner in the line below:
         present(@page)
-          @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
+          @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position DESC')
           @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
           @editors_pick_1=@editors_pick[0]
           @editors_pick_2=@editors_pick[1]

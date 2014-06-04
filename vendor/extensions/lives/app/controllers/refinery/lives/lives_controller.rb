@@ -9,7 +9,7 @@ module Refinery
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @life in the line below:
         present(@page)
-          @politic=Refinery::Lives::Life.order('position ASC')
+          @politic=Refinery::Lives::Life.order('position DESC')
           @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
           @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
           @editors_pick_1=@editors_pick[0]

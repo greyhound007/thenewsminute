@@ -20,33 +20,33 @@ module Refinery
         
         @headline = Refinery::Headlines::Headline.find(2)
         @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
-        @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
+        @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position DESC')
         @editors_pick_1=@editors_pick[0]
         @editors_pick_2=@editors_pick[1]
         @editors_pick_3=@editors_pick[2]
         @editors_pick_4=@editors_pick[3]
         
-        @south=Refinery::SouthernMinutes::SouthernMinute.order('position ASC')
+        @south=Refinery::SouthernMinutes::SouthernMinute.order('position DESC')
         @south_1=@south[0]
         @south_2=@south[1]
         @south_3=@south[2]
         @south_4=@south[3]
-        @elephants=Refinery::Elephants::Elephant.order('position ASC')
+        @elephants=Refinery::Elephants::Elephant.order('position DESC')
         @elephant=@elephants.first
-        @ears=Refinery::Ears::Ear.order('position ASC')
+        @ears=Refinery::Ears::Ear.order('position DESC')
         @ear=@ears.first
        
-        @latest=Refinery::Latests::Latest.order('position ASC')
-        @politics=Refinery::Politics::Politic.order('position ASC')
-        @news=Refinery::NewsSections::NewsSection.order('position ASC')
-        @blog=Refinery::Blogs::Blog.order('position ASC')
-        @sports=Refinery::Sports::Sport.order('position ASC')
-        @enter=Refinery::Entertainments::Entertainment.order('position ASC')
-        @opinion=Refinery::OpinionMainpages::OpinionMainpage.order('position ASC')
-        @money=Refinery::Finances::Finance.order('position ASC')
-        @tech=Refinery::Technologies::Technology.order('position ASC')
-        @world=Refinery::Worlds::World.order('position ASC')
-        @random=Refinery::Randoms::Random.order('position ASC')
+        @latest=Refinery::Latests::Latest.order('position DESC')
+        @politics=Refinery::Politics::Politic.order('position DESC')
+        @news=Refinery::NewsSections::NewsSection.order('position DESC')
+        @blog=Refinery::Blogs::Blog.order('position DESC')
+        @sports=Refinery::Socials::Social.order('position DESC')
+        @enter=Refinery::Entertainments::Entertainment.order('position DESC')
+        @opinion=Refinery::OpinionMainpages::OpinionMainpage.order('position DESC')
+        @money=Refinery::Lives::Life.order('position ASC')
+        @tech=Refinery::Technologies::Technology.order('position DESC')
+        @world=Refinery::Worlds::World.order('position DESC')
+        @random=Refinery::Randoms::Random.order('position DESC')
         
         
     end

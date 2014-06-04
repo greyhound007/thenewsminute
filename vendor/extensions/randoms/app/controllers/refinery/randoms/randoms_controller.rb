@@ -8,7 +8,7 @@ module Refinery
       def index
         # you can use meta fields from your model instead (e.g. browser_title)
         # by swapping @page for @random in the line below:
-          @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position ASC')
+          @editors_pick=Refinery::EditorsPicks::EditorsPick.order('position DESC')
           @side_headline=Refinery::SideHeadlines::SideHeadline.order('position ASC')
           @editors_pick_1=@editors_pick[0]
           @editors_pick_2=@editors_pick[1]
