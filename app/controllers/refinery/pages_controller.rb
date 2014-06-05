@@ -43,7 +43,7 @@ module Refinery
         @sports=Refinery::Socials::Social.order('position DESC')
         @enter=Refinery::Entertainments::Entertainment.order('position DESC')
         @opinion=Refinery::OpinionMainpages::OpinionMainpage.order('position DESC')
-        @money=Refinery::Lives::Life.order('position ASC')
+        @money=Refinery::Lives::Life.order('position DESC')
         @tech=Refinery::Technologies::Technology.order('position DESC')
         @world=Refinery::Worlds::World.order('position DESC')
         @random=Refinery::Randoms::Random.order('position DESC')
